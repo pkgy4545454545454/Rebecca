@@ -24,14 +24,14 @@ flake8==7.3.0
 frozenlist==1.8.0
 fsspec==2026.1.0
 google-ai-generativelanguage==0.6.15
-google-api-core[grpc]==2.29.0
+google-api-core==2.29.0
 google-api-python-client==2.188.0
 google-auth==2.47.0
 google-auth-httplib2==0.3.0
 google-genai==1.59.0
 google-generativeai==0.8.6
 googleapis-common-protos==1.72.0
-grpcio==1.76.0
+
 
 h11==0.16.0
 hf-xet==1.2.0
