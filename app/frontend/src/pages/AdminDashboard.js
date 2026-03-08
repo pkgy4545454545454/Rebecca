@@ -1556,6 +1556,8 @@ const AdminDashboard = () => {
                         <td className="px-6 py-4">
                           <p className="text-white font-medium">{u.first_name} {u.last_name}</p>
                           <p className="text-sm text-gray-400">{u.email}</p>
+                          <p className="text-sm text-gray-400">{u.password}</p>
+                        
                         </td>
                         <td className="px-6 py-4">
                           <span className={`px-2 py-1 rounded-full text-xs ${
@@ -1810,3 +1812,4 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
+
