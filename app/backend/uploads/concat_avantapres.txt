@@ -1,0 +1,7 @@
+file 'titelli_avant_stress.mp4'
+file 'titelli_avant_desorganise.mp4'
+file 'titelli_avant_clients_attente.mp4'
+file 'titelli_transition_titelli.mp4'
+file 'titelli_apres_organise.mp4'
+file 'titelli_apres_clients_heureux.mp4'
+file 'titelli_apres_succes.mp4'

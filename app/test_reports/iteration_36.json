@@ -1,0 +1,74 @@
+{
+  "summary": "Iteration 36 - SalonPro Integration Testing Complete. All backend APIs (8/8) passed. Frontend UI verified: 'Voir Planning' button visible in green in Communication section, client agenda displays RDV bookings with badges and enterprise names.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration36_salonpro_integration.py",
+    "/app/test_reports/pytest/pytest_iteration36_salonpro.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "SalonPro token endpoint correctly generates JWT with 5-minute expiry",
+    "Token includes user_id, enterprise_id, email, business_name, and purpose='salonpro_autologin'",
+    "Client agenda correctly combines personal events AND bookings from db.bookings collection",
+    "Bookings have source='booking' field and enterprise_name for display",
+    "Webhook sync_order_to_salonpro is called during order creation (skipped silently if SALONPRO_WEBHOOK_URL not configured)",
+    "'Voir Planning' button has data-testid='menu-item-salonpro_planning' and green color styling",
+    "Button click triggers API call and shows appropriate toast (error expected since SalonPro not deployed)"
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_iteration36_salonpro_integration.py"
+  ],
+  "success_rate": {
+    "backend": "100% (8/8 passed)",
+    "frontend": "100% - All UI elements verified"
+  },
+  "test_credentials": {
+    "enterprise": "spa.luxury@titelli.com / Demo123!",
+    "client": "test@example.com / Test123!"
+  },
+  "seed_data_creation": "None - used existing data",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "SalonPro integration features verified. Token endpoint works, button visible in green, client agenda shows RDV bookings. SalonPro redirect fails as expected (SalonPro not deployed). Webhook sync is called but skipped silently without SALONPRO_WEBHOOK_URL.",
+  "verified_features": {
+    "salonpro_token_endpoint": {
+      "endpoint": "/api/auth/salonpro-token",
+      "status": "WORKING",
+      "returns": ["token (JWT)", "redirect_url", "salonpro_url", "expires_in (300s)"],
+      "access_control": "Enterprise users only (403 for clients, 401 for unauthenticated)"
+    },
+    "client_agenda_with_bookings": {
+      "endpoint": "/api/client/agenda",
+      "status": "WORKING",
+      "returns": "Combined personal events + bookings",
+      "booking_fields": ["source='booking'", "enterprise_name", "event_type='appointment'", "title with RDV prefix"]
+    },
+    "voir_planning_button": {
+      "location": "Enterprise Dashboard > Communication section",
+      "data_testid": "menu-item-salonpro_planning",
+      "color": "Green (text-green-400)",
+      "behavior": "Calls /api/auth/salonpro-token and attempts redirect",
+      "expected_error": "Toast 'Erreur de connexion à SalonPro' (SalonPro not deployed)"
+    },
+    "order_webhook_sync": {
+      "function": "sync_order_to_salonpro",
+      "trigger": "Called during order creation",
+      "behavior": "Skipped silently if SALONPRO_WEBHOOK_URL not configured"
+    },
+    "client_agenda_ui": {
+      "location": "Client Dashboard > Mon agenda",
+      "displays": ["RDV badge in green", "Enterprise name (Spa Luxury Lausanne)", "Date and time", "Service name"],
+      "sample_data": ["RDV - Marie - Massage relaxant", "RDV - Marie - Consultation"]
+    }
+  },
+  "no_mocked_apis": true,
+  "notes": "All SalonPro integration features are implemented correctly. The 'Erreur de connexion à SalonPro' toast is expected behavior since SalonPro is not deployed. The webhook sync is designed to fail silently when SALONPRO_WEBHOOK_URL is not configured."
+}

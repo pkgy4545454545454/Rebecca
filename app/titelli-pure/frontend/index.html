@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titelli - Les meilleurs prestataires de ta région</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html" class="active">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions">
+            <a href="auth.html" class="btn btn-primary">Connexion</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="hero-title">
+            Les meilleurs prestataires<br>
+            <span class="gold">de ta région</span>
+        </h1>
+        <p class="hero-subtitle">
+            Découvrez les services et produits de qualité à Lausanne
+        </p>
+        <div class="hero-buttons">
+            <a href="services.html" class="btn btn-primary">Services</a>
+            <a href="products.html" class="btn btn-primary">Produits</a>
+            <a href="entreprises.html?filter=certified" class="btn btn-secondary">Certifiés</a>
+            <a href="entreprises.html?filter=premium" class="btn btn-secondary">Premium</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section section-blue">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title">Les meilleurs services de ta région</h2>
+                <p class="section-subtitle">Découvrez nos prestataires de confiance</p>
+            </div>
+            <a href="services.html" class="btn btn-secondary btn-small">Voir tout →</a>
+        </div>
+        <div id="services-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </section>
+
+    <!-- Tendances Section -->
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title">🔥 Tendances actuelles</h2>
+                <p class="section-subtitle">Nos prestataires labellisés du moment</p>
+            </div>
+            <a href="entreprises.html?filter=labeled" class="btn btn-gold btn-small">Voir tout →</a>
+        </div>
+        <div id="tendances-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </section>
+
+    <!-- Guests Section -->
+    <section class="section" style="background: linear-gradient(180deg, rgba(0,71,171,0.1) 0%, transparent 100%);">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title">✓ Guests du moment</h2>
+                <p class="section-subtitle">Nos prestataires certifiés</p>
+            </div>
+            <a href="entreprises.html?filter=certified" class="btn btn-blue btn-small">Voir tout →</a>
+        </div>
+        <div id="guests-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section class="section">
+        <div class="section-header">
+            <div>
+                <h2 class="section-title">👑 Premium</h2>
+                <p class="section-subtitle">L'excellence à votre service</p>
+            </div>
+            <a href="entreprises.html?filter=premium" class="btn btn-secondary btn-small">Découvrir →</a>
+        </div>
+        <div id="premium-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="text-align: center;">
+        <h2 class="section-title">Vous êtes un prestataire ?</h2>
+        <p class="section-subtitle" style="max-width: 600px; margin: 0 auto 32px;">
+            Rejoignez Titelli et exposez vos services aux clients de la région de Lausanne.
+        </p>
+        <a href="auth.html?type=entreprise" class="btn btn-primary" style="padding: 16px 48px; font-size: 16px;">
+            Inscrire mon entreprise
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-circle">T</div>
+                    <span class="logo-text">Titelli</span>
+                </div>
+                <p>Les meilleurs prestataires de la région de Lausanne. Services et produits de qualité.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="entreprises.html">Entreprises</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Informations</h4>
+                <ul class="footer-links">
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>📍 Lausanne, Suisse</li>
+                    <li>📧 contact@titelli.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Titelli. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Load page data
+        async function loadHomePage() {
+            try {
+                // Load services/offres
+                const offres = await API.getOffres();
+                const servicesGrid = document.getElementById('services-grid');
+                if (offres.length > 0) {
+                    servicesGrid.innerHTML = offres.slice(0, 6).map(createServiceCard).join('');
+                } else {
+                    servicesGrid.innerHTML = '<div class="empty-state"><p>Aucun service disponible</p></div>';
+                }
+
+                // Load tendances (labeled)
+                const tendances = await API.getTendances();
+                const tendancesGrid = document.getElementById('tendances-grid');
+                if (tendances.length > 0) {
+                    tendancesGrid.innerHTML = tendances.map(createEnterpriseCard).join('');
+                } else {
+                    tendancesGrid.innerHTML = '<div class="empty-state"><p>Aucune tendance du moment</p></div>';
+                }
+
+                // Load guests (certified)
+                const guests = await API.getGuests();
+                const guestsGrid = document.getElementById('guests-grid');
+                if (guests.length > 0) {
+                    guestsGrid.innerHTML = guests.map(createEnterpriseCard).join('');
+                } else {
+                    guestsGrid.innerHTML = '<div class="empty-state"><p>Aucun guest du moment</p></div>';
+                }
+
+                // Load premium
+                const premium = await API.getPremium();
+                const premiumGrid = document.getElementById('premium-grid');
+                if (premium.length > 0) {
+                    premiumGrid.innerHTML = premium.map(createEnterpriseCard).join('');
+                } else {
+                    premiumGrid.innerHTML = '<div class="empty-state"><p>Aucun prestataire premium</p></div>';
+                }
+
+            } catch (error) {
+                console.error('Error loading home page:', error);
+            }
+        }
+
+        loadHomePage();
+    </script>
+</body>
+</html>

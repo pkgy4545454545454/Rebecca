@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titelli - Animation Logo Pro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            overflow: hidden;
+        }
+
+        .animation-container {
+            position: relative;
+            width: 1280px;
+            height: 720px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+        }
+
+        /* Container pour le texte et l'œil */
+        .logo-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Lettres individuelles */
+        .letters-container {
+            display: flex;
+            align-items: baseline;
+            position: relative;
+            letter-spacing: 15px;
+        }
+
+        .letter {
+            font-size: 140px;
+            font-family: 'Georgia', serif;
+            font-weight: 400;
+            color: white;
+            text-shadow: 
+                0 0 15px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.4),
+                0 0 45px rgba(255, 255, 255, 0.2);
+            opacity: 0;
+            transform: translateY(80px) scale(0.5);
+            display: inline-block;
+            transition: none;
+            margin-right: 8px;
+        }
+
+        .letter.typing {
+            animation: letterType 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        @keyframes letterType {
+            0% {
+                opacity: 0;
+                transform: translateY(80px) scale(0.5);
+            }
+            50% {
+                opacity: 1;
+                transform: translateY(-20px) scale(1.1);
+            }
+            70% {
+                transform: translateY(10px) scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Le dernier i - même hauteur que les autres */
+        .final-i-container {
+            position: relative;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 8px;
+        }
+
+        /* Corps du i (sans le point) - même style que les autres lettres */
+        .i-body {
+            font-size: 140px;
+            font-family: 'Georgia', serif;
+            color: white;
+            text-shadow: 
+                0 0 15px rgba(255, 255, 255, 0.6),
+                0 0 30px rgba(255, 255, 255, 0.4);
+            opacity: 0;
+        }
+
+        .i-body.typing {
+            animation: letterType 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+        }
+
+        /* Logo œil qui saute - positionné au-dessus du i */
+        .eye-logo {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 2px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            z-index: 10;
+        }
+
+        .eye-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: transparent;
+            filter: drop-shadow(0 0 15px rgba(30, 144, 255, 0.4));
+        }
+
+        .eye-logo.bounce {
+            animation: eyeBounce 1.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+        }
+
+        @keyframes eyeBounce {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(-400px) scale(0) rotate(-360deg);
+            }
+            35% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(40px) scale(1.5) rotate(20deg);
+            }
+            55% {
+                transform: translateX(-50%) translateY(-25px) scale(0.85) rotate(-15deg);
+            }
+            70% {
+                transform: translateX(-50%) translateY(15px) scale(1.15) rotate(8deg);
+            }
+            85% {
+                transform: translateX(-50%) translateY(-8px) scale(0.95) rotate(-3deg);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0) scale(1) rotate(0deg);
+            }
+        }
+
+        /* Aiguilles de l'horloge */
+        .clock-hands {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+        }
+
+        .clock-hand {
+            position: absolute;
+            background: #1a1a1a;
+            transform-origin: center bottom;
+            left: 50%;
+            top: 50%;
+            border-radius: 2px;
+        }
+
+        .hour-hand {
+            width: 3px;
+            height: 16px;
+            margin-left: -1.5px;
+            margin-top: -16px;
+            transform: rotate(-50deg);
+        }
+
+        .minute-hand {
+            width: 2px;
+            height: 20px;
+            margin-left: -1px;
+            margin-top: -20px;
+            transform: rotate(-25deg);
+        }
+
+        .hour-hand.closing {
+            animation: closeHourHand 1.2s ease-in-out forwards;
+        }
+
+        .minute-hand.closing {
+            animation: closeMinuteHand 1.2s ease-in-out forwards;
+        }
+
+        @keyframes closeHourHand {
+            0% { transform: rotate(-50deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        @keyframes closeMinuteHand {
+            0% { transform: rotate(-25deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        /* Glow subtil autour de l'œil */
+        .final-glow {
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(30, 144, 255, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            opacity: 0;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        .final-glow.pulse {
+            animation: glowPulse 2.5s ease-in-out forwards;
+        }
+
+        @keyframes glowPulse {
+            0% { opacity: 0; transform: translate(-50%, -50%) scale(0.3); }
+            50% { opacity: 1; transform: translate(-50%, -50%) scale(1.6); }
+            100% { opacity: 0.5; transform: translate(-50%, -50%) scale(1.2); }
+        }
+
+        /* Curseur typing */
+        .cursor {
+            width: 5px;
+            height: 120px;
+            background: white;
+            margin-left: 15px;
+            opacity: 1;
+            animation: cursorBlink 0.7s infinite;
+            align-self: center;
+        }
+
+        .cursor.hidden {
+            animation: cursorFadeOut 0.5s forwards;
+        }
+
+        @keyframes cursorBlink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
+        }
+
+        @keyframes cursorFadeOut {
+            to { opacity: 0; }
+        }
+
+        /* Particules brillantes */
+        .sparkle {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+            box-shadow: 0 0 10px white, 0 0 20px rgba(100, 149, 237, 0.8);
+        }
+
+        .sparkle.active {
+            animation: sparkleAnim 1s ease-out forwards;
+        }
+
+        @keyframes sparkleAnim {
+            0% {
+                opacity: 1;
+                transform: scale(0) translate(0, 0);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.5) translate(var(--tx), var(--ty));
+            }
+        }
+
+        /* Slogan */
+        .slogan {
+            position: absolute;
+            bottom: 100px;
+            font-size: 28px;
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 12px;
+            text-transform: uppercase;
+            font-weight: 300;
+            opacity: 0;
+            transform: translateY(40px);
+        }
+
+        .slogan.show {
+            animation: sloganAppear 1.5s ease-out forwards;
+        }
+
+        @keyframes sloganAppear {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Bouton replay */
+        .replay-btn {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            padding: 12px 24px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 16px;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .replay-btn:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-color: white;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="animation-container" id="container">
+        <div class="logo-wrapper">
+            <div class="letters-container">
+                <span class="letter" data-index="0">T</span>
+                <span class="letter" data-index="1">i</span>
+                <span class="letter" data-index="2">t</span>
+                <span class="letter" data-index="3">e</span>
+                <span class="letter" data-index="4">l</span>
+                <span class="letter" data-index="5">l</span>
+                <div class="final-i-container">
+                    <div class="eye-logo" id="eyeLogo">
+                        <div class="final-glow" id="finalGlow"></div>
+                        <img src="titelli_eye_logo.png" alt="Titelli Eye">
+                        <div class="clock-hands">
+                            <div class="clock-hand hour-hand" id="hourHand"></div>
+                            <div class="clock-hand minute-hand" id="minuteHand"></div>
+                        </div>
+                    </div>
+                    <span class="i-body" id="iBody">i</span>
+                </div>
+                <span class="cursor" id="cursor"></span>
+            </div>
+        </div>
+
+        <div class="slogan" id="slogan">La vie plus simple</div>
+        <button class="replay-btn" id="replayBtn">↻ REJOUER</button>
+    </div>
+
+    <script>
+        const letters = document.querySelectorAll('.letter');
+        const iBody = document.getElementById('iBody');
+        const eyeLogo = document.getElementById('eyeLogo');
+        const hourHand = document.getElementById('hourHand');
+        const minuteHand = document.getElementById('minuteHand');
+        const cursor = document.getElementById('cursor');
+        const slogan = document.getElementById('slogan');
+        const finalGlow = document.getElementById('finalGlow');
+        const container = document.getElementById('container');
+        const replayBtn = document.getElementById('replayBtn');
+
+        function createSparkles(element, count = 12) {
+            const rect = element.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+            
+            for (let i = 0; i < count; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = (rect.left - containerRect.left + rect.width / 2) + 'px';
+                sparkle.style.top = (rect.top - containerRect.top + rect.height / 2) + 'px';
+                
+                const angle = (Math.PI * 2 * i) / count;
+                const distance = 50 + Math.random() * 80;
+                sparkle.style.setProperty('--tx', Math.cos(angle) * distance + 'px');
+                sparkle.style.setProperty('--ty', Math.sin(angle) * distance + 'px');
+                
+                container.appendChild(sparkle);
+                
+                requestAnimationFrame(() => sparkle.classList.add('active'));
+                setTimeout(() => sparkle.remove(), 1000);
+            }
+        }
+
+        function resetAnimation() {
+            // Reset all elements
+            letters.forEach(l => {
+                l.classList.remove('typing');
+                l.style.opacity = '0';
+                l.style.transform = 'translateY(80px) scale(0.5)';
+            });
+            
+            iBody.classList.remove('typing');
+            iBody.style.opacity = '0';
+            
+            eyeLogo.classList.remove('bounce');
+            eyeLogo.style.opacity = '0';
+            
+            hourHand.classList.remove('closing');
+            minuteHand.classList.remove('closing');
+            hourHand.style.transform = 'rotate(-50deg)';
+            minuteHand.style.transform = 'rotate(-25deg)';
+            
+            cursor.classList.remove('hidden');
+            cursor.style.opacity = '1';
+            
+            slogan.classList.remove('show');
+            finalGlow.classList.remove('pulse');
+            
+            // Remove any remaining sparkles
+            container.querySelectorAll('.sparkle').forEach(s => s.remove());
+        }
+
+        function startAnimation() {
+            resetAnimation();
+            
+            const letterDelay = 350; // Plus long entre chaque lettre
+            
+            // Animer chaque lettre avec effet typing
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.classList.add('typing');
+                    createSparkles(letter, 6);
+                }, letterDelay * (index + 1));
+            });
+            
+            // Animer le corps du i final (le i complet avec son point)
+            setTimeout(() => {
+                iBody.classList.add('typing');
+            }, letterDelay * 7.5);
+            
+            // Cacher le curseur
+            setTimeout(() => {
+                cursor.classList.add('hidden');
+            }, letterDelay * 8);
+            
+            // Faire sauter l'œil
+            setTimeout(() => {
+                eyeLogo.classList.add('bounce');
+                setTimeout(() => createSparkles(eyeLogo, 24), 600);
+            }, letterDelay * 10);
+            
+            // Fermer les aiguilles (elles se rejoignent à 12h)
+            setTimeout(() => {
+                hourHand.classList.add('closing');
+                minuteHand.classList.add('closing');
+                finalGlow.classList.add('pulse');
+            }, letterDelay * 14);
+            
+            // Afficher le slogan
+            setTimeout(() => {
+                slogan.classList.add('show');
+            }, letterDelay * 18);
+        }
+
+        // Event listeners
+        replayBtn.addEventListener('click', startAnimation);
+        
+        // Démarrer l'animation au chargement
+        window.addEventListener('load', () => {
+            setTimeout(startAnimation, 1000);
+        });
+    </script>
+</body>
+</html>

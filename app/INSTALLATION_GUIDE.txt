@@ -1,0 +1,60 @@
+# ============================================
+# GUIDE D'INSTALLATION TITELLI - VOTRE ORDINATEUR
+# ============================================
+
+# ÉTAPE 1 : CRÉER LA STRUCTURE
+# ----------------------------
+# Ouvrez un terminal et exécutez :
+
+mkdir titelli-project
+cd titelli-project
+mkdir backend frontend
+
+# ÉTAPE 2 : BACKEND SETUP
+# -----------------------
+cd backend
+
+# Créer environnement virtuel
+python -m venv venv
+
+# Activer (Windows CMD)
+venv\Scripts\activate
+
+# Activer (Windows PowerShell)
+# venv\Scripts\Activate.ps1
+
+# Activer (Mac/Linux)
+# source venv/bin/activate
+
+# Installer les dépendances
+pip install fastapi uvicorn motor python-dotenv pydantic[email] bcrypt PyJWT stripe python-multipart
+
+# ÉTAPE 3 : FRONTEND SETUP
+# ------------------------
+cd ../frontend
+
+# Créer le projet React
+npx create-react-app . --template cra-template
+
+# Installer les dépendances
+npm install react-router-dom axios sonner lucide-react
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+# ÉTAPE 4 : LANCER LES SERVEURS
+# -----------------------------
+
+# Terminal 1 - Backend (dans le dossier backend avec venv activé)
+uvicorn server:app --reload --host 0.0.0.0 --port 8001
+
+# Terminal 2 - Frontend (dans le dossier frontend)
+npm start
+
+# ÉTAPE 5 : ACCÉDER AU SITE
+# -------------------------
+# Frontend : http://localhost:3000
+# Backend API : http://localhost:8001/api
+
+# ============================================
+# FIN DU GUIDE
+# ============================================

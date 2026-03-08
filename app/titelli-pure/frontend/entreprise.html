@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions">
+            <a href="auth.html" class="btn btn-primary">Connexion</a>
+        </div>
+    </header>
+
+    <main style="padding-top: 72px;">
+        <!-- Loading -->
+        <div id="loading" class="loading" style="min-height: 50vh;">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Content -->
+        <div id="content" style="display: none;">
+            <!-- Profile Header -->
+            <div class="profile-header">
+                <div class="profile-cover" id="profile-cover"></div>
+                <div class="profile-info">
+                    <div class="profile-logo" id="profile-logo">E</div>
+                    <div class="profile-details">
+                        <div class="badges" id="profile-badges"></div>
+                        <h1 id="enterprise-name">Nom de l'entreprise</h1>
+                        <p class="slogan" id="enterprise-slogan"></p>
+                        <div style="display: flex; gap: 16px; color: var(--text-secondary); font-size: 14px; margin-top: 8px;">
+                            <span id="enterprise-location">📍 Lausanne</span>
+                            <span id="enterprise-rating"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Grid -->
+            <div class="section">
+                <div class="profile-grid">
+                    <!-- Left Column -->
+                    <div>
+                        <!-- Description -->
+                        <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                            <h3 style="margin-bottom: 16px;">À propos</h3>
+                            <p id="enterprise-description" style="color: var(--text-secondary); line-height: 1.8;"></p>
+                        </div>
+
+                        <!-- Services/Products -->
+                        <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                            <h3 style="margin-bottom: 16px;">Services & Produits</h3>
+                            <div id="services-list">
+                                <div class="loading"><div class="spinner"></div></div>
+                            </div>
+                        </div>
+
+                        <!-- Reviews -->
+                        <div class="card" style="padding: 24px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                                <h3>Avis clients</h3>
+                                <button class="btn btn-small btn-secondary" onclick="openReviewModal()" id="add-review-btn" style="display: none;">
+                                    Laisser un avis
+                                </button>
+                            </div>
+                            <div id="reviews-list">
+                                <div class="loading"><div class="spinner"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div>
+                        <!-- Contact Card -->
+                        <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                            <h3 style="margin-bottom: 16px;">Contact</h3>
+                            <div style="color: var(--text-secondary); font-size: 14px;">
+                                <p style="margin-bottom: 12px;" id="contact-address">📍 Adresse</p>
+                                <p style="margin-bottom: 12px;" id="contact-phone">📞 Téléphone</p>
+                                <p style="margin-bottom: 12px;" id="contact-email">📧 Email</p>
+                                <p id="contact-website" style="display: none;">🌐 <a href="#" target="_blank" id="website-link" style="color: var(--primary);">Site web</a></p>
+                            </div>
+                        </div>
+
+                        <!-- Category Card -->
+                        <div class="card" style="padding: 24px; margin-bottom: 24px;">
+                            <h3 style="margin-bottom: 16px;">Catégorie</h3>
+                            <span class="card-category" id="enterprise-category" style="font-size: 14px;"></span>
+                        </div>
+
+                        <!-- Hours Card (placeholder) -->
+                        <div class="card" style="padding: 24px;">
+                            <h3 style="margin-bottom: 16px;">Horaires</h3>
+                            <div style="color: var(--text-secondary); font-size: 14px;">
+                                <p style="margin-bottom: 8px;">Lun - Ven: 9h - 18h</p>
+                                <p style="margin-bottom: 8px;">Sam: 10h - 16h</p>
+                                <p>Dim: Fermé</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Not Found -->
+        <div id="not-found" style="display: none; text-align: center; padding: 120px 32px;">
+            <div style="font-size: 64px; margin-bottom: 24px;">🔍</div>
+            <h1 style="margin-bottom: 16px;">Entreprise non trouvée</h1>
+            <p style="color: var(--text-secondary); margin-bottom: 32px;">Cette entreprise n'existe pas ou a été supprimée.</p>
+            <a href="entreprises.html" class="btn btn-primary">Voir toutes les entreprises</a>
+        </div>
+    </main>
+
+    <!-- Review Modal -->
+    <div class="modal-overlay" id="review-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Laisser un avis</h2>
+                <button class="modal-close" onclick="closeReviewModal()">&times;</button>
+            </div>
+            <form id="review-form">
+                <div class="form-group">
+                    <label class="form-label">Note</label>
+                    <div style="display: flex; gap: 8px;" id="rating-stars">
+                        <button type="button" class="btn btn-small btn-secondary" onclick="setRating(1)">⭐</button>
+                        <button type="button" class="btn btn-small btn-secondary" onclick="setRating(2)">⭐⭐</button>
+                        <button type="button" class="btn btn-small btn-secondary" onclick="setRating(3)">⭐⭐⭐</button>
+                        <button type="button" class="btn btn-small btn-secondary" onclick="setRating(4)">⭐⭐⭐⭐</button>
+                        <button type="button" class="btn btn-small btn-secondary" onclick="setRating(5)">⭐⭐⭐⭐⭐</button>
+                    </div>
+                    <input type="hidden" name="rating" id="rating-input" value="5">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Commentaire</label>
+                    <textarea class="input" name="comment" required placeholder="Partagez votre expérience..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Publier</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-circle">T</div>
+                    <span class="logo-text">Titelli</span>
+                </div>
+                <p>Les meilleurs prestataires de la région de Lausanne.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="entreprises.html">Entreprises</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Titelli. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        let currentEnterprise = null;
+        let selectedRating = 5;
+        let allCategories = [];
+
+        // Get enterprise ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const enterpriseId = urlParams.get('id');
+
+        function openReviewModal() {
+            document.getElementById('review-modal').classList.add('active');
+        }
+
+        function closeReviewModal() {
+            document.getElementById('review-modal').classList.remove('active');
+        }
+
+        function setRating(rating) {
+            selectedRating = rating;
+            document.getElementById('rating-input').value = rating;
+            
+            // Update button styles
+            document.querySelectorAll('#rating-stars button').forEach((btn, index) => {
+                btn.className = `btn btn-small ${index < rating ? 'btn-gold' : 'btn-secondary'}`;
+            });
+        }
+
+        async function loadCategories() {
+            try {
+                const [services, products] = await Promise.all([
+                    API.getServiceCategories(),
+                    API.getProductCategories()
+                ]);
+                allCategories = [...services, ...products];
+            } catch (e) {
+                console.error('Error loading categories:', e);
+            }
+        }
+
+        function getCategoryName(categoryId) {
+            const cat = allCategories.find(c => c.id === categoryId);
+            return cat ? cat.name : categoryId || 'Autre';
+        }
+
+        async function loadEnterprise() {
+            if (!enterpriseId) {
+                showNotFound();
+                return;
+            }
+
+            try {
+                await loadCategories();
+                const data = await API.getEnterprise(enterpriseId);
+                
+                if (!data || data.detail) {
+                    showNotFound();
+                    return;
+                }
+
+                currentEnterprise = data;
+                renderEnterprise(data);
+            } catch (e) {
+                console.error('Error loading enterprise:', e);
+                showNotFound();
+            }
+        }
+
+        function showNotFound() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('not-found').style.display = 'block';
+        }
+
+        function renderEnterprise(enterprise) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+
+            // Update page title
+            document.title = `${enterprise.business_name} - Titelli`;
+
+            // Profile
+            document.getElementById('profile-logo').textContent = enterprise.business_name.charAt(0);
+            document.getElementById('enterprise-name').textContent = enterprise.business_name;
+            document.getElementById('enterprise-slogan').textContent = enterprise.slogan || '';
+            document.getElementById('enterprise-description').textContent = enterprise.description;
+            document.getElementById('enterprise-location').textContent = `📍 ${enterprise.address}, ${enterprise.city}`;
+            document.getElementById('enterprise-category').textContent = getCategoryName(enterprise.category);
+
+            // Rating
+            if (enterprise.rating > 0) {
+                document.getElementById('enterprise-rating').textContent = 
+                    `⭐ ${enterprise.rating.toFixed(1)} (${enterprise.review_count} avis)`;
+            }
+
+            // Badges
+            const badges = [];
+            if (enterprise.is_certified) badges.push('<span class="badge badge-certified">✓ Certifié</span>');
+            if (enterprise.is_labeled) badges.push('<span class="badge badge-labeled">★ Labellisé</span>');
+            if (enterprise.is_premium) badges.push('<span class="badge badge-premium">👑 Premium</span>');
+            document.getElementById('profile-badges').innerHTML = badges.join('');
+
+            // Contact
+            document.getElementById('contact-address').textContent = `📍 ${enterprise.address}, ${enterprise.city}`;
+            document.getElementById('contact-phone').textContent = `📞 ${enterprise.phone}`;
+            document.getElementById('contact-email').textContent = `📧 ${enterprise.email}`;
+            
+            if (enterprise.website) {
+                document.getElementById('contact-website').style.display = 'block';
+                document.getElementById('website-link').href = enterprise.website;
+                document.getElementById('website-link').textContent = enterprise.website.replace(/^https?:\/\//, '');
+            }
+
+            // Services
+            if (enterprise.services && enterprise.services.length > 0) {
+                document.getElementById('services-list').innerHTML = enterprise.services.map(item => `
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 0; border-bottom: 1px solid var(--border);">
+                        <div>
+                            <div style="font-weight: 600;">${item.name}</div>
+                            <div style="font-size: 14px; color: var(--text-secondary);">${item.description.substring(0, 100)}${item.description.length > 100 ? '...' : ''}</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div style="font-weight: 700; color: var(--secondary);">${item.price.toFixed(2)} CHF</div>
+                            <span style="font-size: 12px; color: var(--text-muted);">${item.type === 'service' ? 'Service' : 'Produit'}</span>
+                        </div>
+                    </div>
+                `).join('');
+            } else {
+                document.getElementById('services-list').innerHTML = '<p style="color: var(--text-secondary);">Aucun service ou produit disponible</p>';
+            }
+
+            // Reviews
+            if (enterprise.reviews && enterprise.reviews.length > 0) {
+                document.getElementById('reviews-list').innerHTML = enterprise.reviews.map(review => `
+                    <div style="padding: 16px 0; border-bottom: 1px solid var(--border);">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 8px;">
+                            <span style="font-weight: 600;">${review.user_name}</span>
+                            <span style="color: var(--secondary);">${'⭐'.repeat(review.rating)}</span>
+                        </div>
+                        <p style="color: var(--text-secondary); font-size: 14px;">${review.comment}</p>
+                        <div style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">${formatDate(review.created_at)}</div>
+                    </div>
+                `).join('');
+            } else {
+                document.getElementById('reviews-list').innerHTML = '<p style="color: var(--text-secondary);">Aucun avis pour le moment</p>';
+            }
+
+            // Show add review button if logged in
+            if (isLoggedIn()) {
+                document.getElementById('add-review-btn').style.display = 'block';
+            }
+        }
+
+        // Review form
+        document.getElementById('review-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            if (!isLoggedIn()) {
+                showToast('Connectez-vous pour laisser un avis', 'error');
+                return;
+            }
+
+            const form = e.target;
+            const data = {
+                enterprise_id: enterpriseId,
+                rating: selectedRating,
+                comment: form.comment.value
+            };
+
+            try {
+                const result = await API.createReview(data);
+                if (result.id) {
+                    showToast('Avis publié !');
+                    closeReviewModal();
+                    form.reset();
+                    loadEnterprise();
+                } else {
+                    showToast(result.detail || 'Erreur', 'error');
+                }
+            } catch (e) {
+                showToast('Erreur de connexion', 'error');
+            }
+        });
+
+        // Init
+        setRating(5);
+        loadEnterprise();
+    </script>
+</body>
+</html>

@@ -1,0 +1,2674 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr-CH">
+<head>
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<meta property="base-url" content="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud">
+<meta property="csrf-token" content="-PIfPRLk4WPgJXUmU_zFAUToHa5dtbTyA1f8QziAMdKyiTAA55Fwhpa4QHdK0ZU3uRAiUCemp3scpXDYHoXNmTVmowd_5ECG3OdyeKLgA74=">
+<meta property="lang-code" content="Fr">
+<meta property="og:locale" content="fr-CH">
+<meta property="rco-code" content="Vd">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://caritas-regio.ch/assets/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://caritas-regio.ch/assets/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://caritas-regio.ch/assets/favicons/favicon-16x16.png">
+
+<link rel="mask-icon" href="https://caritas-regio.ch/assets/favicons/safari-pinned-tab.svg" color="#fe0020">
+<meta name="msapplication-TileColor" content="#f1e7e3">
+<meta name="theme-color" content="#f1e7e3">
+
+		
+
+				
+		<meta property="base-url" content="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/">
+<meta property="site-handle" content="caritasVdFr">
+<meta property="rco-code" content="Vd">
+		
+		
+        
+    
+                                                   
+        
+    
+
+
+
+		
+        
+    
+                                                   
+        
+    
+
+
+
+		
+        
+    
+                                                   
+        
+    
+
+
+
+		
+    
+    
+        
+    
+		
+    
+    
+        <meta name="app-css" content="/dist/css/app.css">
+
+    
+
+		
+		<meta name="theme-color" content="#ffffff">
+	<title>Caritas Vaud</title>
+<script>dataLayer = [];
+
+window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        if(localStorage.getItem('consentMode') === null){
+            gtag('consent', 'default', {
+                'analytics_storage': 'granted',
+                'ad_storage': 'granted',
+                'personalization_storage': 'granted',
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'functionality_storage': 'granted',
+                'security_storage': 'granted'
+            });
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')));
+        }
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MFMLRW9');
+</script><meta name="htmx-config" content="{&quot;requestClass&quot;:&quot;loading&quot;}">
+<meta name="generator" content="SEOmatic">
+<meta name="description" content="Caritas Vaud est une association à but non lucratif s’engageant localement contre la pauvreté et l’exclusion depuis 1942">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<meta name="robots" content="all">
+<meta content="fr_CH" property="og:locale">
+<meta content="de_CH" property="og:locale:alternate">
+<meta content="caritas" property="og:site_name">
+<meta content="website" property="og:type">
+<meta content="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/" property="og:url">
+<meta content="Caritas Vaud" property="og:title">
+<meta content="Caritas Vaud est une association à but non lucratif s’engageant localement contre la pauvreté et l’exclusion depuis 1942" property="og:description">
+<meta content="https://caritas-regio.ch/media/vd/_1200x630_crop_center-center_82_none/caritas-vaud-lavaux-lac-montagnes.jpg?mtime=1677751537" property="og:image">
+<meta content="1200" property="og:image:width">
+<meta content="630" property="og:image:height">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@">
+<meta name="twitter:title" content="Caritas Vaud">
+<meta name="twitter:description" content="Caritas Vaud est une association à but non lucratif s’engageant localement contre la pauvreté et l’exclusion depuis 1942">
+<meta name="twitter:image" content="https://caritas-regio.ch/media/vd/_800x418_crop_center-center_82_none/caritas-vaud-lavaux-lac-montagnes.jpg?mtime=1677751537">
+<meta name="twitter:image:width" content="800">
+<meta name="twitter:image:height" content="418">
+<link href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud" rel="canonical">
+<link href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud" rel="home">
+<link href="https://caritas-regio.ch/ueber-caritas/waadt" rel="alternate" hreflang="de-ch">
+<link href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud" rel="alternate" hreflang="fr-ch">
+<link type="text/css" href="/dist/css/app.css?v=1769508894" rel="stylesheet">
+<script src="/dist/js/cookiesBanner.js?v=1759912167"></script></head>
+
+<body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFMLRW9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<header
+		id="header"
+    class="header">
+
+	<a href="https://caritas-regio.ch/fr"
+	   class="header__home-link">
+		<span class="header__home-link-text visually-hidden">Page d&#039;accueil</span>
+			
+	<i class="icon icon-logo">
+		<svg width="240px" height="39px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 240 39" xml:space="preserve" focusable="false" aria-hidden="true">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="#DB001B" d="M122.7,37.6h9.8V0.8h-9.8V37.6z M62.3,1.1  l13.9,36.5H66L63.7,31H52.5l2.3-7.1h6.6l-3.2-10.1L62.3,1.1z M60.3,0.8L48.2,37.6h-10l14-36.9H60.3z M189.9,0.8l-11.6,35.3l-0.6,1.6  h-10l14-36.9H189.9z M191.8,1.3l13.8,36.4h-10.2l-2.3-6.6h-11.1l2.3-7.1h6.5l-3.2-10L191.8,1.3z M159.8,11.1v26.6h-9.8V11.1H159.8z   M171,0.8V9h-11.2v0h-9.8v0h-11.2V0.8H171z M9.8,19.2c0-5.2,2.2-10.4,7.7-10.9V0C6.8,0.6,0,8.9,0,19.2s6.8,18.6,17.5,19.2v-8.3  C11.9,29.6,9.8,24.4,9.8,19.2 M26,13.9h9.8C35.6,5.3,27.3,0.3,19.5,0v8.3C23,8.6,25.6,10.5,26,13.9 M19.5,30.1v8.3  c9.1-0.3,15.8-5.8,16.3-15.1H26C25.7,27.3,23.4,29.7,19.5,30.1 M90.9,16.8V8.5V0.8h-9.8v36.9h9.8V24.2V16.8z M112.9,29.3  c-0.3-3.5-1.5-7.9-5.5-8.8v-0.1c3.9-1.5,5.9-5.3,5.9-9.2c0-7.4-6.5-10.4-13.1-10.4h-7.3v7.7h5.8c2.7,0,4.9,1.2,4.9,4  s-1.6,4.4-4.5,4.4h-6.2v7.4h5.4c4.6,0,5.2,3.8,5.5,7.5c0.1,1,0.3,4.7,1.1,5.9h9.6C113.1,36.3,113,30.9,112.9,29.3 M229,11.9h9.8  c0-8.1-7.3-11.7-14.6-11.9v7.5C226.8,7.8,229.2,9,229,11.9 M218.3,10.6c0-2.1,2-3,4-3.1V0c-6.6,0.4-13.7,3.7-13.7,11.2  c0,6.8,5.6,9.1,11,10.6c0.9,0.3,1.9,0.5,2.8,0.7v-8.9C219.9,12.9,218.3,12.1,218.3,10.6 M217.2,25.2h-9.8c0,8.9,6.8,12.7,14.8,13.1  v-7.5C219.2,30.4,217.3,28.9,217.2,25.2 M240,26.1c0-6.7-5.5-9.1-10.9-10.6c-1.7-0.5-3.4-0.8-4.9-1.2v8.8c3.4,0.9,6,1.9,6,4.1  c0,2.7-3,3.8-6,3.8v7.4C232.3,38.3,240,35.2,240,26.1"></path>
+</svg>
+
+	</i>
+
+	</a>
+
+	<div class="header__nav" id="header__nav">
+		
+	
+	
+	
+	<nav class="nav nav--main-nav" aria-label="main-nav">
+		<ul class="nav__wrap nav__wrap--parent menu" role="menubar">
+							
+				
+				
+													
+
+				<li class="nav__item nav__item--parent  nav__item--has-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/prestations" role="menuitem" aria-haspopup tabindex="0" target="_self">													<span class="nav__text">
+Prestations</span>
+																		</a>
+																	
+						<div id="main-nav-453317" class="nav__wrap nav__wrap--child">								
+	<p class="nav__back-link-wrap">
+		<button class="nav__back-link"
+				aria-controls="main-nav-453317"
+				aria-expanded="true">
+				
+	<i class="icon icon-arrow-left">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40,17.5 9.6,17.5 23.5,3.5 20,0 0,20 20,40 23.5,36.5 9.6,22.5  40,22.5 "></polygon>
+</svg>
+
+	</i>
+
+			<span class="nav__back-link-text">Back</span>
+		</button>
+	</p>
+
+
+									<p class="nav__current-link">		<span class="nav__text nav__text--nowrap">Prestations</span>
+
+	</p>
+
+							<div class="nav__scroll-area">
+																											<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+											
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Soutien social et juridique														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-643079"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/conseil-juridique"><span class="nav__text">Conseil juridique</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/consultations-sociales"><span class="nav__text">Consultations sociales</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/aide-desendettement"><span class="nav__text">Aide au désendettement</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/aide-gestion-administrative"><span class="nav__text">Aide à la gestion administrative</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/soutien-logement"><span class="nav__text">Soutien dans le domaine du logement</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/accompagnement-dans-la-vie"><span class="nav__text">Accompagnement dans la vie</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/diaconie"><span class="nav__text">Diaconie</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-643079">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																							
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child nav__item--child-last" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/petits-budgets" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Petits Budgets														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-642917"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/petits-budgets/carteculture"><span class="nav__text">CarteCulture</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/petits-budgets/epicerie-caritas"><span class="nav__text">Épicerie Caritas</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/petits-budgets/manger-a-petit-prix"><span class="nav__text">Manger à petit prix</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/petits-budgets/seconde-main"><span class="nav__text">Seconde main</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-642917">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																																	</ul>																			<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+											
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/travail" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Travail														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-558541"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/travail/programmes-insertion-professionnelle"><span class="nav__text">Programmes d'insertion professionnelle</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/travail/aide-recherche-emploi"><span class="nav__text">Aide à la recherche d'emploi</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/travail/places-dapprentissage"><span class="nav__text">Apprentissage</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/travail/stages"><span class="nav__text">Stages</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/travail/cheque-emploi"><span class="nav__text">Chèque Emploi</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-558541">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																							
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child nav__item--child-last" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/cours-formation" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Cours et Formation														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-620978"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/cours-formation/cours-daccompagnement-de-fin-de-vie"><span class="nav__text">Cours d'accompagnement de fin de vie</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/cours-formation/apprendre-le-francais"><span class="nav__text">Apprendre le français</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/cours-formation/soutien-numerique"><span class="nav__text">Soutien numérique</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/cours-formation/apprendre-gerer"><span class="nav__text">Apprendre et gérer</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-620978">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																																	</ul>																			<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+											
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/familles" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Familles														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-643081"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/parrainage-avec-moi"><span class="nav__text">Parrainage «avec moi»</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/soutien-parental"><span class="nav__text">Soutien parental</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/creche-garde-enfants"><span class="nav__text">Crèche et garde d'enfants</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/offrir-une-aide-aux-proches-aidants"><span class="nav__text">Soutien pour les proches aidants</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/conseil-jeunes"><span class="nav__text">Conseils pour les jeunes</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/familles/consultations-pour-les-couples-et-familles"><span class="nav__text">Consultations pour les couples et familles</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-643081">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																							
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child nav__item--child-last" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/integration" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Intégration														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-643083"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/integration/accompagnement-integration"><span class="nav__text">Accompagnement à l'intégration</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/integration/aide-pour-les-personnes-migrantes"><span class="nav__text">Aide pour les personnes migrantes</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/integration/centres-dinsertion-sociale"><span class="nav__text">Centres d'insertion sociale</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/integration/rencontres-activites"><span class="nav__text">Rencontres et activités</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-643083">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																																	</ul>																			<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+											
+												
+												
+																																					
+
+												
+													<li class="nav__item nav__item--child nav__item--child-last" role="none">
+														<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/aide-durgence" role="menuitem" tabindex="-1" target="_self">															<span class="nav__text">
+														Aide d&#039;urgence														
+													</span>
+																													</a>
+														
+															<ul
+																			role="menu"
+																			class="nav__wrap nav__wrap--grand-child-inner"
+																			id="main-nav-643080"
+																			tabindex="-1"
+															>
+
+																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/aide-durgence/aide-alimentaire"><span class="nav__text">Aide alimentaire</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/aide-durgence/hebergement-d-urgence"><span class="nav__text">Hébergement d'urgence</span></a>
+
+																	</li>																																	<li class="nav__item nav__item--grand-child">
+																		<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/aide-durgence/vestiaire-social"><span class="nav__text">Vestiaire social</span></a>
+
+																	</li>																
+															</ul>
+
+																															<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-643080">																		
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+																</button>															
+																											</li>																																	</ul>																	
+
+																	<ul
+													role="menu"
+													class="nav__wrap nav__wrap--child-inner nav__wrap--child-inner-grey"
+													tabindex="-1"
+									>
+
+										
+											
+											
+																																		
+
+											
+												<li class="nav__item nav__item--child nav__item--child-last" role="none">
+													<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/prestations/services" role="menuitem" tabindex="-1" target="_self">														<span class="nav__text">
+														Services
+													</span>
+																											</a>
+													
+														<ul
+																		role="menu"
+																		class="nav__wrap nav__wrap--grand-child-inner"
+																		id="main-nav-643084"
+																		tabindex="-1"
+														>
+
+																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/atelier-de-couture"><span class="nav__text">Ateliers de couture</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/atelier-de-reparation-de-velos"><span class="nav__text">Atelier de réparation de vélos</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/cafe-reparation"><span class="nav__text">Cafés réparations</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/interpretariat"><span class="nav__text">Interprétariat</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/prevoyance"><span class="nav__text">Prévoyance</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/restaurants"><span class="nav__text">Restaurants</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/revalorisation"><span class="nav__text">Revalorisation – Upcycling</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/service-et-location-velos"><span class="nav__text">Service et location de vélos</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/service-de-recuperation"><span class="nav__text">Service de récupération</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/blanchisserie"><span class="nav__text">Service de blanchisserie</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/prestations/services/service-traiteur"><span class="nav__text">Service traiteur</span></a>
+
+																</li>																													</ul>
+
+																													<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-643084">																	
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+															</button>														
+																									</li>																														</ul>
+															</div>
+						</div>
+
+													<button type="button" class="action nav__toggle" role="menuitemradio" data-has-sibling aria-haspopup="true" aria-checked="false" aria-controls="main-nav-453317">									
+	<i class="icon icon-arrow-right icon--Open icon--sub icon--menu">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="0,17.5 30.4,17.5 16.5,3.5 20,0 40,20 20,40 16.5,36.5  30.4,22.5 0,22.5 "></polygon>
+</svg>
+
+	</i>
+
+							</button>											
+				</li>							
+				
+				
+													
+
+				<li class="nav__item nav__item--parent  nav__item--has-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/offrir-son-aide" role="menuitem" aria-haspopup tabindex="0" target="_self">													<span class="nav__text">
+Offrir son aide</span>
+																		</a>
+																	
+						<div id="main-nav-589438" class="nav__wrap nav__wrap--child nav__wrap--child-without-grey nav__wrap--single">								
+	<p class="nav__back-link-wrap">
+		<button class="nav__back-link"
+				aria-controls="main-nav-589438"
+				aria-expanded="true">
+				
+	<i class="icon icon-arrow-left">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40,17.5 9.6,17.5 23.5,3.5 20,0 0,20 20,40 23.5,36.5 9.6,22.5  40,22.5 "></polygon>
+</svg>
+
+	</i>
+
+			<span class="nav__back-link-text">Back</span>
+		</button>
+	</p>
+
+
+									<p class="nav__current-link">		<span class="nav__text nav__text--nowrap">Offrir son aide</span>
+
+	</p>
+
+							<div class="nav__scroll-area">
+																	<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+
+										
+											
+											
+																																		
+
+											
+												<li class="nav__item nav__item--child" role="none">
+													<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons" role="menuitem" tabindex="-1" target="_self">														<span class="nav__text">
+														Faire un don														
+													</span>
+																											</a>
+													
+														<ul
+																		role="menu"
+																		class="nav__wrap nav__wrap--grand-child-inner"
+																		id="main-nav-589447"
+																		tabindex="-1"
+														>
+
+																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/donner-de-largent"><span class="nav__text">Donner de l'argent</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/dons-en-nature"><span class="nav__text">Dons en nature</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/legs"><span class="nav__text">Héritage et legs</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/un-don-au-lieu-cadeau"><span class="nav__text">Un don au lieu d'un cadeau</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/dons-de-deuil-commemoratifs"><span class="nav__text">Dons commémoratifs & lors d'un deuil</span></a>
+
+																</li>																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/responsabilite-sociale-des-entreprises"><span class="nav__text">Responsabilité sociale des entreprises</span></a>
+
+																</li>															
+														</ul>
+
+																													<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-589447">																	
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+															</button>														
+																									</li>																					
+											
+											
+											
+
+											
+												<li class="nav__item nav__item--child" role="none">
+													<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/offrir-son-aide/devenir-membre" role="menuitem" tabindex="-1" target="_self">														<span class="nav__text">
+														Devenir membre														
+													</span>
+																											</a>
+																									</li>																					
+											
+											
+																																		
+
+											
+												<li class="nav__item nav__item--child nav__item--child-last" role="none">
+													<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/offrir-son-aide/sengager-comme-benevole" role="menuitem" tabindex="-1" target="_self">														<span class="nav__text">
+														S&#039;engager comme bénévole														
+													</span>
+																											</a>
+													
+														<ul
+																		role="menu"
+																		class="nav__wrap nav__wrap--grand-child-inner"
+																		id="main-nav-621271"
+																		tabindex="-1"
+														>
+
+																															<li class="nav__item nav__item--grand-child">
+																	<a class="nav__link nav__link--grand-child" href="https://caritas-regio.ch/fr/offrir-son-aide/sengager-comme-benevole/activites-benevoles"><span class="nav__text">Activités bénévoles</span></a>
+
+																</li>															
+														</ul>
+
+																													<button type="button" class="action nav__toggle nav__toggle--sub" role="menuitemradio" aria-haspopup="true" aria-checked="false" aria-controls="main-nav-621271">																	
+	<i class="icon icon-chevron-down icon--Open icon--sub icon--menu">
+		<svg width="41px" height="26px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 41 26" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40.5,5.3 35.8,0.5 20.5,16 5.2,0.5 0.5,5.3 20.5,25.5 "></polygon>
+</svg>
+
+	</i>
+
+															</button>														
+																									</li>																														</ul>								
+
+															</div>
+						</div>
+
+													<button type="button" class="action nav__toggle" role="menuitemradio" data-has-sibling aria-haspopup="true" aria-checked="false" aria-controls="main-nav-589438">									
+	<i class="icon icon-arrow-right icon--Open icon--sub icon--menu">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="0,17.5 30.4,17.5 16.5,3.5 20,0 40,20 20,40 16.5,36.5  30.4,22.5 0,22.5 "></polygon>
+</svg>
+
+	</i>
+
+							</button>											
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/agenda" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Agenda</span>
+																		</a>
+					
+				</li>							
+				
+				
+													
+
+				<li class="nav__item nav__item--parent  nav__item--has-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/notre-engagement" role="menuitem" aria-haspopup tabindex="0" target="_self">													<span class="nav__text">
+Notre engagement</span>
+																		</a>
+																	
+						<div id="main-nav-1141775" class="nav__wrap nav__wrap--child nav__wrap--child-without-grey nav__wrap--single">								
+	<p class="nav__back-link-wrap">
+		<button class="nav__back-link"
+				aria-controls="main-nav-1141775"
+				aria-expanded="true">
+				
+	<i class="icon icon-arrow-left">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="40,17.5 9.6,17.5 23.5,3.5 20,0 0,20 20,40 23.5,36.5 9.6,22.5  40,22.5 "></polygon>
+</svg>
+
+	</i>
+
+			<span class="nav__back-link-text">Back</span>
+		</button>
+	</p>
+
+
+									<p class="nav__current-link">		<span class="nav__text nav__text--nowrap">Notre engagement</span>
+
+	</p>
+
+							<div class="nav__scroll-area">
+																	<ul class="nav__wrap nav__wrap--child-inner" role="menu" tabindex="-1">
+
+										
+											
+											
+											
+
+											
+												<li class="nav__item nav__item--child nav__item--child-last" role="none">
+													<a class="nav__link nav__link--child" href="https://caritas-regio.ch/fr/notre-engagement/pauvrete-en-suisse" role="menuitem" tabindex="-1" target="_self">														<span class="nav__text">
+														Pauvreté en Suisse														
+													</span>
+																											</a>
+																									</li>																														</ul>								
+
+															</div>
+						</div>
+
+													<button type="button" class="action nav__toggle" role="menuitemradio" data-has-sibling aria-haspopup="true" aria-checked="false" aria-controls="main-nav-1141775">									
+	<i class="icon icon-arrow-right icon--Open icon--sub icon--menu">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="0,17.5 30.4,17.5 16.5,3.5 20,0 40,20 20,40 16.5,36.5  30.4,22.5 0,22.5 "></polygon>
+</svg>
+
+	</i>
+
+							</button>											
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/stories" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Caritas Blog</span>
+																		</a>
+					
+				</li>					</ul>	</nav>
+		<div class="header__nav-meta">
+						
+
+
+	
+									
+										
+		
+		
+	
+
+	
+									
+										
+		
+		
+	
+
+			<label for="lang-chooser" class="visually-hidden">Sprache wählen</label>
+		<select class="lang-chooser" id="lang-chooser">
+												<option value="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud" selected>fr</option>
+																<option value="https://caritas-regio.ch/ueber-caritas/waadt">de</option>
+									</select>
+				
+	
+	
+	
+	<nav class="nav nav--meta-nav" aria-label="meta-nav">
+		<ul class="nav__wrap nav__wrap--parent menu" role="menubar">
+							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent is-active" href="https://caritas-regio.ch/fr/a-propos-de-caritas" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+A propos de Caritas</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/emplois" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Emplois</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/medias" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Médias</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/contact" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Contact</span>
+																		</a>
+					
+				</li>					</ul>	</nav>
+		</div>
+
+		
+					
+	
+			
+			 
+			
+	
+		
+
+				
+						
+									
+		<a class="action action-primary" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/donner-de-largent" target="_self">						<span class="action__text">Faire un don</span>
+							<span class="visually-hidden">Le lien s&#039;ouvre dans un nouvel onglet.</span>
+					</a>
+
+	
+
+			</div>
+
+	<div class="header__hamburger">
+		<button class="action hamburger toggle-trigger header-nav__trigger"
+		        data-target="body"
+		        data-classes="header__nav--opened"
+		        aria-expanded="false"
+		        data-siblings=".header-nav__trigger"
+		        aria-controls="header__nav"
+		        aria-label="Toggle Menu"
+		        value="Toggle Menu"
+		        type="button">
+			<span class="hamburger__text">Menu</span>
+			<span class="hamburger__inner">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+      </span>
+		</button>
+	</div>
+
+	<button class="header__nav-overlay toggle-trigger header-nav__trigger"
+	        data-target="body"
+	        data-classes="header__nav--opened"
+	        aria-expanded="false"
+	        data-siblings=".header-nav__trigger"
+	        aria-controls="header__nav"
+	        aria-label="Menu schliessen"
+	        type="button"
+	        value="Menu schliessen"></button>
+
+</header>
+
+<main id="main">
+	
+	
+			
+		
+		
+	
+	
+	
+    
+		
+							
+		
+		
+							
+		<div id="m40" class="component component--headingLocation c-headingLocation c-first c-spaced">			
+
+<div class="component component--heading-auto c-heading-auto c-first c-edge">
+	<div class="section heading__section">
+										<figure class="figure figure-heading">			<picture class="picture picture-heading">
+
+								
+				<source srcset="/imager/vd/458969/caritas-vaud-lavaux-lac-montagnes_42df3456cb89d1fdb4f2dab584856f2a.webp" media="(max-width:799px)">
+								
+				<img class="img-heading" src="/imager/vd/458969/caritas-vaud-lavaux-lac-montagnes_9f35e151b52faff084459654c5255f83.webp" width="1920" height="500" loading="eager" style="--focalpoint: 49.87% 50.97%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+		
+		<div class="wrapper">
+			<div class="container">
+								
+	
+	
+	
+	
+		
+		<div class="wrapper breadcrumb__wrapper">
+			<div class="container">
+				<nav class="breadcrumb__outer">
+					<ol class="breadcrumb">
+
+						
+														
+							
+															<li class="breadcrumb__item breadcrumb__item--home">
+									<a href="https://caritas-regio.ch/fr" class="breadcrumb__link--home">
+											
+	<i class="icon icon-home">
+		<svg width="16px" height="16px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve" focusable="false" aria-hidden="true">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M3.5,8.9v5.2h2.6v-3h3.5v3h2.7V8.9h1.1v6.3  H8.5v-3H7.2v3H2.4V8.9H3.5z M8,0.8l8,7.9l-0.8,0.8L8,2.3L0.8,9.6L0,8.8L8,0.8z"></path>
+</svg>
+
+	</i>
+
+										<span class="visually-hidden">Page d&#039;accueil</span>
+									</a>
+								</li>
+													
+														
+							
+															<li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--first">
+																				
+	<i class="icon icon-chevron-right">
+		<svg width="25px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 25 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="4.8,0 0,4.7 15.5,20 0,35.3 4.8,40 25,20 "></polygon>
+</svg>
+
+	</i>
+
+									
+									<a href="https://caritas-regio.ch/fr/a-propos-de-caritas" class="breadcrumb__item-title">
+										A propos de Caritas
+									</a>
+
+								</li>
+													
+														
+							
+															<li class="breadcrumb__item breadcrumb__item--parent breadcrumb__item--last">
+										
+	<i class="icon icon-chevron-right">
+		<svg width="25px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 25 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="4.8,0 0,4.7 15.5,20 0,35.3 4.8,40 25,20 "></polygon>
+</svg>
+
+	</i>
+
+
+									<span class="breadcrumb__item-title">Vaud</span>
+								</li>
+																		</ol>
+				</nav>
+			</div>
+		</div>
+
+		
+	
+				
+				<div class="middle middle--medium heading__content">
+
+					<div class="heading__title-wrap">
+						<h1 class="visually-hidden">Caritas Vaud</h1>
+
+						
+													<i class="heading__logo">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="hsxakcfotm-Ebene_1" x="0px" y="0px" viewBox="0 0 348.7 44.9" style="enable-background:new 0 0 348.7 44.9;" xml:space="preserve">
+<style type="text/css">
+	.hsxakcfotm-st0{fill:#DC0D15;}
+	.hsxakcfotm-st1{fill-rule:evenodd;clip-rule:evenodd;fill:#DC0D15;}
+</style>
+<polygon points="303.3,24.1 296.9,41.7 296.9,41.7 290.5,24.1 288.4,24.1 295.8,43.8 298,43.8 305.3,24.1 "></polygon>
+<g>
+	<path d="M314.9,38.3c0,2.8-2.3,4.5-5,4.5c-1.6,0-3.2-1.1-3.2-2.8c0-2.8,3.7-2.8,6.6-3.3c0.5-0.1,1.2-0.2,1.5-0.6h0.1V38.3z    M307.3,33.9c0.1-2.3,1.7-3.3,3.8-3.3c2,0,3.7,0.6,3.7,2.9c0,1.6-0.8,1.8-2.2,1.9c-3.8,0.4-7.7,0.6-7.7,4.6c0,2.9,2.2,4.2,4.8,4.2   c2.7,0,4-1.1,5.2-2.9h0.1c0,1.5,0.3,2.5,2,2.5c0.5,0,0.7,0,1.1-0.1v-1.5c-0.1,0.1-0.4,0.1-0.6,0.1c-0.7,0-1-0.4-1-1.1v-7.6   c0-3.8-2.7-4.6-5.3-4.6c-3.3,0-5.6,1.4-5.8,4.8H307.3z"></path>
+	<path d="M332.2,43.8h-1.6v-2.6h-0.1c-0.9,1.9-2.8,3-4.9,3c-3.6,0-5-2.1-5-5.4v-9.3h1.7v9.3c0.1,2.6,1.1,3.9,3.8,3.9   c3,0,4.3-2.8,4.3-5.7v-7.5h1.7V43.8z"></path>
+	<path d="M337.2,36.7c0-3,1.4-6.1,4.7-6.1c3.7,0,5,3.1,5,6.1c0,3-1.3,6.1-5,6.1C338.6,42.8,337.2,39.6,337.2,36.7 M348.7,24.1h-1.7   v8.2h-0.1c-0.7-2-2.8-3.1-5-3.1c-4.3,0-6.4,3.5-6.4,7.6s2.1,7.6,6.4,7.6c2.1,0,4.3-1.3,5.1-3.1h0.1v2.7h1.6V24.1z"></path>
+	<rect x="138.6" y="1.4" class="hsxakcfotm-st0" width="11" height="42.4"></rect>
+	<polygon class="hsxakcfotm-st1" points="70.4,1.8 65.7,16.4 69.3,27.9 61.9,27.9 59.3,36.1 72,36.1 74.6,43.7 86.1,43.7  "></polygon>
+	<polygon class="hsxakcfotm-st1" points="59,1.4 43.2,43.7 54.5,43.7 68.2,1.4  "></polygon>
+	<polygon class="hsxakcfotm-st1" points="216.8,1.9 212.1,16.5 215.7,27.9 208.4,27.9 205.7,36.1 218.3,36.1 220.9,43.7 232.4,43.7  "></polygon>
+	<path class="hsxakcfotm-st1" d="M11,22.5c0-5.9,2.4-11.9,8.7-12.5V0.5C7.7,1.2,0,10.7,0,22.5c0,11.8,7.7,21.4,19.8,22v-9.5   C13.5,34.4,11,28.5,11,22.5"></path>
+	<path class="hsxakcfotm-st1" d="M29.4,16.5h11C40.2,6.6,30.9,0.9,22,0.5V10C26,10.4,28.9,12.6,29.4,16.5"></path>
+	<path class="hsxakcfotm-st1" d="M22,35.1v9.5c10.3-0.3,17.9-6.7,18.5-17.3h-11C29,31.8,26.5,34.7,22,35.1"></path>
+	<polygon class="hsxakcfotm-st0" points="102.7,19.8 102.7,10.2 102.7,10.2 102.7,1.4 91.6,1.4 91.6,43.7 102.7,43.7 102.7,28.3 102.7,28.3    102.7,19.8  "></polygon>
+	<path class="hsxakcfotm-st0" d="M127.6,34.2c-0.4-4-1.7-9.1-6.2-10.1v-0.1c4.4-1.7,6.6-6.1,6.6-10.6c0-8.5-7.4-11.9-14.8-11.9H105v8.8h6.5   c3.1,0,5.6,1.4,5.6,4.6c0,3.2-1.8,5-5.1,5h-7v8.5h6.1c5.2,0,5.9,4.4,6.2,8.7c0.1,1.2,0.3,5.3,1.2,6.8h10.9   C127.9,42.2,127.7,36,127.6,34.2"></path>
+	<polygon class="hsxakcfotm-st1" points="180.6,10.9 193.3,10.9 193.3,1.4 157,1.4 157,10.9 169.6,10.9 169.6,10.9 180.6,10.9  "></polygon>
+	<rect x="169.6" y="13.2" class="hsxakcfotm-st1" width="11" height="30.5"></rect>
+	<polygon class="hsxakcfotm-st1" points="205.4,1.4 189.5,43.7 200.9,43.7 201.5,41.9 214.6,1.4  "></polygon>
+	<path class="hsxakcfotm-st0" d="M258.8,14.1h11c-0.1-9.4-8.2-13.5-16.5-13.6v8.6C256.3,9.4,259,10.8,258.8,14.1"></path>
+	<path class="hsxakcfotm-st0" d="M246.7,12.6c0-2.5,2.3-3.4,4.5-3.6V0.5c-7.5,0.5-15.5,4.2-15.5,12.8c0,7.8,6.3,10.5,12.4,12.2   c1.1,0.3,2.1,0.6,3.1,0.8V16.2C248.5,15.4,246.7,14.4,246.7,12.6"></path>
+	<path class="hsxakcfotm-st0" d="M245.4,29.5h-11c0.1,10.2,7.7,14.6,16.8,15.1v-8.7C247.8,35.4,245.6,33.6,245.4,29.5"></path>
+	<path class="hsxakcfotm-st0" d="M271.2,30.4c0-7.7-6.2-10.5-12.3-12.2c-1.9-0.5-3.8-1-5.6-1.4V27c3.9,1,6.8,2.2,6.8,4.8c0,3.1-3.4,4.3-6.8,4.3   c0,0,0,0,0,0v8.5C262.5,44.5,271.2,40.9,271.2,30.4"></path>
+</g>
+</svg>
+
+							</i>
+											</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="container">
+				<div class="middle middle--medium heading__content">
+					<p>
+						<span class="h6">Contact</span>
+						Caritas Vaud<br>
+						Chemin de la Colline 11<br>
+						1007 Lausanne
+					</p>
+
+											<p class="h4">
+															
+	
+			
+			 
+			
+	
+		
+
+				
+						
+									
+		<a class="action action-phone" href="tel:+41213175980" target="_self">						<span class="action__text">021 317 59 80</span>
+							<span class="visually-hidden">Le lien s&#039;ouvre dans un nouvel onglet.</span>
+					</a>
+
+	
+<br>
+														
+	
+			
+			 
+			
+	
+		
+
+				
+						
+									
+		<a class="action action-email" href="mailto:info@caritas-vaud.ch" target="_self">						<span class="action__text">Écrire un email</span>
+							<span class="visually-hidden">Le lien s&#039;ouvre dans un nouvel onglet.</span>
+					</a>
+
+	
+
+						</p>
+					
+											<p>
+							<span class="h6">Horaires d&#039;ouverture</span>
+							Notre réception physique et téléphonique est ouverte aux horaires suivants:<br />
+Lu-ve: 9h00-12h00 et 13h00-16h30<br />
+<br />
+IBAN CH82 0900 0000 1001 0936 3
+						</p>
+					
+																<nav class="nav nav--social-nav">
+							<ul class="nav__wrap">
+																	<li class="nav__item">
+										<a
+												href="https://www.facebook.com/caritas.vaud.ch/"
+												class="nav__link nav__link--light"
+												target="_blank"
+										>
+																							
+	<i class="icon icon-facebook">
+		<svg width="22px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 22 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.6,40V21.2H0v-6.8h5.6V8.7c0-4.5,3.3-8.7,11-8.7C19.7,0,22,0.3,22,0.3  l-0.2,6.3c0,0-2.3,0-4.9,0c-2.8,0-3.2,1.1-3.2,3v4.9H22l-0.4,6.8h-7.9V40H5.6z"></path>
+</svg>
+
+	</i>
+
+											<span class="visually-hidden">facebook</span>
+																					</a>
+									</li>
+																	<li class="nav__item">
+										<a
+												href="https://www.instagram.com/caritas.vaud/"
+												class="nav__link nav__link--light"
+												target="_blank"
+										>
+																							
+	<i class="icon icon-instagram">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M26.5,0l0.3,0c0.5,0,0.9,0,1.5,0.1c2.1,0.1,3.6,0.4,4.9,0.9  c1.3,0.5,2.4,1.2,3.5,2.3c1.1,1.1,1.8,2.2,2.3,3.5c0.5,1.3,0.8,2.7,0.9,4.9c0,0.3,0,0.7,0,1l0,0.3c0,0.1,0,0.3,0,0.4l0,0.3  c0,1.1,0,2.3,0,5v2.8c0,2.9,0,4.2-0.1,5.3l0,0.3c0,0.4,0,0.8-0.1,1.3c-0.1,2.1-0.4,3.6-0.9,4.9c-0.5,1.3-1.2,2.4-2.3,3.5  c-1.1,1.1-2.2,1.8-3.5,2.3c-1.3,0.5-2.7,0.8-4.9,0.9C26.4,40,25.6,40,21.7,40l-0.6,0l-0.2,0l0,0l-1.6,0c-0.1,0-0.2,0-0.3,0l-0.6,0  c-2.6,0-3.8,0-4.9-0.1l-0.3,0c0,0-0.1,0-0.1,0l-0.3,0c-0.3,0-0.6,0-1,0c-2.1-0.1-3.6-0.4-4.9-0.9c-1.3-0.5-2.4-1.2-3.5-2.3  c-1.1-1.1-1.8-2.2-2.3-3.5c-0.5-1.3-0.8-2.7-0.9-4.9c0-0.5,0-0.9-0.1-1.3l0-0.3c0-1,0-2.2-0.1-4.7l0-1.6v-0.7l0,0L0,18  c0-2.8,0-3.9,0.1-5l0-0.3c0-0.3,0-0.6,0-1C0.2,9.6,0.6,8.2,1,6.9c0.5-1.3,1.2-2.4,2.3-3.5C4.5,2.2,5.6,1.6,6.9,1  c1.3-0.5,2.7-0.8,4.9-0.9c0.3,0,0.7,0,1,0l0.3,0C14.1,0,15.1,0,17.7,0L22,0C24.4,0,25.5,0,26.5,0z M20,9.2C14,9.2,9.2,14,9.2,20  c0,6,4.8,10.8,10.8,10.8S30.8,26,30.8,20C30.8,14,26,9.2,20,9.2z M20,13c3.9,0,7,3.1,7,7s-3.1,7-7,7s-7-3.1-7-7S16.1,13,20,13z   M31.2,6.2c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S32.6,6.2,31.2,6.2z"></path>
+</svg>
+
+	</i>
+
+											<span class="visually-hidden">instagram</span>
+																					</a>
+									</li>
+																	<li class="nav__item">
+										<a
+												href="https://www.linkedin.com/company/caritas-vaud"
+												class="nav__link nav__link--light"
+												target="_blank"
+										>
+																							
+	<i class="icon icon-linkedIn">
+		<svg width="40px" height="40px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 40 40" xml:space="preserve" focusable="false" aria-hidden="true">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.8,0c2.7,0,4.8,2.2,4.8,4.9S7.5,9.7,4.8,9.7S0,7.5,0,4.9S2.2,0,4.8,0   M30.2,12.6c0.5,0,1.1,0,1.9,0.1c3.7,0.2,7.7,3.1,7.8,9.8C40,28,40,36.8,40,40h-8.3c0-3.3,0-10.1,0-14.9c0-2.2-1-5.1-4.5-5.1  c-3.9,0-4.8,3.6-4.8,5.1c0,4.6,0,12,0,14.9h-8.3c0-4.9,0.1-21.9,0.1-26.7c4.3,0,6.3,0,7.9,0c0,1.6,0,2.6,0,3.8  c1.3-2.6,4.9-4.3,6.4-4.4C29.1,12.7,29.7,12.6,30.2,12.6 M0.7,40H9V13.4H0.7V40z"></path>
+</svg>
+
+	</i>
+
+											<span class="visually-hidden">linkedIn</span>
+																					</a>
+									</li>
+								
+							</ul>
+						</nav>
+
+					
+											<div class="anchor">
+	<p class="h6">Raccourcis</p>
+	<nav class="anchor__menu">
+		<ul class="anchor__list">
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Engagez-vous"><span class="action__text">Engagez-vous</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Prestations qui pourraient vous intéresser"><span class="action__text">Prestations</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Actualités"><span class="action__text">Actualités</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Trouver de l&#039;aide"><span class="action__text">Trouver de l&#039;aide</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="À propos de nous"><span class="action__text">À propos de nous</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Devenez une entreprise partenaire"><span class="action__text">Devenez une entreprise partenaire</span></button>
+				</li>
+											<li class="anchor__item">
+					<button class="action action-red-underlined" tabindex="0" data-tag="h2" data-text="Témoignages et portraits"><span class="action__text">Témoignages et portraits</span></button>
+				</li>
+					</ul>
+	</nav>
+</div>
+					
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m1363352" class="component component--fullscreen c-fullscreen c-edge">				<div class="section fullscreen">
+		<div class="wrapper">
+										<figure class="figure figure-fullscreen">			<picture class="picture picture-fullscreen">
+
+								
+				<source srcset="/imager/vd/1361133/concert-carteculture_a5ac317e6c6585a790b08ddd36a680ef.webp" media="(max-width:799px)">
+								
+				<img class="img-fullscreen" src="/imager/vd/1361133/concert-carteculture_3a8e397ac2489e988e704ea8b643bc81.webp" width="2600" height="1070" loading="eager" style="--focalpoint: 49.78% 65.56%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+			
+							<div class="container">
+				<div class="row row--grid">
+					<div class="fullscreen__content col col-sm-12 col-md-10 col-lg-6 font-color-white">
+						<h2 class="h1">Pour que la culture et les loisirs soient un droit, pas un luxe!</h2><p><a class="action action-primary" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/campagnes/crowdfunding-carteculture-2"><strong>CHF 4'562.- récoltés, mille merci !</strong></a></p>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m206375" class="component component--columns c-columns c-spaced">			
+	<div class="section section--spacing-top">
+		<div class="wrapper">
+			<div class="container">
+
+				
+													
+				
+				
+					
+					<h2 class="c-columns__title section__title h3">Prestations qui pourraient vous intéresser</h2>
+
+		
+		
+
+
+				
+				
+				<div class="row--grid">																											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/prestations/petits-budgets/epicerie-caritas">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/48382/50621469262_ef1e7b0c89_k_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/48382/50621469262_ef1e7b0c89_k_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Petits budgets</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Epiceries Caritas</p>
+
+		
+		
+
+
+					<p class="teaser__text">À Lausanne, Renens, Vevey et Yverdon-les-Bains</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/prestations/soutien-social-juridique/consultations-sociales">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/49044/49068304803_9d1b45ab59_k_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/49044/49068304803_9d1b45ab59_k_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Service social</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Permanences accueil</p>
+
+		
+		
+
+
+					<p class="teaser__text">À Nyon et Vevey</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/prestations/petits-budgets/seconde-main">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/49046/15010330568_c762f33d71_k_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/49046/15010330568_c762f33d71_k_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Petits budgets</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Boutiques de seconde main</p>
+
+		
+		
+
+
+					<p class="teaser__text">À Lausanne, Nyon, Clarens, Vevey et Yverdon-les-Bains</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/espaces-essor">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/1394628/caritas-vaud-couture-machine-coudre-mains_2026-01-21-133246_rwai_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/1394628/caritas-vaud-couture-machine-coudre-mains_2026-01-21-133246_rwai_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Insertion sociale</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Espaces Essor</p>
+
+		
+		
+
+
+					<p class="teaser__text">À Lausanne, Nyon, Vevey et Yverdon-les-Bains</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/centrale-alimentaire-de-la-region-lausannoise">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/370384/carl-camion-c11_e083373983c12f8caced78c728110464.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/370384/carl-camion-c11_ec0c966dee050d8ec3bb269027e63f35.webp" width="600" height="462" loading="lazy" style="--focalpoint: 50% 50%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Aide directe</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Centrale alimentaire de la région lausannoise</p>
+
+		
+		
+
+
+					<p class="teaser__text">Pour les associations du grand Lausanne</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/la-maison-des-lionnes">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/412807/Maison-Lionnes-logo_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/412807/Maison-Lionnes-logo_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Insertion sociale</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">La Maison des Lionnes</p>
+
+		
+		
+
+
+					<p class="teaser__text">Ouverte pour toute femme dans la précarité, à Renens</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/parlons-cash">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/460219/parlons-cash-affiche_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/460219/parlons-cash-affiche_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Service de désendettement</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Parlons Cash</p>
+
+		
+		
+
+
+					<p class="teaser__text">Permanence téléphonique pour tout problèmes financiers et questions</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/prestations/aide-durgence/hebergement-d-urgence">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/458975/caritas-vaud-sdf-hebergement-maison-sans-abri-mains_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/458975/caritas-vaud-sdf-hebergement-maison-sans-abri-mains_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Aide d&#039;urgence</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Hébergements d'urgence</p>
+
+		
+		
+
+
+					<p class="teaser__text">À Nyon, Vevey et Yverdon-les-Bains</p>
+			</div>
+
+</a>						</div>											<div class="col col-sm-12 col-lg-4">							
+<a class="teaser teaser--big" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/tout-compte-fait">
+							<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/caritasglobal/404357/Administraive-Unterstuetzung-Caritas-03_cddf18d864d0700313cf028ef6606bbb.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/caritasglobal/404357/Administraive-Unterstuetzung-Caritas-03_1e88c874a58d036754e7996d31508692.webp" width="600" height="462" loading="lazy" style="--focalpoint: 34.6% 32.95%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+	
+	<div class="teaser__content">
+		<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">Aide administrative et budgétaire</p>
+
+		
+				
+		
+			
+					<p class="h3 teaser__headline font-weight-500">Tout Compte Fait</p>
+
+		
+		
+
+
+					<p class="teaser__text">Accompagnement individuel et gratuit</p>
+			</div>
+
+</a>						</div>									</div>			</div>
+		</div>
+	</div>
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m827100" class="component component--text c-text c-spaced">			
+	<div class="section section--spacing-top">
+		<div class="wrapper">
+			<div class="container">
+				<div class="middle middle--medium">
+					    <p><a class="action action-primary" href="https://caritas-regio.ch/media/vdDownloads/250103_Activites-ds-Canton.pdf"><strong>Toutes nos activités dans le canton en un clin d'oeil</strong></a></p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m213608" class="component component--ctaLarge c-ctaLarge c-edge">			
+	<div class="section section--ov section--width-badge">
+		<div class="container container--large c-cta__container c-cta__container--large c-cta__container--primary">
+							<span class="c-cta__badge">Agissez maintenant !</span>
+			
+			<div class="c-cta__row c-cta__row--large">
+				<div class="c-cta__left">
+																			<figure class="figure figure-ctaLarge">			<picture class="picture picture-ctaLarge">
+
+								
+				<source srcset="/imager/vd/358281/carl-distribution-alimentaire-file_b250511cece1aac8dc94a9af99dfe6f0.webp" media="(max-width:799px)">
+								
+				<img class="img-ctaLarge" src="/imager/vd/358281/carl-distribution-alimentaire-file_2a041eb0e4b2732543df64c77cf18d68.webp" width="900" height="847" loading="lazy" style="--focalpoint: 50.17% 57.57%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+					
+					<div class="c-cta__left-inner styled font-color-white">
+						<h2>Agissez avec nous pour les personnes dans le besoin</h2>
+					</div>
+				</div>
+
+				<div class="c-cta__right">
+				<div class="c-cta__half">
+											
+								
+					<h2 class="font-color-white c-cta__text-right font-weight-500 font-size-h3">Engagez-vous</h2>
+
+		
+		
+
+					
+					
+				
+													
+
+
+	
+<a class="c-cta__content" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/campagnes">
+			<figure class="figure figure-cta figure-cta--svg">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="42px" height="42px" viewBox="0 0 42 42" xml:space="preserve">
+<path fill="currentColor" d="M5.9,14.1c-0.6,0-5.9,0.1-5.9,1.8v2.6c0,0.4,0.3,0.7,0.7,0.9C0.3,19.7,0,20,0,20.4v2.6  c0,1.7,5.3,1.8,5.9,1.8s5.9-0.1,5.9-1.8v-2.6l0,0c0-0.4-0.3-0.7-0.7-0.9c0.4-0.2,0.7-0.5,0.7-0.9v-2.6l0,0  C11.9,14.2,6.5,14.1,5.9,14.1z M1,17c0.2,0.1,0.5,0.2,0.8,0.3v1.6c-0.3-0.1-0.5-0.2-0.8-0.4V17z M2.7,17.4c0.2,0,0.5,0.1,0.7,0.1  v1.7c-0.3,0-0.5-0.1-0.7-0.1V17.4z M4.4,17.6c0.8,0.1,1.4,0.1,1.5,0.1s0.8,0,1.5-0.1v1.7c-0.5,0-1,0.1-1.5,0.1s-1.1,0-1.5-0.1V17.6z   M8.5,17.5c0.2,0,0.5-0.1,0.7-0.1v1.7c-0.2,0-0.4,0.1-0.7,0.1V17.5z M10.1,17.2c0.3-0.1,0.5-0.2,0.8-0.3v1.5  c-0.2,0.2-0.5,0.3-0.8,0.4V17.2z M5.9,15.1c2.9,0,4.5,0.5,4.9,0.8l0,0c-0.4,0.3-2.1,0.8-4.9,0.8S1.4,16.2,1,15.9l0,0  C1.4,15.6,3.1,15.1,5.9,15.1L5.9,15.1z M1,21.5c0.2,0.1,0.5,0.2,0.8,0.3v1.6C1.5,23.3,1.2,23.2,1,23V21.5z M2.7,21.9  C3,22,3.2,22,3.4,22v1.7c-0.3,0-0.5-0.1-0.7-0.1V21.9z M4.4,23.8v-1.7c0.8,0.1,1.4,0.1,1.5,0.1s0.8,0,1.5-0.1v1.7  c-0.5,0-1,0.1-1.5,0.1S4.9,23.8,4.4,23.8L4.4,23.8z M8.5,22c0.2,0,0.5-0.1,0.7-0.1v1.7c-0.2,0-0.4,0.1-0.7,0.1V22z M10.9,23  c-0.2,0.2-0.5,0.3-0.8,0.4v-1.6c0.3-0.1,0.5-0.2,0.8-0.3V23z M10.8,20.4L10.8,20.4c-0.4,0.3-2.1,0.8-4.9,0.8S1.4,20.7,1,20.4l0,0  c0.4-0.2,0.8-0.4,1.2-0.4c2.4,0.4,5,0.4,7.4,0C10.1,20.1,10.5,20.2,10.8,20.4L10.8,20.4z M35.9,11.5c-0.6,0-5.9,0-5.9,1.8v2.6  c0,0.4,0.3,0.7,0.7,0.9c-0.4,0.2-0.7,0.5-0.7,0.9v2.6c0,0.4,0.3,0.7,0.7,0.9c-0.4,0.2-0.7,0.5-0.7,0.9v2.6c0,1.7,5.3,1.8,5.9,1.8  s5.9,0,5.9-1.8v-2.6l0,0c0-0.4-0.3-0.7-0.7-0.9c0.4-0.2,0.7-0.5,0.7-0.9v-2.6l0,0c0-0.4-0.3-0.7-0.7-0.9c0.4-0.2,0.7-0.5,0.7-0.9  v-2.6l0,0C41.9,11.5,36.5,11.5,35.9,11.5z M31,14.3c0.3,0.1,0.5,0.2,0.8,0.3v1.6c-0.3-0.1-0.5-0.2-0.8-0.4V14.3z M32.7,14.8  c0.2,0,0.5,0.1,0.7,0.1v1.7c-0.2,0-0.5-0.1-0.7-0.1V14.8z M34.4,15c0.8,0.1,1.4,0.1,1.5,0.1c0.2,0,0.8,0,1.5-0.1v1.7  c-0.5,0-1,0.1-1.5,0.1s-1.1,0-1.5-0.1V15z M38.4,14.9c0.2,0,0.5-0.1,0.7-0.1v1.7c-0.2,0-0.5,0.1-0.7,0.1V14.9z M40.1,14.6  c0.3-0.1,0.5-0.2,0.8-0.3v1.5c-0.2,0.2-0.5,0.3-0.8,0.4V14.6z M35.9,12.5c2.9,0,4.5,0.5,4.9,0.8l0,0c-0.4,0.3-2.1,0.8-4.9,0.8  c-2.9,0-4.5-0.5-4.9-0.8l0,0C31.4,13,33.1,12.5,35.9,12.5L35.9,12.5z M40.9,18.8v1.5c-0.2,0.2-0.5,0.3-0.8,0.4v-1.6  C40.4,19,40.6,18.9,40.9,18.8L40.9,18.8z M39.1,20.9c-0.2,0-0.5,0.1-0.7,0.1v-1.7c0.2,0,0.5-0.1,0.7-0.1V20.9z M37.5,21.1  c-0.5,0-1,0.1-1.5,0.1s-1.1,0-1.5-0.1v-1.7c0.8,0.1,1.4,0.1,1.5,0.1c0.2,0,0.8,0,1.5-0.1V21.1z M33.4,21c-0.2,0-0.5-0.1-0.7-0.1  v-1.7c0.2,0,0.5,0.1,0.7,0.1V21z M31.7,20.7c-0.3-0.1-0.5-0.2-0.8-0.4v-1.5c0.3,0.1,0.5,0.2,0.8,0.3V20.7z M31,23.3  c0.3,0.1,0.5,0.2,0.8,0.3v1.6c-0.3-0.1-0.5-0.2-0.8-0.4V23.3z M32.7,23.8c0.2,0,0.5,0.1,0.7,0.1v1.7c-0.2,0-0.5-0.1-0.7-0.1V23.8z   M34.4,25.6V24c0.8,0.1,1.4,0.1,1.5,0.1c0.2,0,0.8,0,1.5-0.1v1.7c-0.5,0-1,0.1-1.5,0.1S34.8,25.7,34.4,25.6L34.4,25.6z M38.4,23.9  c0.2,0,0.5-0.1,0.7-0.1v1.7c-0.2,0-0.5,0.1-0.7,0.1V23.9z M40.9,24.9c-0.2,0.2-0.5,0.3-0.8,0.4v-1.6c0.3-0.1,0.5-0.2,0.8-0.3V24.9z   M40.8,22.3L40.8,22.3c-0.4,0.3-2.1,0.8-4.9,0.8c-2.9,0-4.5-0.5-4.9-0.8l0,0c0.4-0.2,0.8-0.4,1.2-0.4c2.5,0.5,5,0.5,7.5,0  C40.1,21.9,40.5,22,40.8,22.3L40.8,22.3z M40.8,17.8L40.8,17.8c-0.4,0.3-2.1,0.8-4.9,0.8c-2.9,0-4.5-0.5-4.9-0.8l0,0  c0.4-0.2,0.8-0.4,1.2-0.4c2.5,0.5,5,0.5,7.5,0C40.1,17.4,40.5,17.6,40.8,17.8L40.8,17.8z M21,7.5c-0.8,0-7.9,0.1-7.9,2.4v3.5  c0,0.6,0.4,1,1.1,1.3c-0.7,0.3-1.1,0.8-1.1,1.3v3.5c0,0.6,0.4,1,1.1,1.3c-0.7,0.3-1.1,0.8-1.1,1.3v3.5c0,0.6,0.4,1,1.1,1.3  c-0.7,0.3-1.1,0.8-1.1,1.3v3.5c0,2.3,7.1,2.4,7.9,2.4s7.9-0.1,7.9-2.4v-3.5l0,0c0-0.6-0.4-1-1.1-1.3c0.7-0.3,1.1-0.8,1.1-1.3v-3.5  l0,0c0-0.6-0.4-1-1.1-1.3c0.7-0.3,1.1-0.8,1.1-1.3V16l0,0c0-0.6-0.4-1-1.1-1.3c0.7-0.3,1.1-0.8,1.1-1.3V9.9l0,0  C28.9,7.6,21.8,7.5,21,7.5z M14.5,11.3c0.4,0.2,0.8,0.3,1.1,0.4v2.1c-0.6-0.2-1-0.4-1.1-0.5V11.3z M16.6,11.9  c0.4,0.1,0.8,0.1,1.2,0.2v2.2c-0.5-0.1-0.9-0.1-1.2-0.2V11.9z M18.8,12.1c1.1,0.1,1.9,0.1,2.2,0.1s1.1,0,2.2-0.1v2.2  c-0.7,0.1-1.4,0.1-2.2,0.1s-1.5,0-2.2-0.1V12.1z M24.2,12c0.4,0,0.8-0.1,1.2-0.2V14c-0.4,0.1-0.8,0.1-1.2,0.2V12z M26.4,11.7  c0.4-0.1,0.8-0.2,1.2-0.4v2c-0.1,0.1-0.5,0.3-1.2,0.5V11.7z M21,8.8c3.7,0,5.9,0.6,6.4,1c-0.5,0.4-2.7,1-6.4,1s-5.9-0.6-6.5-1  C15.1,9.5,17.3,8.8,21,8.8z M27.6,17.4v2c-0.1,0.1-0.5,0.3-1.2,0.5v-2.1C26.8,17.7,27.2,17.6,27.6,17.4L27.6,17.4z M25.4,20.1  c-0.4,0.1-0.8,0.1-1.2,0.2v-2.2c0.4,0,0.8-0.1,1.2-0.2V20.1z M23.2,20.4c-0.7,0.1-1.4,0.1-2.2,0.1s-1.5,0-2.2-0.1v-2.2  c1.1,0.1,1.9,0.1,2.2,0.1s1.1,0,2.2-0.1V20.4z M17.9,20.3c-0.5-0.1-0.9-0.1-1.2-0.2V18c0.4,0.1,0.8,0.1,1.2,0.2V20.3z M15.6,19.9  c-0.6-0.2-1-0.4-1.1-0.5v-2c0.4,0.2,0.8,0.3,1.1,0.4V19.9z M27.6,23.5v2c-0.1,0.1-0.5,0.3-1.2,0.5v-2.1  C26.8,23.8,27.2,23.7,27.6,23.5L27.6,23.5z M25.4,26.2c-0.4,0.1-0.8,0.1-1.2,0.2v-2.2c0.4,0,0.8-0.1,1.2-0.2V26.2z M23.2,26.5  c-0.7,0.1-1.4,0.1-2.2,0.1s-1.5,0-2.2-0.1v-2.2c1.1,0.1,1.9,0.1,2.2,0.1s1.1,0,2.2-0.1V26.5z M17.9,26.4c-0.5-0.1-0.9-0.1-1.2-0.2  v-2.1c0.4,0.1,0.8,0.1,1.2,0.2V26.4z M15.6,26c-0.6-0.2-1-0.4-1.1-0.5v-2c0.4,0.2,0.8,0.3,1.1,0.4V26z M14.5,29.7  c0.4,0.2,0.8,0.3,1.1,0.4v2.1c-0.6-0.2-1-0.4-1.1-0.5V29.7z M16.6,30.2c0.4,0.1,0.8,0.1,1.2,0.2v2.2c-0.5-0.1-0.9-0.1-1.2-0.2V30.2z   M18.8,32.7v-2.2c1.1,0.1,1.9,0.1,2.2,0.1s1.1,0,2.2-0.1v2.2c-0.7,0.1-1.4,0.1-2.2,0.1S19.5,32.7,18.8,32.7L18.8,32.7z M24.2,30.4  c0.4,0,0.8-0.1,1.2-0.2v2.1c-0.4,0.1-0.8,0.1-1.2,0.2V30.4z M27.6,31.6c-0.1,0.1-0.5,0.3-1.2,0.5V30c0.4-0.1,0.8-0.2,1.2-0.4V31.6z   M27.5,28.2c-0.5,0.4-2.7,1-6.4,1s-5.9-0.6-6.5-1c0.3-0.2,0.9-0.4,1.9-0.6c3,0.5,6,0.5,9,0C26.5,27.8,27.2,28,27.5,28.2L27.5,28.2z   M27.5,22.1c-0.5,0.4-2.7,1-6.4,1s-5.9-0.6-6.5-1c0.3-0.2,0.9-0.4,1.9-0.6c3,0.5,6,0.5,9,0C26.5,21.7,27.2,21.9,27.5,22.1L27.5,22.1  z M27.5,16c-0.5,0.4-2.7,1-6.4,1s-5.9-0.6-6.5-1c0.3-0.2,0.9-0.4,1.9-0.6c3,0.5,6,0.5,9,0C26.5,15.5,27.2,15.8,27.5,16L27.5,16z"></path>
+</svg>
+
+		</figure>
+	
+			<div class="c-cta__text no-margin">
+			<p class="h4 font-weight-700">
+				Faites un don financier
+				<br>
+				<strong class="font-color-primary"></strong>
+			</p>
+		</div>
+	
+			<span class="c-cta__icon">
+			<span class="action action-fab"></span>
+		</span>
+	</a>
+													
+
+
+	
+<a class="c-cta__content" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/benevolat">
+			<figure class="figure figure-cta figure-cta--svg">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M38.4,13.8l-2.9,3l-6.8-6.9l2.9-3L38.4,13.8z M14.9,30.3  c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3s-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7  c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3C14.8,29.8,14.9,30,14.9,30.3L14.9,30.3z M28.1,25.6l-3.9-4c0.1,0,0.1,0,0.2,0  c0.4,0,0.9-0.1,1.3-0.2c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.5c-0.1-0.2-0.2-0.3-0.4-0.4c-0.1,0-0.2-0.1-0.3-0.1  c-0.1,0-0.2,0-0.3,0.1c-0.2,0.1-0.4,0.1-0.6,0.1c-1.4,0-3.4-1.7-3.8-2.1l0.6-0.6c0.3-0.3,0.3-0.7,0-1c-0.1-0.1-0.3-0.2-0.5-0.2  c-0.2,0-0.3,0.1-0.5,0.2l-1,1l0,0h0l0,0l-2.4,2.4c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4c-0.2-0.2-0.4-0.6-0.4-0.9  c0-0.3,0.1-0.7,0.4-0.9l4.2-4.2c0.2-0.2,0.5-0.4,0.8-0.6c0.7-0.4,1.4-0.6,2.2-0.6c0.6,0,1.2,0.1,1.7,0.4c0.4,0.2,0.9,0.3,1.4,0.3  c0.9,0,1.7-0.4,2.3-1l0.9-0.9l5.2,5.2l-1.9,1.9c-0.4,0.5-0.7,1-0.8,1.6c-0.3,1.8-1.2,3.4-2.4,4.7L28.1,25.6z M10.8,27.1  c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.4,0.4,0.4,1,0,1.4l0,0c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3  c-0.2-0.2-0.3-0.4-0.3-0.7C10.6,27.6,10.7,27.3,10.8,27.1L10.8,27.1z M15.6,31.9c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3  c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7  C15.3,32.4,15.4,32.1,15.6,31.9L15.6,31.9z M19.5,22.1c-0.3,0.3-0.3,0.7,0,1l6.7,6.7c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6  c-0.2,0.2-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.2l-6.3-6.4c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2  c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.1,0.4,0.2,0.5l5.2,5.2c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6c-0.2,0.2-0.4,0.2-0.6,0.2  c-0.2,0-0.4-0.1-0.6-0.2l-5.6-5.7c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2c-0.3,0.3-0.3,0.7,0,1l4.2,4.2  c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6C19.2,32.9,19,33,18.7,33c0,0-0.1,0-0.1,0c0.1-0.7-0.2-1.5-0.7-2  c-0.4-0.4-1-0.7-1.7-0.7l0,0c0-0.6-0.2-1.2-0.7-1.7c-0.4-0.4-1-0.7-1.7-0.7c0,0,0,0,0,0c0-0.6-0.2-1.3-0.7-1.7  c-0.4-0.4-1-0.7-1.6-0.7c-0.2,0-0.3,0-0.5,0.1l-0.4-0.4c-1.3-1.3-2.1-2.9-2.4-4.6c-0.1-0.7-0.4-1.3-0.9-1.7l-1.1-1.1l6.3-6.4  l1.6,1.6c0.6,0.6,1.5,1,2.3,1c0.4,0,0.8-0.1,1.2-0.2c0.1-0.1,0.3-0.1,0.4-0.1l-3.9,3.9c-0.5,0.5-0.8,1.2-0.8,1.9s0.3,1.4,0.8,1.9  c0.5,0.5,1.1,0.8,1.8,0.8c0.7,0,1.3-0.3,1.8-0.8l2-2l8.1,8.1c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6  c-0.1,0.2-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.2l-6.2-6.3c-0.1-0.1-0.3-0.2-0.5-0.2S19.6,22,19.5,22.1L19.5,22.1z M12.2,9.6  l-7.7,7.8l-2.9-3l7.7-7.8L12.2,9.6z M39.8,13.3l-7.7-7.8c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2l-3.9,3.9  C27.1,9.5,27,9.7,27,9.8c0,0.2,0.1,0.4,0.2,0.5l0.4,0.4l-0.9,0.9c-0.4,0.4-0.9,0.6-1.4,0.6c-0.3,0-0.6-0.1-0.8-0.2  c-0.7-0.3-1.5-0.5-2.3-0.5c-0.9,0-1.8,0.2-2.6,0.7c-0.3-0.1-0.7-0.1-1-0.1c-0.5,0-1,0.1-1.5,0.3c-0.2,0.1-0.5,0.1-0.7,0.1  c-0.5,0-1-0.2-1.4-0.6l-1.6-1.6l0.2-0.2c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5L9.8,5.2C9.6,5.1,9.5,5,9.3,5h0h0  C9.1,5,8.9,5.1,8.8,5.2l-8.6,8.7C0.1,14,0,14.2,0,14.4c0,0.2,0.1,0.4,0.2,0.5l3.9,3.9C4.2,18.9,4.4,19,4.5,19c0.2,0,0.4-0.1,0.5-0.2  l0.2-0.2l1.1,1.1c0.3,0.3,0.5,0.6,0.5,1c0.4,2,1.3,3.9,2.8,5.3l0.2,0.2c-0.4,0.4-0.6,1-0.6,1.6c0,0.6,0.2,1.2,0.7,1.7  c0.4,0.4,1,0.7,1.6,0.7c0,0,0.1,0,0.1,0c0,0.7,0.2,1.3,0.7,1.7c0.4,0.4,1,0.7,1.6,0.7h0c0,0.6,0.2,1.2,0.7,1.7  c0.4,0.4,1,0.7,1.6,0.7c0.6,0,1.2-0.2,1.6-0.7c0,0,0.1-0.1,0.1-0.1l0,0c0.2,0.1,0.5,0.1,0.7,0.1c0.6,0,1.1-0.2,1.5-0.6  c0.2-0.2,0.4-0.4,0.5-0.7l0,0c0.4,0.4,1,0.6,1.5,0.6c0.6,0,1.1-0.2,1.5-0.6c0.2-0.2,0.4-0.5,0.5-0.7c0.4,0.3,0.8,0.4,1.2,0.4  c0.6,0,1.1-0.2,1.5-0.6c0.4-0.4,0.6-1,0.6-1.6c0-0.2,0-0.3-0.1-0.5c0.4-0.1,0.8-0.3,1.1-0.6c0.4-0.4,0.6-1,0.6-1.6  c0-0.4-0.1-0.9-0.4-1.2l0.5-0.5c1.5-1.5,2.4-3.4,2.8-5.4c0.1-0.3,0.2-0.7,0.5-0.9l1.9-1.9l0.3,0.3c0.1,0.1,0.3,0.2,0.5,0.2  c0.2,0,0.3-0.1,0.5-0.2l3.9-3.9c0.1-0.1,0.2-0.3,0.2-0.5C40,13.6,39.9,13.4,39.8,13.3L39.8,13.3z"></path>
+</svg>
+
+		</figure>
+	
+			<div class="c-cta__text no-margin">
+			<p class="h4 font-weight-700">
+				Devenez bénévole
+				<br>
+				<strong class="font-color-primary"></strong>
+			</p>
+		</div>
+	
+			<span class="c-cta__icon">
+			<span class="action action-fab"></span>
+		</span>
+	</a>
+											</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m330981" class="component component--newsTeasers c-newsTeasers c-edge">			
+	
+	<section class="section section--spacing section--background-grey">
+		<div class="wrapper">
+			<div class="container">
+		
+                	
+					<h2 class="h2 section__title font-family-title font-weight-500">Actualités</h2>
+
+		
+		
+
+	
+									<div class="row--grid news-teasers">
+													        
+    <article class="col col-sm-12 col-md-6 col-lg-3 news-teaser">
+        <a class="news-teaser__link" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/news/cartons-de-noel-saison-6">            			<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/1368982/carton-de-noel-25_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/1368982/carton-de-noel-25_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+
+            <div class="news-teaser__content">
+                <p class="teaser__supTitle font-size-h6 font-color-grey uppercase">24.11.2025</p>
+
+                <h3>Cartons de Noël - Saison 6</h3>
+
+                <p class="news-teaser__text">Offrez un carton avec 5 objets utiles, afin de donner un peu de baume au coeur aux personnes sans-abri</p>
+            </div>
+
+            	
+	<i class="icon icon-arrow-up-right news-teaser__icon">
+		<svg width="23px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 23 24" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="  1.3,0.9 1.3,4.7 16.1,4.7 0,20.8 2.7,23.5 18.8,7.3 18.8,22.1 22.5,22.1 22.5,0.9 "></polygon>
+</svg>
+
+	</i>
+
+        </a>    </article>
+
+
+																				        
+    <article class="col col-sm-12 col-md-6 col-lg-3 news-teaser">
+        <a class="news-teaser__link" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/news/campagne-de-financement-pour-la-carteculture">            			<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/1361133/concert-carteculture_48be18ab0d8a7c2afa3508adfa6fb155.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/1361133/concert-carteculture_3af243f7cddd0b1850e7a88e3028a14d.webp" width="600" height="462" style="--focalpoint: 49.78% 65.56%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+
+            <div class="news-teaser__content">
+                <p class="teaser__supTitle font-size-h6 font-color-grey uppercase">12.11.2025</p>
+
+                <h3>Campagne de financement pour la CarteCulture</h3>
+
+                <p class="news-teaser__text">Pour que la culture et les loisirs soient un droit, pas un luxe !</p>
+            </div>
+
+            	
+	<i class="icon icon-arrow-up-right news-teaser__icon">
+		<svg width="23px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 23 24" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="  1.3,0.9 1.3,4.7 16.1,4.7 0,20.8 2.7,23.5 18.8,7.3 18.8,22.1 22.5,22.1 22.5,0.9 "></polygon>
+</svg>
+
+	</i>
+
+        </a>    </article>
+
+
+																				        
+    <article class="col col-sm-12 col-md-6 col-lg-3 news-teaser">
+        <a class="news-teaser__link" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/news/bilan-sante-gratuit-yverdon">            			<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/1359629/CARITAS-UniSante-LIGHT-003_377f3ac955a272ae6e80234e9863384c.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/1359629/CARITAS-UniSante-LIGHT-003_e5be514a59c51dcfb9a867555a7621de.webp" width="600" height="462">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+
+            <div class="news-teaser__content">
+                <p class="teaser__supTitle font-size-h6 font-color-grey uppercase">03.11.2025</p>
+
+                <h3>Bilan de santé gratuit à Yverdon-les-Bains les 26 et 27 novembre</h3>
+
+                <p class="news-teaser__text">Cet événement est complet</p>
+            </div>
+
+            	
+	<i class="icon icon-arrow-up-right news-teaser__icon">
+		<svg width="23px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 23 24" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="  1.3,0.9 1.3,4.7 16.1,4.7 0,20.8 2.7,23.5 18.8,7.3 18.8,22.1 22.5,22.1 22.5,0.9 "></polygon>
+</svg>
+
+	</i>
+
+        </a>    </article>
+
+
+																				        
+    <article class="col col-sm-12 col-md-6 col-lg-3 news-teaser">
+        <a class="news-teaser__link" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/news/marche-solidaire-des-lionnes-a-renens-le-samedi-6-decembre">            			<figure class="figure figure-teaser-big">			<picture class="picture picture-teaser-big">
+
+								
+				<source srcset="/imager/vd/1358438/Marche-MdL-Post-Insta_2fcad395ffa45138431f8205137df0b8.webp" media="(max-width:799px)">
+								
+				<img class="img-teaser-big" src="/imager/vd/1358438/Marche-MdL-Post-Insta_a61f7dc030925df90a8e303675d9f237.webp" width="600" height="462" style="--focalpoint: 48.04% 42.33%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+
+            <div class="news-teaser__content">
+                <p class="teaser__supTitle font-size-h6 font-color-grey uppercase">29.10.2025</p>
+
+                <h3>Marché solidaire des Lionnes à Renens le samedi 6 décembre</h3>
+
+                <p class="news-teaser__text">SAVE THE DATE!</p>
+            </div>
+
+            	
+	<i class="icon icon-arrow-up-right news-teaser__icon">
+		<svg width="23px" height="24px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 23 24" xml:space="preserve" focusable="false" aria-hidden="true">
+<polygon fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" points="  1.3,0.9 1.3,4.7 16.1,4.7 0,20.8 2.7,23.5 18.8,7.3 18.8,22.1 22.5,22.1 22.5,0.9 "></polygon>
+</svg>
+
+	</i>
+
+        </a>    </article>
+
+
+																		</div>
+                
+									<div class="action-wrap action-wrap--center">
+						
+	
+			
+			 
+			
+	
+		
+
+				
+						
+									
+		<a class="action action-primary" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/news" target="_self">						<span class="action__text">Toutes les actualités</span>
+					</a>
+
+	
+
+					</div>
+							</div>
+		</div>
+	</section>
+
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m213834" class="component component--fullscreen c-fullscreen c-edge">				<div class="section fullscreen">
+		<div class="wrapper">
+										<figure class="figure figure-fullscreen">			<picture class="picture picture-fullscreen">
+
+								
+				<source srcset="/imager/vd/458956/caritas-vaud-femme-enfant-monoparental-dos_679fe185e2e31aa59f1d918f47267b8f.webp" media="(max-width:799px)">
+								
+				<img class="img-fullscreen" src="/imager/vd/458956/caritas-vaud-femme-enfant-monoparental-dos_124377588beb7447d1c1d83ce2831f05.webp" width="2600" height="1070" loading="eager">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+			
+							<div class="container">
+				<div class="row row--grid">
+					<div class="fullscreen__content col col-sm-12 col-md-10 col-lg-6 font-color-white">
+						<h2 class="default">Trouver de l'aide</h2>
+<h4 class="h4">Un répertoire de toutes les aides à disposition dans le canton de Vaud, selon votre problématique</h4>
+<p><a href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/trouver-de-laide" class="action action-primary">Découvrez les</a></p>
+					</div>
+				</div>
+			</div>
+					</div>
+	</div>
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m205659" class="component component--twoColumns c-twoColumns c-spaced">			
+	<div class="section section--spacing-top">
+		<div class="wrapper">
+			<div class="container">
+					
+					<h2 class="h2 font-family-title section__title text-align-center">À propos de nous</h2>
+
+		
+		
+
+				
+				
+<div class="row--grid c-two-columns__row">
+			<div class="col col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/portrait" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/455631/agirici_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/455631/agirici_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Portrait</p>
+
+		
+		
+
+
+											<p class="teaser__text">Caritas Vaud est une association à but non lucratif fondée en 1942</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col offset-sm-2 col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/organisation" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/1019215/2404-EDIR_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/1019215/2404-EDIR_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Organisation</p>
+
+		
+		
+
+
+											<p class="teaser__text">Rencontrez notre Comité et notre équipe de direction ainsi que l'organigramme</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/rapports-activite" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/caritasglobal/404393/Freiwilligeneinsaetze-Caritas_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/caritasglobal/404393/Freiwilligeneinsaetze-Caritas_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Rapports d'activité</p>
+
+		
+		
+
+
+											<p class="teaser__text">En savoir plus sur nos engagement, impacts et chiffres clés</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col offset-sm-2 col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/prestations?rco=VD" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/49465/CARL_Team-002-clear_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/49465/CARL_Team-002-clear_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Nos prestations dans le canton de Vaud</p>
+
+		
+		
+
+
+											<p class="teaser__text">Alimentation, hébergement, service social et de désendettement, centres d'accueil, formations et mesures d'insertion... Découvrez toutes nos offres</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/partenaires" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/49601/38435432285_0999712bdf_c_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/49601/38435432285_0999712bdf_c_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Nos partenaires</p>
+
+		
+		
+
+
+											<p class="teaser__text">Caritas Vaud est membre de nombreuses institutions</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col offset-sm-2 col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/medias" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/455633/Interview-media-camera_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/455633/Interview-media-camera_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Médias</p>
+
+		
+		
+
+
+											<p class="teaser__text">Contact presse, communiqués et Caritas Vaud dans les médias</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/declaration-protection-des-donnees" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/1120419/franck-DoWZMPZ-M9s-unsplash_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/1120419/franck-DoWZMPZ-M9s-unsplash_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Protection des données</p>
+
+		
+		
+
+
+											<p class="teaser__text">Nous mettons tout en place pour protéger vos données</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col offset-sm-2 col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/caritas-mag" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/682007/Caritas-mag-couv-avril2023_f2141734599452f691a5e9d7e71df710.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/682007/Caritas-mag-couv-avril2023_f9a72fdf58b6ec0bb8ac4b108a85725a.webp" width="700" height="489" loading="lazy" style="--focalpoint: 49.85% 38.7%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Caritas.mag</p>
+
+		
+		
+
+
+											<p class="teaser__text">Caritas Vaud édite un magazine deux fois par année, en avril et en octobre</p>
+					
+									</div>
+			</a>		</div>
+	</div>
+
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m213706" class="component component--facts c-facts c-spaced">				<div class="section section--spacing-top">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row row--grid c-facts__row">
+					
+						<div class="fact col col-sm-12 col-lg-4">
+																						<figure class="figure figure-fact facts__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" d="M1.4,33v4.8c0,0.4-0.3,0.7-0.7,0.7S0,38.2,0,37.8V33c0-0.4,0.3-0.7,0.7-0.7S1.4,32.6,1.4,33z M11,21.8  c0,0.4-0.3,0.7-0.7,0.7c-1.3,0-2.7-0.7-3.4-2H5.8c-2.4,0-4.4,2-4.4,4.4v4.5h3.8v-1c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7v9.4  c0,0.4-0.3,0.7-0.7,0.7c-0.4,0-0.7-0.3-0.7-0.7v-7.1H0.7c-0.4,0-0.8-0.4-0.6-0.8v-5c0-3.2,2.6-5.8,5.8-5.8h1l0.5-1.5  c-1.8-1.1-2.8-3-2.8-5c0-1.1,0-6.4,0-7.4C4.5,2.9,6.4,1,8.7,1h9.1c0.4,0,0.7,0.3,0.7,0.7v1.9c0,3.2-2.6,5.8-5.8,5.8H5.8v3.2  c0,2.5,2.2,4.7,4.8,4.4c2.3-0.2,4-2.2,4-4.5v-1.3c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7v1.3c0,1.9-1,3.7-2.5,4.8l0.6,2.1  c0.1,0.4-0.2,0.9-0.6,0.9c-0.3,0-0.6-0.2-0.6-0.5L12.3,18c-1.2,0.5-2.6,0.5-3.8,0.1L8,19.7c0.5,0.9,1.3,1.4,2.3,1.4  C10.7,21.1,11,21.4,11,21.8z M5.8,8.1h6.9c2.5,0,4.5-2,4.5-4.5V2.3H8.7c-1.6,0-2.9,1.3-2.9,2.9V8.1z M36.4,19.5  c-0.3-0.1-0.7,0-0.9,0.4c-0.1,0.3,0,0.7,0.4,0.9c1.7,0.7,2.8,2.3,2.8,4.1v1.6c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7v-1.6  C40,22.5,38.6,20.4,36.4,19.5L36.4,19.5z M32.9,20.4c-0.3,0-0.6-0.2-0.6-0.5L31.7,18c-1.2,0.4-2.5,0.5-3.8,0.1l-0.5,1.5  c0.5,0.9,1.3,1.4,2.3,1.4c0.4,0,0.7,0.3,0.7,0.7c0,0.4-0.3,0.7-0.7,0.7c-1.4,0-3-0.9-3.6-2.5c-0.1-0.1-0.1-0.3,0-0.5l0.6-1.9  c-1.7-1-2.8-2.9-2.8-5V10c0-0.4,0.3-0.7,0.7-0.7c2.9,0,5.7-0.4,8.5-1.3c1.2-0.4,2.4,0.5,2.4,1.7v2.9c0,1.8-0.9,3.6-2.5,4.8l0.6,2.1  C33.6,19.9,33.3,20.4,32.9,20.4L32.9,20.4z M34,12.6V9.7c0-0.2-0.1-0.3-0.2-0.4c-0.3-0.2-0.4,0-2.3,0.5c-2.1,0.5-4.3,0.8-6.4,0.9  v1.9c0,2.3,1.8,4.3,4,4.5C31.9,17.3,34,15.2,34,12.6L34,12.6z M23.1,31.7l0.6,1.9c0.1,0.4-0.1,0.7-0.4,0.8c-0.4,0.1-0.7-0.1-0.8-0.4  l-0.6-1.7c-1.2,0.4-2.6,0.4-3.8,0l-0.5,1.5c0.4,0.9,1.3,1.5,2.3,1.5c0.4,0,0.7,0.3,0.6,0.7c0,0.4-0.3,0.6-0.7,0.6  c-1.3,0-2.7-0.7-3.4-2.1h-1.3c-1.5,0-2.7,1.2-2.7,2.7v0.7c0,0.4-0.3,0.7-0.7,0.7s-0.7-0.3-0.7-0.7v-0.7c0-2.2,1.8-4,4-4h1.3l0.5-1.4  c-1.8-1.1-3.1-3.1-3.1-5.3c0-4,3.7-6.9,7.6-6V9.3c0-4.6,3.7-8.3,8.3-8.3c4.6,0,8.3,3.7,8.3,8.3v6.8c0,0.4-0.3,0.7-0.7,0.7  c-0.4,0-0.7-0.3-0.7-0.7V9.3c0-3.8-3.1-7-7-7c-3.8,0-7,3.1-7,7v11.6C27.1,23.1,27.3,29.3,23.1,31.7L23.1,31.7z M24.8,26.4  c0-2.7-2.2-4.8-4.8-4.8s-4.8,2.2-4.8,4.8s2.2,4.8,4.8,4.8S24.8,29.1,24.8,26.4z M26.6,33.6c-0.3-0.2-0.7,0-0.9,0.3  c-0.2,0.3,0,0.7,0.3,0.9c0.9,0.5,1.5,1.4,1.5,2.4v0.7c0,0.4,0.3,0.7,0.7,0.7s0.7-0.3,0.7-0.7v-0.7C28.8,35.6,28,34.3,26.6,33.6  L26.6,33.6z M39.3,29.4h-4.5v-1c0-0.4-0.3-0.7-0.7-0.7c-0.4,0-0.7,0.3-0.7,0.7v9.4c0,0.4,0.3,0.7,0.7,0.7c0.4,0,0.7-0.3,0.7-0.7  v-7.1h3.8v7.1c0,0.4,0.3,0.7,0.7,0.7s0.7-0.3,0.7-0.7V30C40,29.7,39.7,29.4,39.3,29.4z"></path>
+</svg>
+
+								</figure>
+							
+															<p class="no-margin facts__number">3&#039;000</p>
+							
+								
+					<p class="facts__text no-margin font-size-h4 font-weight-500 font-color-primary uppercase">consultations sociales</p>
+
+		
+		
+
+
+						</div>
+					
+						<div class="fact col col-sm-12 col-lg-4">
+																						<figure class="figure figure-fact facts__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" d="M20,0c11,0,19.9,9,19.9,20c0,8.1-4.9,15.4-12.3,18.5s-16,1.4-21.8-4.3s-7.4-14.3-4.3-21.8S11.9,0,20,0z   M6.8,6.8c-5.3,5.3-6.9,13.4-4,20.3c2.8,6.9,9.4,11.4,16.8,11.5l0.4,0c10.3,0,18.6-8.4,18.6-18.6c0-7.5-4.5-14.3-11.5-17.2  S12.1,1.5,6.8,6.8z M20,32.7c0.2,0,0.4,0.1,0.6,0.2c0.1,0.1,0.2,0.3,0.2,0.6l0,0v0.6c0,0.4-0.3,0.8-0.8,0.8s-0.8-0.4-0.8-0.8l0,0  v-0.6C19.2,33,19.5,32.7,20,32.7z M10.4,28.7c0.2,0,0.4,0.1,0.6,0.2c0.3,0.3,0.3,0.8,0,1.1l0,0l-0.5,0.5c-0.2,0.2-0.5,0.3-0.8,0.2  c-0.3-0.1-0.5-0.3-0.6-0.6s0-0.6,0.2-0.8l0,0l0.5-0.5C10,28.8,10.2,28.7,10.4,28.7z M29,28.9c0.3-0.3,0.8-0.3,1.1,0l0,0l0.5,0.5  c0.3,0.3,0.3,0.8,0,1.1s-0.8,0.3-1.1,0l0,0L29,30C28.7,29.7,28.7,29.2,29,28.9z M20,10.2c0.3,0,0.6,0.2,0.7,0.6l0,0.1v6.5l0.1,0  l0.1,0c1.1,0.4,1.9,1.5,1.7,2.7c-0.1,1.2-1.1,2.2-2.3,2.3c-1.1,0.1-2.2-0.5-2.7-1.6l-0.1-0.2l0-0.1l0-0.1h-4.6  c-0.4,0-0.7-0.3-0.7-0.7c0-0.3,0.2-0.6,0.6-0.7l0.1,0h4.6l0-0.1l0-0.1c0.2-0.7,0.8-1.2,1.4-1.5l0.2-0.1l0.1,0l0.1,0v-6.5  C19.3,10.5,19.6,10.2,20,10.2z M20,18.6c-0.7,0-1.3,0.6-1.3,1.3c0,0.7,0.5,1.2,1.1,1.3l0.1,0v0c0.7,0,1.3-0.6,1.3-1.3  C21.2,19.2,20.7,18.6,20,18.6z M34.2,19.1c0.4,0,0.8,0.4,0.8,0.8s-0.3,0.8-0.8,0.8l0,0h-0.6c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8  l0,0H34.2z M6.4,19.1c0.4,0,0.8,0.4,0.8,0.8s-0.3,0.8-0.8,0.8l0,0H5.8c-0.4,0-0.8-0.4-0.8-0.8s0.3-0.8,0.8-0.8l0,0H6.4z M30,9.1  L30,9.1c0.4,0,0.8,0.4,0.8,0.8c0,0.2-0.1,0.4-0.2,0.6l0,0l-0.5,0.5c-0.3,0.3-0.8,0.3-1.1,0s-0.3-0.8,0-1.1l0,0l0.5-0.5  C29.6,9.2,29.8,9.1,30,9.1L30,9.1z M9.7,9.1c0.3-0.1,0.6,0,0.8,0.2l0,0l0.5,0.5c0.1,0.1,0.2,0.3,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6  c-0.1,0.1-0.3,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.2l0,0l-0.5-0.5c-0.2-0.2-0.3-0.5-0.2-0.8C9.2,9.4,9.4,9.1,9.7,9.1z M20,4.9  c0.4,0,0.8,0.4,0.8,0.8l0,0v0.6c0,0.4-0.3,0.8-0.8,0.8s-0.8-0.4-0.8-0.8l0,0V5.7C19.2,5.3,19.5,4.9,20,4.9z"></path>
+</svg>
+
+								</figure>
+							
+															<p class="no-margin facts__number">42&#039;310</p>
+							
+								
+					<p class="facts__text no-margin font-size-h4 font-weight-500 font-color-primary uppercase">heures de bénévolat</p>
+
+		
+		
+
+
+						</div>
+					
+						<div class="fact col col-sm-12 col-lg-4">
+																						<figure class="figure figure-fact facts__icon">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" d="M35.6,24.6c0-6.3-1.2-10.3-3.8-12.4c-2.9-2.3-7-1.7-10.3-0.8c-0.5,0.1-0.9,0.2-1.4,0.2h-0.2l0-0.2  c-0.1-0.3-0.1-0.6-0.2-0.9l-0.1-0.2l2.5-0.4c3.2-0.5,5.7-3,6.2-6.2l0.4-2.5c0-0.1,0-0.2,0-0.2v0L28.8,0l-3.6,0.5  C22,1,19.5,3.5,19,6.7l-0.2,1.5l-0.3-0.5c-0.7-1.3-1.8-2.3-3-3c-0.2-0.1-0.5-0.1-0.7,0c-0.2,0.1-0.3,0.4-0.3,0.6  c0,0.2,0.2,0.5,0.4,0.6c2.3,1.2,3.3,3.8,3.6,5.3l0.1,0.3l-0.3,0c-0.2,0-0.4-0.1-0.6-0.1c-1.3-0.3-3.2-0.7-5.1-0.7  c-2.1,0-3.8,0.5-5.2,1.6c-2.6,2.1-3.8,6.1-3.8,12.4c0,4.6,2.7,10,6.5,13c2,1.6,4,2.4,6.1,2.4c0.6,0,1.2-0.1,1.7-0.2  c1.1-0.3,2.3-0.3,3.5,0c0.6,0.1,1.2,0.2,1.7,0.2c2.1,0,4.1-0.8,6.1-2.4C32.9,34.6,35.6,29.2,35.6,24.6z M27,3.5  c-0.4,2.6-2.4,4.7-5.1,5.1l-0.6,0.1l5.8-5.8L27,3.5z M20.3,7c0.4-2.6,2.4-4.7,5.1-5.1l0.9-0.1l-6.1,6.1L20.3,7z M28.2,36.6  c-1.2,0.9-3,2.1-5.2,2.1c-0.5,0-1-0.1-1.4-0.2c-1.3-0.3-2.7-0.3-4.1,0c-0.5,0.1-1,0.2-1.4,0.2c-2.2,0-4-1.1-5.2-2.1  c-3.5-2.8-6-7.8-6-12c0-5.9,1.1-9.6,3.3-11.3c1.1-0.9,2.5-1.3,4.3-1.3c1.6,0,3.2,0.3,4.8,0.7c0.4,0.1,0.9,0.2,1.3,0.2l0.2,0l0,0.2  c0,0.3,0.1,1.5,0.1,1.5v0.1l-0.1,0c-0.5-0.1-1-0.4-1.4-0.8c-0.2-0.2-0.5-0.2-0.7-0.1c-0.3,0.1-0.4,0.4-0.4,0.6  c0,0.2,0.1,0.4,0.2,0.5c0.8,0.8,1.9,1.2,3,1.2s2.2-0.4,3-1.2c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.3-0.2-0.5c-0.3-0.3-0.7-0.3-1,0  c-0.3,0.3-0.7,0.5-1.1,0.7l-0.1,0v-0.1c0-0.2-0.1-1.2-0.1-1.4l0-0.2l0.2,0c0.5,0,1-0.1,1.5-0.2c4.4-1.1,7.2-0.9,9.1,0.6  c2.3,1.8,3.3,5.5,3.3,11.3C34.2,28.8,31.7,33.8,28.2,36.6z"></path>
+</svg>
+
+								</figure>
+							
+															<p class="no-margin facts__number">783&#039;000</p>
+							
+								
+					<p class="facts__text no-margin font-size-h4 font-weight-500 font-color-primary uppercase">kilos de denrées de première nécessité distribuées</p>
+
+		
+		
+
+
+						</div>
+									</div>
+			</div>
+		</div>
+	</div>
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m205658" class="component component--cta c-cta c-edge">			
+	<div class="section">
+		<div class="wrapper c-cta__wrapper--primary">
+			<div class="container c-cta__container">
+				<div class="row c-cta__row">
+						
+					<h2 class="font-color-white c-cta__title font-family-title font-size-h2">Devenez une entreprise partenaire</h2>
+
+		
+		
+
+
+					
+					
+
+
+	
+<a class="c-cta__content" href="https://caritas-regio.ch/fr/offrir-son-aide/dons/responsabilite-sociale-des-entreprises?rco=largeDonationsVdFr#largeDonationsMaFr">
+			<figure class="figure figure-cta figure-cta--svg">
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M38.4,13.8l-2.9,3l-6.8-6.9l2.9-3L38.4,13.8z M14.9,30.3  c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3s-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7c0-0.3,0.1-0.5,0.3-0.7  c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3C14.8,29.8,14.9,30,14.9,30.3L14.9,30.3z M28.1,25.6l-3.9-4c0.1,0,0.1,0,0.2,0  c0.4,0,0.9-0.1,1.3-0.2c0.2-0.1,0.3-0.2,0.4-0.4c0.1-0.2,0.1-0.4,0-0.5c-0.1-0.2-0.2-0.3-0.4-0.4c-0.1,0-0.2-0.1-0.3-0.1  c-0.1,0-0.2,0-0.3,0.1c-0.2,0.1-0.4,0.1-0.6,0.1c-1.4,0-3.4-1.7-3.8-2.1l0.6-0.6c0.3-0.3,0.3-0.7,0-1c-0.1-0.1-0.3-0.2-0.5-0.2  c-0.2,0-0.3,0.1-0.5,0.2l-1,1l0,0h0l0,0l-2.4,2.4c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4c-0.2-0.2-0.4-0.6-0.4-0.9  c0-0.3,0.1-0.7,0.4-0.9l4.2-4.2c0.2-0.2,0.5-0.4,0.8-0.6c0.7-0.4,1.4-0.6,2.2-0.6c0.6,0,1.2,0.1,1.7,0.4c0.4,0.2,0.9,0.3,1.4,0.3  c0.9,0,1.7-0.4,2.3-1l0.9-0.9l5.2,5.2l-1.9,1.9c-0.4,0.5-0.7,1-0.8,1.6c-0.3,1.8-1.2,3.4-2.4,4.7L28.1,25.6z M10.8,27.1  c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3c0.4,0.4,0.4,1,0,1.4l0,0c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3  c-0.2-0.2-0.3-0.4-0.3-0.7C10.6,27.6,10.7,27.3,10.8,27.1L10.8,27.1z M15.6,31.9c0.2-0.2,0.4-0.3,0.7-0.3c0.3,0,0.5,0.1,0.7,0.3  c0.2,0.2,0.3,0.4,0.3,0.7c0,0.3-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3c-0.2-0.2-0.3-0.4-0.3-0.7  C15.3,32.4,15.4,32.1,15.6,31.9L15.6,31.9z M19.5,22.1c-0.3,0.3-0.3,0.7,0,1l6.7,6.7c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6  c-0.2,0.2-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.2l-6.3-6.4c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2  c-0.1,0.1-0.2,0.3-0.2,0.5c0,0.2,0.1,0.4,0.2,0.5l5.2,5.2c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6c-0.2,0.2-0.4,0.2-0.6,0.2  c-0.2,0-0.4-0.1-0.6-0.2l-5.6-5.7c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2c-0.3,0.3-0.3,0.7,0,1l4.2,4.2  c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6C19.2,32.9,19,33,18.7,33c0,0-0.1,0-0.1,0c0.1-0.7-0.2-1.5-0.7-2  c-0.4-0.4-1-0.7-1.7-0.7l0,0c0-0.6-0.2-1.2-0.7-1.7c-0.4-0.4-1-0.7-1.7-0.7c0,0,0,0,0,0c0-0.6-0.2-1.3-0.7-1.7  c-0.4-0.4-1-0.7-1.6-0.7c-0.2,0-0.3,0-0.5,0.1l-0.4-0.4c-1.3-1.3-2.1-2.9-2.4-4.6c-0.1-0.7-0.4-1.3-0.9-1.7l-1.1-1.1l6.3-6.4  l1.6,1.6c0.6,0.6,1.5,1,2.3,1c0.4,0,0.8-0.1,1.2-0.2c0.1-0.1,0.3-0.1,0.4-0.1l-3.9,3.9c-0.5,0.5-0.8,1.2-0.8,1.9s0.3,1.4,0.8,1.9  c0.5,0.5,1.1,0.8,1.8,0.8c0.7,0,1.3-0.3,1.8-0.8l2-2l8.1,8.1c0.2,0.2,0.2,0.4,0.2,0.6c0,0.2-0.1,0.4-0.2,0.6  c-0.1,0.2-0.4,0.2-0.6,0.2c-0.2,0-0.4-0.1-0.6-0.2l-6.2-6.3c-0.1-0.1-0.3-0.2-0.5-0.2S19.6,22,19.5,22.1L19.5,22.1z M12.2,9.6  l-7.7,7.8l-2.9-3l7.7-7.8L12.2,9.6z M39.8,13.3l-7.7-7.8c-0.1-0.1-0.3-0.2-0.5-0.2c-0.2,0-0.3,0.1-0.5,0.2l-3.9,3.9  C27.1,9.5,27,9.7,27,9.8c0,0.2,0.1,0.4,0.2,0.5l0.4,0.4l-0.9,0.9c-0.4,0.4-0.9,0.6-1.4,0.6c-0.3,0-0.6-0.1-0.8-0.2  c-0.7-0.3-1.5-0.5-2.3-0.5c-0.9,0-1.8,0.2-2.6,0.7c-0.3-0.1-0.7-0.1-1-0.1c-0.5,0-1,0.1-1.5,0.3c-0.2,0.1-0.5,0.1-0.7,0.1  c-0.5,0-1-0.2-1.4-0.6l-1.6-1.6l0.2-0.2c0.1-0.1,0.2-0.3,0.2-0.5c0-0.2-0.1-0.4-0.2-0.5L9.8,5.2C9.6,5.1,9.5,5,9.3,5h0h0  C9.1,5,8.9,5.1,8.8,5.2l-8.6,8.7C0.1,14,0,14.2,0,14.4c0,0.2,0.1,0.4,0.2,0.5l3.9,3.9C4.2,18.9,4.4,19,4.5,19c0.2,0,0.4-0.1,0.5-0.2  l0.2-0.2l1.1,1.1c0.3,0.3,0.5,0.6,0.5,1c0.4,2,1.3,3.9,2.8,5.3l0.2,0.2c-0.4,0.4-0.6,1-0.6,1.6c0,0.6,0.2,1.2,0.7,1.7  c0.4,0.4,1,0.7,1.6,0.7c0,0,0.1,0,0.1,0c0,0.7,0.2,1.3,0.7,1.7c0.4,0.4,1,0.7,1.6,0.7h0c0,0.6,0.2,1.2,0.7,1.7  c0.4,0.4,1,0.7,1.6,0.7c0.6,0,1.2-0.2,1.6-0.7c0,0,0.1-0.1,0.1-0.1l0,0c0.2,0.1,0.5,0.1,0.7,0.1c0.6,0,1.1-0.2,1.5-0.6  c0.2-0.2,0.4-0.4,0.5-0.7l0,0c0.4,0.4,1,0.6,1.5,0.6c0.6,0,1.1-0.2,1.5-0.6c0.2-0.2,0.4-0.5,0.5-0.7c0.4,0.3,0.8,0.4,1.2,0.4  c0.6,0,1.1-0.2,1.5-0.6c0.4-0.4,0.6-1,0.6-1.6c0-0.2,0-0.3-0.1-0.5c0.4-0.1,0.8-0.3,1.1-0.6c0.4-0.4,0.6-1,0.6-1.6  c0-0.4-0.1-0.9-0.4-1.2l0.5-0.5c1.5-1.5,2.4-3.4,2.8-5.4c0.1-0.3,0.2-0.7,0.5-0.9l1.9-1.9l0.3,0.3c0.1,0.1,0.3,0.2,0.5,0.2  c0.2,0,0.3-0.1,0.5-0.2l3.9-3.9c0.1-0.1,0.2-0.3,0.2-0.5C40,13.6,39.9,13.4,39.8,13.3L39.8,13.3z"></path>
+</svg>
+
+		</figure>
+	
+			<div class="c-cta__text no-margin">
+			<p class="h4 font-weight-700">
+				Récoltes alimentaires / Volontariat / Projets spéciaux
+				<br>
+				<strong class="font-color-primary">Contactez-nous</strong>
+			</p>
+		</div>
+	
+			<span class="c-cta__icon">
+			<span class="action action-fab"></span>
+		</span>
+	</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	
+    
+		
+		
+		
+		
+							
+		<div id="m206368" class="component component--twoColumns c-twoColumns c-spaced">			
+	<div class="section section--spacing-top">
+		<div class="wrapper">
+			<div class="container">
+					
+					<h2 class="h2 font-family-title section__title text-align-center">Témoignages et portraits</h2>
+
+		
+		
+
+				
+				
+<div class="row--grid c-two-columns__row">
+			<div class="col col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/temoignages-et-portraits" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/caritasglobal/404392/Frau-Fenster-Caritas_ed31e3f7f723c6513167269a9a7e67f9.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/caritasglobal/404392/Frau-Fenster-Caritas_1ddb16dc8297927d818b63130ec23437.webp" width="700" height="489" loading="lazy" style="--focalpoint: 49.8% 37.77%;">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Découvrez les parcours de vie de femmes et d'hommes que nous avons soutenus.</p>
+
+		
+		
+
+
+											<p class="teaser__text">En savoir plus sur leur histoire et comment ils ont remonté la pente</p>
+					
+									</div>
+			</a>		</div>
+			<div class="col offset-sm-2 col-sm-10 offset-lg-0 col-lg-6 two-columns__item">
+			<a class="teaser" href="https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/benevolat/portraits-benevoles" target="_self">
+																<figure class="figure figure-bigSmall two-columns__figure">			<picture class="picture picture-bigSmall">
+
+								
+				<source srcset="/imager/vd/1123814/CARITAS-19-Sep-2024-Nyon-LIGHT_e5a61d27579255a1f22f783b00a0e861.webp" media="(max-width:799px)">
+								
+				<img class="img-bigSmall" src="/imager/vd/1123814/CARITAS-19-Sep-2024-Nyon-LIGHT_14ec00ae5a1e54f67d7f3e83215a609b.webp" width="700" height="489" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+				
+				<div class="teaser__content">
+										
+						
+					<p class="teaser__headline no-margin font-size-h3 font-weight-500">Découvrez les témoignages de celles et ceux qui oeuvrent pour Caritas Vaud</p>
+
+		
+		
+
+
+											<p class="teaser__text">Faites la connaissance de personnes bénévoles ainsi que des collaborateur-rices de Caritas vaud</p>
+					
+									</div>
+			</a>		</div>
+	</div>
+
+			</div>
+		</div>
+	</div>
+
+
+		</div>
+	
+    
+		
+		
+							
+		
+							
+		<div id="m768263" class="component component--stories c-stories c-last c-edge">			
+
+	
+
+<div class="c-stories__section section section--spacing-top">
+	<div class="wrapper">
+		<div class="container">
+							<p class="c-stories__title font-size-h3 font-weight-500 text-align-center">
+					Caritas Stories
+				</p>
+			
+
+			<div class="c-stories__scroll">
+				<div class="row c-stories__row">
+											<a
+								class="c-stories__item teaser"
+								href="https://caritas-regio.ch/fr/stories/tout-augmente-la-pauvrete-aussi"
+						>
+																									<figure class="figure figure-story">			<picture class="picture picture-story">
+
+								
+				<source srcset="/imager/caritasglobal/667386/epicerie-fribourg-cliente-rayon_dde596cbb9e856633976d0df31dac729.webp" media="(max-width:799px)">
+								
+				<img class="img-story" src="/imager/caritasglobal/667386/epicerie-fribourg-cliente-rayon_c15287184ef010492443f67cc160b4c9.webp" width="600" height="686" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+														<div class="teaser__content">
+								
+																	<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">
+										Petits Budgets
+									</p>
+																<p class="no-margin font-size-h4 font-weight-500">
+									<span class="teaser__link">Tout augmente, la pauvreté aussi</span>
+								</p>
+							</div>
+						</a>
+											<a
+								class="c-stories__item teaser"
+								href="https://caritas-regio.ch/fr/stories/stress"
+						>
+																									<figure class="figure figure-story">			<picture class="picture picture-story">
+
+								
+				<source srcset="/imager/caritasstories/498975/caritas-story-stress_dde596cbb9e856633976d0df31dac729.webp" media="(max-width:799px)">
+								
+				<img class="img-story" src="/imager/caritasstories/498975/caritas-story-stress_c15287184ef010492443f67cc160b4c9.webp" width="600" height="686" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+														<div class="teaser__content">
+								
+																	<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">
+										Soutien social et juridique
+									</p>
+																<p class="no-margin font-size-h4 font-weight-500">
+									<span class="teaser__link">Stress : «Il faut accepter l&#039;échec pour poursuivre sa route»</span>
+								</p>
+							</div>
+						</a>
+											<a
+								class="c-stories__item teaser"
+								href="https://caritas-regio.ch/fr/stories/reduire-la-fracture-numerique-un-nouvel-enjeu"
+						>
+																									<figure class="figure figure-story">			<picture class="picture picture-story">
+
+								
+				<source srcset="/imager/caritasstories/499379/caritas-story-reduire-la-fracture-numérique-Sedrik-Nemeth-01_dde596cbb9e856633976d0df31dac729.webp" media="(max-width:799px)">
+								
+				<img class="img-story" src="/imager/caritasstories/499379/caritas-story-reduire-la-fracture-numérique-Sedrik-Nemeth-01_c15287184ef010492443f67cc160b4c9.webp" width="600" height="686" loading="lazy">
+
+				
+			</picture>
+
+			
+					</figure>	
+
+														<div class="teaser__content">
+								
+																	<p class="teaser__supTitle font-size-h6 font-color-grey uppercase">
+										Soutien social et juridique
+									</p>
+																<p class="no-margin font-size-h4 font-weight-500">
+									<span class="teaser__link">Réduire la fracture numérique, un nouvel enjeu</span>
+								</p>
+							</div>
+						</a>
+									</div>
+			</div>
+
+							
+	
+			
+			  
+			
+	
+		
+
+				
+						
+									
+		<a class="action action-underlined action-vertical" href="https://caritas-regio.ch/fr/stories" target="_self">						<span class="action__text">Tous les articles</span>
+							<span class="visually-hidden">Le lien s&#039;ouvre dans un nouvel onglet.</span>
+					</a>
+
+	
+
+					</div>
+	</div>
+</div>
+
+
+
+		</div>
+	
+
+
+	
+    
+      
+
+
+</main>
+
+
+
+<footer class="footer">
+  <div class="wrapper footer__top">
+    <div class="container">
+      <div class="row row--grid">
+                
+        <div class="footer__top-left col col-sm-12 col-md-7 col-lg-6 styled">
+                      <a
+                href="https://zewo.ch/fr/"
+                class="footer__link"
+                target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="94px" height="100px" viewBox="0 0 94 100" xml:space="preserve">
+<path fill-rule="evenodd" clip-rule="evenodd" fill="currentColor" d="M42.9,92.9L48,93l0,0.8l-2.1-0.1l-0.2,6.2  l-0.9,0l0.2-6.2l-2.1-0.1L42.9,92.9z M50.5,92.8l0.6,7l-0.9,0.1l-0.6-7L50.5,92.8z M36.9,91.8l2.7,0.5c0.8,0.2,1.3,0.5,1.6,0.9  c0.3,0.4,0.4,0.9,0.3,1.5c-0.1,0.6-0.4,1-0.8,1.3c-0.2,0.2-0.6,0.3-0.9,0.3l0.8,3.3l-1-0.2L39,96.4L37,96.1L36.5,99l-0.9-0.2  L36.9,91.8z M57.2,91.6l0.2,0.8l-3.6,0.8l0.5,2.3l3.2-0.7l0.2,0.8l-3.2,0.7l0.6,3l-0.9,0.2l-1.5-6.9L57.2,91.6z M31,89.9l4.4,1.6  l-0.3,0.8l-3.6-1.3l-0.7,2l3.2,1.1l-0.3,0.8l-3.2-1.1l-0.8,2.3l3.6,1.3l-0.3,0.8l-4.4-1.6L31,89.9z M59.6,90.7l2.3,6.7L61,97.7  L58.8,91L59.6,90.7z M66,87.9l0.4,0.7l-3.4,1.7l0.9,1.9l3-1.5l0.4,0.8l-3,1.5l1.1,2.2l3.4-1.7l0.4,0.7l-4.2,2.1L61.8,90L66,87.9z   M37.7,92.8l-0.5,2.4l1.8,0.3c0.8,0.2,1.5-0.1,1.6-1c0.2-0.9-0.4-1.3-1.2-1.5L37.7,92.8z M27.5,87.9c0.7,0.4,1.1,1,1.3,1.6  c0.2,0.6,0.1,1.2-0.2,1.7l-0.8-0.4c0.2-0.3,0.2-0.7,0.1-1.1c-0.1-0.4-0.4-0.8-0.9-1.1c-0.4-0.2-0.9-0.3-1.4-0.2  c-0.8,0.2-1.3,1.1-1.6,1.7c-0.4,0.6-0.8,1.5-0.6,2.3c0.1,0.5,0.4,0.9,0.9,1.1c0.5,0.3,1,0.3,1.4,0.2c0.3-0.1,0.6-0.4,0.8-0.7  l0.8,0.4c-0.3,0.6-0.8,0.9-1.4,1.1c-0.6,0.2-1.4,0.1-2-0.3c-0.6-0.3-1.1-0.9-1.3-1.6c-0.3-1,0.1-2,0.6-3c0.5-1,1.2-1.8,2.2-2.1  C26.1,87.5,26.9,87.6,27.5,87.9z M46.5,17.2c5.8,0,11.3,1.4,16.1,3.8c-0.8,1.3-1.6,2.7-2.4,4c-4.1-2-8.8-3.1-13.7-3.1  C29,21.9,14.8,36,14.7,53.6c0,17.5,14.2,31.7,31.8,31.7c17.5,0,31.7-14.2,31.8-31.7c0-6.7-2.1-12.9-5.7-18c0.9-1.4,1.8-2.8,2.6-4.2  c4.8,6.1,7.7,13.8,7.7,22.2c0,20.1-16.3,36.3-36.4,36.3c-20.1,0-36.4-16.3-36.4-36.3C10.1,33.5,26.4,17.2,46.5,17.2z M63.5,86.7  l0.7,0.4L63,88.9l-0.5-0.3L63.5,86.7z M75,81.7c0.6,0,1.1,0.3,1.6,0.7L76,83c-0.3-0.3-0.6-0.4-1-0.5c-0.4,0-0.9,0.1-1.3,0.5  c-0.4,0.3-0.6,0.8-0.6,1.3c0,0.8,0.5,1.4,1,2l0.1,0.1c0.5,0.5,1.2,1.2,2,1.3c0.5,0,1-0.1,1.3-0.5c0.4-0.4,0.6-0.8,0.6-1.3  c0-0.3-0.1-0.7-0.4-1l0.7-0.6c0.4,0.5,0.6,1.1,0.6,1.7c0,0.6-0.3,1.3-0.9,1.8c-0.5,0.5-1.2,0.8-1.9,0.7c-1.1,0-1.9-0.7-2.6-1.6  c-0.8-0.8-1.4-1.7-1.3-2.7c0-0.7,0.4-1.4,0.9-1.8C73.7,81.9,74.4,81.7,75,81.7z M16.7,79.5l3.6,3.6l-0.6,0.6l-1.5-1.5l-4.4,4.4  l-0.6-0.6l4.4-4.4l-1.5-1.5L16.7,79.5z M79,76l0.6,0.5l-2.4,3l1.7,1.3l2.1-2.6l0.7,0.5l-2.1,2.6l1.9,1.5l2.4-3l0.6,0.5L81.7,84  l-5.5-4.4L79,76z M13.1,74.7l1.6,2.2c0.5,0.7,0.6,1.3,0.5,1.8c-0.1,0.5-0.3,0.9-0.8,1.3s-1,0.4-1.4,0.4c-0.3,0-0.6-0.2-0.9-0.4  l-1.7,3l-0.6-0.8l1.6-2.8l-1.1-1.6l-2.4,1.7l-0.5-0.7L13.1,74.7z M12.9,75.8l-2,1.4l1.1,1.5c0.5,0.7,1.1,1,1.8,0.4  c0.7-0.5,0.7-1.2,0.2-1.9L12.9,75.8z M84.2,71.2c0.5,0.3,0.8,0.7,1,1.1c0.1,0.3,0.1,0.6,0,1l3.4,0.3l-0.5,0.9l-3.2-0.3l-1,1.7  l2.6,1.4L86,78.1l-6.2-3.4l1.3-2.4c0.4-0.7,0.9-1.1,1.4-1.3C83.1,70.9,83.6,70.9,84.2,71.2z M10.2,69.2l2.1,4.2l-0.7,0.4l-1.7-3.4  l-1.9,1l1.5,3l-0.8,0.4l-1.5-3L5,72.8l1.7,3.4L6,76.6l-2.1-4.2L10.2,69.2z M57.6,67c0.6,0,1.1,0.1,1.7,0.4c1.5,0.7,2.3,2.2,2.3,3.8  c0,0.7-0.2,1.4-0.5,2c-0.8,1.6-2.4,2.6-4,2.6c-0.6,0-1.1-0.1-1.7-0.4c-1.5-0.7-2.3-2.2-2.3-3.8c0-0.7,0.2-1.4,0.5-2  C54.4,68,56,67,57.6,67z M81.9,72.7L81,74.3l2.2,1.2l0.9-1.6c0.4-0.7,0.4-1.4-0.4-1.9C82.9,71.6,82.3,72,81.9,72.7z M75,8.2  c2.4,0,8.1,1.6,8.9,2.4c1.3,1.3-0.4,3.6-0.5,3.8c-12.3,18.7-22.6,35.5-33.2,54l-1.1,2l-1.8,3.5c-1.8,2.2-4.4,1.4-5,0.3  c-6.5-10-9.5-17-15.4-27.3c-0.4-0.7-0.4-1.7,0.1-2.2c2-1.8,8.2,1.3,8.6,2c3,7.7,1.9,6.1,5.4,13.7c0.1,0.3,0.4,0.9,0.8,1.6l0.2,0.5  c0.1,0.2,0.2,0.3,0.2,0.5l0.2,0.4c0.1,0.2,0.2,0.4,0.3,0.5c1.3-3.1,2.6-6.2,4.2-9.5C53,41.5,58.3,32.2,65.3,21.2  c0.4,0.1,0.8,0.1,1.3,0.1c0.7,0,1.5-0.1,2.2-0.4c2.8-0.9,4.2-3.1,5.2-5.2c0.8-1.5,1.4-3.1,1.4-5c0-0.8-0.1-1.6-0.4-2.3  C75.1,8.3,75,8.3,75,8.2z M84.4,64.6l0.8,0.3l-0.7,2l5.9,2.1l-0.3,0.8l-5.9-2.1l-0.7,2l-0.8-0.3L84.4,64.6z M9.1,66.2l0.3,0.9  l-6.7,2.4l-0.3-0.9L9.1,66.2z M7.4,59.5l1.1,5l-0.9,0.2l-6.1-2.9l0.9,4.1l-0.8,0.2L0.5,61l0.9-0.2l6.1,2.9l-0.9-4L7.4,59.5z   M85,62.2l6.9,1.6l-0.2,0.9l-6.9-1.6L85,62.2z M86,55.4l0.8,0.1l-0.4,3.7l2.3,0.3l0.4-3.3l0.8,0.1l-0.4,3.3l3.1,0.4l-0.1,0.9l-7-0.8  L86,55.4z M7.2,56.9l0.1,0.9l-7,0.7l-0.1-0.9L7.2,56.9z M0,50.5l7.1,0.2L7,55.3l-0.8,0l0.1-3.7l-2.3-0.1l-0.1,3.3l-0.8,0l0.1-3.3  L0,51.4L0,50.5z M93,52.8l0,0.9l-7.1,0l0-0.9L93,52.8z M91.7,45.5c0.5,0.4,0.9,1,1,1.8c0.1,0.7-0.1,1.4-0.5,2  c-0.6,0.9-1.7,1.1-2.8,1.3c-1.1,0.1-2.2,0.2-3-0.5c-0.6-0.4-0.9-1.1-1-1.8c-0.1-0.8,0.1-1.5,0.5-2c0.4-0.5,0.9-0.8,1.5-0.9l0.1,0.9  c-0.4,0.1-0.7,0.3-0.9,0.5c-0.3,0.3-0.4,0.8-0.3,1.3c0.1,0.5,0.3,0.9,0.7,1.2c0.7,0.5,1.6,0.4,2.4,0.3c0.7-0.1,1.7-0.2,2.2-0.9  c0.3-0.4,0.4-0.9,0.4-1.3c-0.1-0.5-0.4-1-0.7-1.2c-0.3-0.2-0.7-0.3-1.1-0.3L90,45C90.7,44.9,91.3,45.1,91.7,45.5z M0.5,46.5l7,1  l-0.1,0.9l-7-1L0.5,46.5z M8.2,40.8L9,41l-1.3,4.9l-0.8-0.2l0.5-2l-6-1.6l0.2-0.9l6,1.6L8.2,40.8z M90.2,37.2l0.3,0.9l-1.4,1  l0.9,2.9l1.8,0.1l0.3,0.9l-7.5-0.3l-0.3-1L90.2,37.2z M88.3,39.6l-3.1,2.3L89,42L88.3,39.6z M4.9,32.6l6.5,2.9L10.2,38  c-0.3,0.8-0.8,1.2-1.3,1.4c-0.5,0.2-1,0.2-1.5-0.1c-0.6-0.3-0.9-0.6-1.1-1.1c-0.1-0.3-0.1-0.6-0.1-1l-3.4,0l0.4-0.9l3.2,0l0.8-1.8  l-2.7-1.2L4.9,32.6z M88.5,33.5l0.4,0.8L83.2,37l0.9,1.9l-0.7,0.3l-2.2-4.6l0.8-0.3l0.9,1.9L88.5,33.5z M8,34.9l-0.8,1.7  c-0.3,0.8-0.3,1.4,0.5,1.8c0.8,0.4,1.4,0,1.7-0.8l0.8-1.7L8,34.9z M8.7,26.3l5.9,3.9L12,34.1l-0.7-0.4l2.1-3.2l-1.8-1.2l-1.9,2.8  l-0.7-0.5l1.9-2.8l-2-1.3l-2.1,3.2l-0.7-0.5L8.7,26.3z M83.6,26.4c0.7,0.1,1.3,0.6,1.7,1.2c0.4,0.6,0.6,1.3,0.4,2  c-0.2,1.1-1,1.7-1.9,2.4c-0.9,0.6-1.9,1.1-2.9,0.9c-0.7-0.1-1.3-0.6-1.7-1.2c-0.4-0.6-0.6-1.3-0.4-2c0.2-1.1,1-1.7,1.9-2.4  C81.6,26.7,82.5,26.2,83.6,26.4z M81.1,28.1c-0.6,0.4-1.4,1-1.6,1.8c-0.1,0.5,0,1,0.3,1.4c0.3,0.4,0.7,0.7,1.2,0.8  c0.8,0.1,1.6-0.4,2.2-0.8c0.6-0.4,1.4-1,1.6-1.8c0.1-0.5,0-1-0.3-1.4c-0.3-0.4-0.7-0.7-1.2-0.8C82.6,27.2,81.8,27.7,81.1,28.1z   M13.8,20.4l0.7,0.6l1.2,6.6l2.7-3l0.6,0.6L15.6,29l-0.7-0.6l-1.2-6.6l-2.8,3.1l-0.6-0.6L13.8,20.4z M26,4.1l1.2,2.2l-2.4,11.8  l6.9-3.7l1.1,2L23,21.7l-1.2-2.2l2.5-11.8l-6.7,3.6l-1.1-2L26,4.1z M70.4,5.7c1.4,0.7,2.4,1.8,2.9,3.2c0.7,2,0.1,3.8-1,5.9  c-1,2.1-2.1,3.6-4.2,4.3c-1.4,0.5-3,0.3-4.3-0.4c-1.4-0.7-2.4-1.8-2.9-3.2c-0.7-2-0.1-3.8,1-5.9C62.9,7.6,64,6,66,5.3  C67.5,4.8,69,5,70.4,5.7z M66.9,7.6c-1.3,0.5-2.1,2-2.7,3.2c-0.6,1.2-1.3,2.7-0.9,4.1c0.2,0.8,0.8,1.5,1.6,1.8  c0.7,0.4,1.6,0.4,2.4,0.2c1.3-0.5,2.1-2,2.7-3.1c0.6-1.2,1.3-2.7,0.9-4.1c-0.2-0.8-0.8-1.5-1.6-1.8C68.6,7.4,67.7,7.3,66.9,7.6z   M41.2,0.4l0.4,2.3l-7.3,1.4l0.6,3.2L41.4,6l0.4,2.3l-6.5,1.3l0.7,3.8l7.3-1.4l0.4,2.3L34,16.1L31.3,2.3L41.2,0.4z M47.5,0l0.8,9.9  l4-9.1l2.1,0.3l1.7,9.8l3.2-9.5l2.2,0.6l-4.4,13.3L54.6,15l-1.7-10l-4.1,9.3L46.2,14L45.1,0L47.5,0z"></path>
+</svg>
+
+              <span class="visually-hidden">Zewo</span>
+            </a>
+          
+          <div class="footer__text">
+            <p class="h1"><a href="https://caritas-regio.ch/fr/offrir-son-aide/dons/donner-de-largent" class="action action-arrow">Donnez maintenant pour les personnes en situation de précarité en Suisse</a></p>
+          </div>
+
+        </div>
+
+        <div class="footer__top-right col col-sm-12 md-5 col-lg-6">
+          
+	
+	
+	
+	<nav class="nav nav--footer-right" aria-label="footer-right">
+		<ul class="nav__wrap nav__wrap--parent" role="menubar">
+							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/contact" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Contactez-nous</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/offrir-son-aide" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Offrir son aide</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/newsletter" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Newsletter</span>
+																		</a>
+					
+				</li>					</ul>	</nav>
+        </div>
+      </div>
+
+      <div class="row row--grid footer__bottom">
+        <div class="footer__bottom-left col col-sm-12 col-md-7 col-lg-6">
+          <div class="footer__copyright">&copy; 2026 Organisations régionales Caritas</div>
+          
+	
+	
+	
+	<nav class="nav nav--footer-nav" aria-label="footer-nav">
+		<ul class="nav__wrap nav__wrap--parent" role="menubar">
+							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/mentions-legales" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Mentions légales</span>
+																		</a>
+					
+				</li>							
+				
+				
+				
+
+				<li class="nav__item nav__item--parent  nav__item--no-children">
+					<a class="nav__link nav__link--parent" href="https://caritas-regio.ch/fr/declaration-protection-des-donnees" role="menuitem" tabindex="0" target="_self">													<span class="nav__text">
+Protection des données</span>
+																		</a>
+					
+				</li>					</ul>	</nav>
+        </div>
+
+        <div class="footer__bottom-right col col-sm-12 md-5 col-lg-6">
+          
+          
+          
+            <a href="https://caritas-regio.ch/fr/reseaux-sociaux"
+               aria-label=""
+               class="footer__social-link"
+               target="_blank">
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="22px" height="40px" viewBox="0 0 22 40" xml:space="preserve">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M5.6,40V21.2H0v-6.8h5.6V8.7c0-4.5,3.3-8.7,11-8.7C19.7,0,22,0.3,22,0.3  l-0.2,6.3c0,0-2.3,0-4.9,0c-2.8,0-3.2,1.1-3.2,3v4.9H22l-0.4,6.8h-7.9V40H5.6z"></path>
+</svg>
+
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M4.8,0c2.7,0,4.8,2.2,4.8,4.9S7.5,9.7,4.8,9.7S0,7.5,0,4.9S2.2,0,4.8,0   M30.2,12.6c0.5,0,1.1,0,1.9,0.1c3.7,0.2,7.7,3.1,7.8,9.8C40,28,40,36.8,40,40h-8.3c0-3.3,0-10.1,0-14.9c0-2.2-1-5.1-4.5-5.1  c-3.9,0-4.8,3.6-4.8,5.1c0,4.6,0,12,0,14.9h-8.3c0-4.9,0.1-21.9,0.1-26.7c4.3,0,6.3,0,7.9,0c0,1.6,0,2.6,0,3.8  c1.3-2.6,4.9-4.3,6.4-4.4C29.1,12.7,29.7,12.6,30.2,12.6 M0.7,40H9V13.4H0.7V40z"></path>
+</svg>
+
+                              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" xml:space="preserve">
+<path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M26.5,0l0.3,0c0.5,0,0.9,0,1.5,0.1c2.1,0.1,3.6,0.4,4.9,0.9  c1.3,0.5,2.4,1.2,3.5,2.3c1.1,1.1,1.8,2.2,2.3,3.5c0.5,1.3,0.8,2.7,0.9,4.9c0,0.3,0,0.7,0,1l0,0.3c0,0.1,0,0.3,0,0.4l0,0.3  c0,1.1,0,2.3,0,5v2.8c0,2.9,0,4.2-0.1,5.3l0,0.3c0,0.4,0,0.8-0.1,1.3c-0.1,2.1-0.4,3.6-0.9,4.9c-0.5,1.3-1.2,2.4-2.3,3.5  c-1.1,1.1-2.2,1.8-3.5,2.3c-1.3,0.5-2.7,0.8-4.9,0.9C26.4,40,25.6,40,21.7,40l-0.6,0l-0.2,0l0,0l-1.6,0c-0.1,0-0.2,0-0.3,0l-0.6,0  c-2.6,0-3.8,0-4.9-0.1l-0.3,0c0,0-0.1,0-0.1,0l-0.3,0c-0.3,0-0.6,0-1,0c-2.1-0.1-3.6-0.4-4.9-0.9c-1.3-0.5-2.4-1.2-3.5-2.3  c-1.1-1.1-1.8-2.2-2.3-3.5c-0.5-1.3-0.8-2.7-0.9-4.9c0-0.5,0-0.9-0.1-1.3l0-0.3c0-1,0-2.2-0.1-4.7l0-1.6v-0.7l0,0L0,18  c0-2.8,0-3.9,0.1-5l0-0.3c0-0.3,0-0.6,0-1C0.2,9.6,0.6,8.2,1,6.9c0.5-1.3,1.2-2.4,2.3-3.5C4.5,2.2,5.6,1.6,6.9,1  c1.3-0.5,2.7-0.8,4.9-0.9c0.3,0,0.7,0,1,0l0.3,0C14.1,0,15.1,0,17.7,0L22,0C24.4,0,25.5,0,26.5,0z M20,9.2C14,9.2,9.2,14,9.2,20  c0,6,4.8,10.8,10.8,10.8S30.8,26,30.8,20C30.8,14,26,9.2,20,9.2z M20,13c3.9,0,7,3.1,7,7s-3.1,7-7,7s-7-3.1-7-7S16.1,13,20,13z   M31.2,6.2c-1.4,0-2.5,1.1-2.5,2.5s1.1,2.5,2.5,2.5s2.5-1.1,2.5-2.5S32.6,6.2,31.2,6.2z"></path>
+</svg>
+
+                            <span class="visually-hidden">Le lien s&#039;ouvre dans un nouvel onglet.</span>
+            </a>
+
+
+          
+                 </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","author":{"@id":"#identity"},"copyrightHolder":{"@id":"#identity"},"copyrightYear":"2023","creator":{"@id":"#creator"},"dateCreated":"2023-01-17T17:09:27+01:00","dateModified":"2026-01-21T14:33:13+01:00","datePublished":"2023-01-17T17:24:00+01:00","description":"Caritas Vaud est une association à but non lucratif s’engageant localement contre la pauvreté et l’exclusion depuis 1942","headline":"Caritas Vaud","image":{"@type":"ImageObject","url":"https://caritas-regio.ch/media/vd/_1200x630_crop_center-center_82_none/caritas-vaud-lavaux-lac-montagnes.jpg?mtime=1677751537"},"inLanguage":"fr-ch","mainEntityOfPage":"https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/","name":"caritas","publisher":{"@id":"#creator"},"url":"https://caritas-regio.ch/fr/a-propos-de-caritas/vaud"},{"@id":"#identity","@type":"Organization"},{"@id":"#creator","@type":"Organization"},{"@type":"BreadcrumbList","description":"Breadcrumbs list","itemListElement":[{"@type":"ListItem","item":"https://caritas-regio.ch/fr","name":"Home","position":1},{"@type":"ListItem","item":"https://caritas-regio.ch/fr/a-propos-de-caritas","name":"A propos de Caritas","position":2},{"@type":"ListItem","item":"https://caritas-regio.ch/fr/a-propos-de-caritas/vaud/","name":"Vaud","position":3}],"name":"Breadcrumbs"}]}</script><script src="/dist/js/app.js?v=1759912167"></script>
+<script src="/dist/js/ux.js?v=1759912167"></script></body>
+</html>
+<!-- Cached by Blitz on 2026-02-02T14:56:22+01:00 -->

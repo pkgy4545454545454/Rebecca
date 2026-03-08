@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+        <div class="header-actions"></div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-avatar" style="background: var(--error);">A</div>
+                <div>
+                    <div style="font-weight: 600;">Admin</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">Administrateur</div>
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#overview" class="active" onclick="showSection('overview', this)">📊 Vue d'ensemble</a></li>
+                <li><a href="#users" onclick="showSection('users', this)">👥 Utilisateurs</a></li>
+                <li><a href="#enterprises" onclick="showSection('enterprises', this)">🏢 Entreprises</a></li>
+                <li><a href="#orders" onclick="showSection('orders', this)">📦 Commandes</a></li>
+                <li style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 24px;">
+                    <a href="#" onclick="logout()" style="color: var(--error);">🚪 Déconnexion</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Access Denied -->
+            <div id="access-denied" style="display: none; text-align: center; padding: 120px 32px;">
+                <div style="font-size: 64px; margin-bottom: 24px;">🔒</div>
+                <h1 style="margin-bottom: 16px;">Accès refusé</h1>
+                <p style="color: var(--text-secondary); margin-bottom: 32px;">Vous devez être administrateur pour accéder à cette page.</p>
+                <a href="auth.html" class="btn btn-primary">Se connecter</a>
+            </div>
+
+            <!-- Admin Content -->
+            <div id="admin-content" style="display: none;">
+                <!-- Overview Section -->
+                <section id="section-overview" class="dashboard-section">
+                    <h1 style="margin-bottom: 32px;">Tableau de bord Admin</h1>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="icon">👥</div>
+                            <div class="value" id="stat-users">0</div>
+                            <div class="label">Utilisateurs</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">🏢</div>
+                            <div class="value" id="stat-enterprises">0</div>
+                            <div class="label">Entreprises</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">📦</div>
+                            <div class="value" id="stat-orders">0</div>
+                            <div class="label">Commandes</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">⭐</div>
+                            <div class="value" id="stat-reviews">0</div>
+                            <div class="label">Avis</div>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 48px;">
+                        <div class="card" style="padding: 24px;">
+                            <h3 style="margin-bottom: 16px;">Derniers utilisateurs</h3>
+                            <div id="recent-users"></div>
+                        </div>
+                        <div class="card" style="padding: 24px;">
+                            <h3 style="margin-bottom: 16px;">Dernières commandes</h3>
+                            <div id="recent-orders"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Users Section -->
+                <section id="section-users" class="dashboard-section" style="display: none;">
+                    <h1 style="margin-bottom: 32px;">Gestion des utilisateurs</h1>
+                    <div id="users-list">
+                        <div class="loading"><div class="spinner"></div></div>
+                    </div>
+                </section>
+
+                <!-- Enterprises Section -->
+                <section id="section-enterprises" class="dashboard-section" style="display: none;">
+                    <h1 style="margin-bottom: 32px;">Gestion des entreprises</h1>
+                    <div id="enterprises-list">
+                        <div class="loading"><div class="spinner"></div></div>
+                    </div>
+                </section>
+
+                <!-- Orders Section -->
+                <section id="section-orders" class="dashboard-section" style="display: none;">
+                    <h1 style="margin-bottom: 32px;">Toutes les commandes</h1>
+                    <div id="all-orders-list">
+                        <div class="loading"><div class="spinner"></div></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Check admin
+        if (!isLoggedIn()) {
+            document.getElementById('access-denied').style.display = 'block';
+        } else {
+            const user = getUser();
+            if (user.email !== 'admin@titelli.com') {
+                document.getElementById('access-denied').style.display = 'block';
+            } else {
+                document.getElementById('admin-content').style.display = 'block';
+                loadAdminData();
+            }
+        }
+
+        function showSection(sectionId, linkEl) {
+            document.querySelectorAll('.dashboard-section').forEach(s => s.style.display = 'none');
+            document.getElementById('section-' + sectionId).style.display = 'block';
+            document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+            if (linkEl) linkEl.classList.add('active');
+        }
+
+        async function loadAdminData() {
+            try {
+                const stats = await API.getAdminStats();
+                
+                // Stats
+                document.getElementById('stat-users').textContent = stats.stats.total_users;
+                document.getElementById('stat-enterprises').textContent = stats.stats.total_enterprises;
+                document.getElementById('stat-orders').textContent = stats.stats.total_orders;
+                document.getElementById('stat-reviews').textContent = stats.stats.total_reviews;
+
+                // Recent users
+                if (stats.recent_users.length > 0) {
+                    document.getElementById('recent-users').innerHTML = stats.recent_users.slice(0, 5).map(user => `
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border);">
+                            <div>
+                                <div style="font-weight: 600;">${user.first_name} ${user.last_name}</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">${user.email}</div>
+                            </div>
+                            <span class="badge ${user.user_type === 'entreprise' ? 'badge-certified' : 'badge-premium'}">
+                                ${user.user_type}
+                            </span>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('recent-users').innerHTML = '<p style="color: var(--text-secondary);">Aucun utilisateur</p>';
+                }
+
+                // Recent orders
+                if (stats.recent_orders.length > 0) {
+                    document.getElementById('recent-orders').innerHTML = stats.recent_orders.slice(0, 5).map(order => `
+                        <div style="display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border);">
+                            <div>
+                                <div style="font-weight: 600;">#${order.id.slice(0, 8)}</div>
+                                <div style="font-size: 12px; color: var(--text-secondary);">${formatDate(order.created_at)}</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-weight: 600;">${order.total.toFixed(2)} CHF</div>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('recent-orders').innerHTML = '<p style="color: var(--text-secondary);">Aucune commande</p>';
+                }
+
+                // Load full lists
+                loadUsers();
+                loadEnterprises();
+
+            } catch (e) {
+                console.error('Error loading admin data:', e);
+                showToast('Erreur de chargement', 'error');
+            }
+        }
+
+        async function loadUsers() {
+            try {
+                const { users } = await API.getAdminUsers();
+                
+                if (users.length > 0) {
+                    document.getElementById('users-list').innerHTML = `
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid var(--border);">
+                                    <th style="text-align: left; padding: 16px;">Utilisateur</th>
+                                    <th style="text-align: left; padding: 16px;">Email</th>
+                                    <th style="text-align: left; padding: 16px;">Type</th>
+                                    <th style="text-align: left; padding: 16px;">Statut</th>
+                                    <th style="text-align: right; padding: 16px;">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${users.map(user => `
+                                    <tr style="border-bottom: 1px solid var(--border);">
+                                        <td style="padding: 16px;">
+                                            <div style="font-weight: 600;">${user.first_name} ${user.last_name}</div>
+                                        </td>
+                                        <td style="padding: 16px; color: var(--text-secondary);">${user.email}</td>
+                                        <td style="padding: 16px;">
+                                            <span class="badge ${user.user_type === 'entreprise' ? 'badge-certified' : 'badge-premium'}">
+                                                ${user.user_type}
+                                            </span>
+                                        </td>
+                                        <td style="padding: 16px;">
+                                            ${user.is_verified ? '<span style="color: var(--success);">✓ Vérifié</span>' : '<span style="color: var(--text-muted);">Non vérifié</span>'}
+                                        </td>
+                                        <td style="padding: 16px; text-align: right;">
+                                            ${!user.is_certified ? `<button class="btn btn-small btn-secondary" onclick="verifyUser('${user.id}', true, false)">Certifier</button>` : ''}
+                                            ${!user.is_labeled ? `<button class="btn btn-small btn-gold" onclick="verifyUser('${user.id}', false, true)">Labelliser</button>` : ''}
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                } else {
+                    document.getElementById('users-list').innerHTML = '<p style="color: var(--text-secondary);">Aucun utilisateur</p>';
+                }
+            } catch (e) {
+                console.error('Error loading users:', e);
+            }
+        }
+
+        async function loadEnterprises() {
+            try {
+                const { enterprises } = await API.getEnterprises();
+                
+                if (enterprises.length > 0) {
+                    document.getElementById('enterprises-list').innerHTML = `
+                        <table style="width: 100%; border-collapse: collapse;">
+                            <thead>
+                                <tr style="border-bottom: 1px solid var(--border);">
+                                    <th style="text-align: left; padding: 16px;">Entreprise</th>
+                                    <th style="text-align: left; padding: 16px;">Catégorie</th>
+                                    <th style="text-align: left; padding: 16px;">Statut</th>
+                                    <th style="text-align: left; padding: 16px;">Note</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${enterprises.map(e => `
+                                    <tr style="border-bottom: 1px solid var(--border);">
+                                        <td style="padding: 16px;">
+                                            <div style="font-weight: 600;">${e.business_name}</div>
+                                            <div style="font-size: 12px; color: var(--text-secondary);">${e.email}</div>
+                                        </td>
+                                        <td style="padding: 16px; color: var(--text-secondary);">${e.category}</td>
+                                        <td style="padding: 16px;">
+                                            ${e.is_certified ? '<span class="badge badge-certified">Certifié</span>' : ''}
+                                            ${e.is_labeled ? '<span class="badge badge-labeled">Labellisé</span>' : ''}
+                                            ${e.is_premium ? '<span class="badge badge-premium">Premium</span>' : ''}
+                                        </td>
+                                        <td style="padding: 16px;">
+                                            ${e.rating > 0 ? `⭐ ${e.rating.toFixed(1)}` : '-'}
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    `;
+                } else {
+                    document.getElementById('enterprises-list').innerHTML = '<p style="color: var(--text-secondary);">Aucune entreprise</p>';
+                }
+            } catch (e) {
+                console.error('Error loading enterprises:', e);
+            }
+        }
+
+        async function verifyUser(userId, isCertified, isLabeled) {
+            try {
+                await API.verifyUser(userId, isCertified, isLabeled);
+                showToast('Utilisateur mis à jour !');
+                loadUsers();
+                loadAdminData();
+            } catch (e) {
+                showToast('Erreur', 'error');
+            }
+        }
+    </script>
+</body>
+</html>

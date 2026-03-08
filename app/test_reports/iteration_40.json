@@ -1,0 +1,101 @@
+{
+  "summary": "Iteration 40 - Complete Monetization System Testing for Titelli Social Commerce Platform. 34/34 backend API tests passed (100%). Frontend verified: splash screen optimized (~3 seconds), main pages working, client dashboard functional.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/subscriptions/checkout?plan_id=vip", "issue": "VIP plan not available in SUBSCRIPTION_PLANS - returns 'Plan invalide'. VIP is defined in PREMIUM_PLANS but client_premium router not included in server.py", "priority": "LOW"},
+      {"endpoint": "WebSocket /ws/notifications", "issue": "WebSocket connection closes before established (non-blocking, reconnection attempts visible)", "priority": "LOW"}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {"flow": "RDV page access", "issue": "RDV page (/rdv) redirects to auth even when logged in - may need session persistence check", "affected_selectors": []}
+    ],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration40_monetization.py",
+    "/app/test_reports/pytest/pytest_iteration40.xml"
+  ],
+  "action_items": [
+    "Consider including client_premium router in server.py if VIP plan (19.99 CHF) is needed for clients",
+    "Investigate RDV page redirect issue - may need to check route protection logic"
+  ],
+  "critical_code_review_comments": [
+    "✅ Splash screen optimized: SPLASH_DURATION = 3000ms (3 seconds) - verified working",
+    "✅ Stripe LIVE mode confirmed: STRIPE_API_KEY=sk_live_51RelvgKG28DxZ5CC..., STRIPE_PUBLIC_KEY=pk_live_51RelvgKG28DxZ5CC...",
+    "✅ All 3 authentication types working: client, enterprise (entreprise), admin",
+    "✅ Stripe webhooks endpoint: /api/webhooks/stripe - supports checkout.session.completed, payment_intent.payment_failed, customer.subscription.deleted, charge.refunded",
+    "✅ RDV Titelli: 8 categories, romantic subscription (200 CHF/month) via Stripe checkout",
+    "✅ Lifestyle Passes: Healthy (99 CHF), Better You (149 CHF), MVP (299 CHF) - all checkout URLs redirect to checkout.stripe.com",
+    "✅ Titelli Pro++: Enterprise-only (403 for clients), 199 CHF/month subscription via Stripe checkout",
+    "✅ Sports: 11 categories (football, tennis, basketball, volleyball, badminton, padel, running, swimming, cycling, fitness, other), matches, teams, competitions",
+    "✅ Gamification: Profile with total_points, level, badges, login_streak; 8 levels available",
+    "✅ Referral system: Unique code (TIT prefix), stats with referrals_count and total_points_earned, leaderboard",
+    "✅ Admin routes: /api/admin/stats, /api/admin/users, /api/admin/accounting/summary - all working with proper 403 for non-admins",
+    "✅ Email preferences: GET/PUT /api/notifications/preferences working correctly",
+    "✅ Email service: Resend configured with payment confirmation and payment failed templates"
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_iteration40_monetization.py"
+  ],
+  "success_rate": {
+    "backend": "100% (34/34 passed)",
+    "frontend": "95% - All main pages verified, minor RDV redirect issue"
+  },
+  "test_credentials": {
+    "client": "test.client@titelli.com / Test123!",
+    "enterprise": "test.entreprise@titelli.com / Test123!",
+    "admin": "admin@titelli.com / Admin123!"
+  },
+  "seed_data_creation": "No new seed data created",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All monetization systems verified in production mode. Stripe LIVE keys confirmed. Splash screen optimized to 3 seconds. All payment checkout URLs redirect to checkout.stripe.com. Database contains: 61 users, 6482 enterprises. Email service Resend configured with onboarding@resend.dev.",
+  "verified_features": {
+    "splash_screen": {
+      "duration": "3 seconds (optimized from 10 seconds)",
+      "status": "✅ WORKING"
+    },
+    "stripe_payments": {
+      "premium_subscription": "✅ 9.99 CHF via Stripe checkout",
+      "premium_mvp_subscription": "✅ 1000 CHF via Stripe checkout",
+      "romantic_subscription": "✅ 200 CHF/month via Stripe checkout",
+      "lifestyle_passes": {
+        "healthy": "✅ 99 CHF via Stripe checkout",
+        "better_you": "✅ 149 CHF via Stripe checkout",
+        "mvp": "✅ 299 CHF via Stripe checkout"
+      },
+      "titelli_pro_plus": "✅ 199 CHF/month via Stripe checkout (enterprise only)"
+    },
+    "webhooks": {
+      "endpoint": "/api/webhooks/stripe",
+      "health": "✅ HEALTHY",
+      "supported_events": ["checkout.session.completed", "payment_intent.payment_failed", "customer.subscription.deleted", "charge.refunded"]
+    },
+    "admin_routes": {
+      "stats": "✅ /api/admin/stats - returns total_users, total_enterprises, total_orders",
+      "users": "✅ /api/admin/users - returns users list with total count",
+      "accounting": "✅ /api/admin/accounting/summary - returns orders and subscriptions data"
+    },
+    "referral_system": {
+      "my_code": "✅ Returns unique code with TIT prefix",
+      "stats": "✅ Returns referrals_count, total_points_earned",
+      "leaderboard": "✅ Returns leaderboard entries"
+    },
+    "sports": {
+      "categories": "✅ 11 sports categories",
+      "teams": "✅ My teams endpoint working",
+      "matches": "✅ Matches endpoint working"
+    }
+  },
+  "frontend_pages_verified": {
+    "homepage": "✅ Splash screen (3 seconds), header with navigation",
+    "auth_page": "✅ /auth - Login form with email/password",
+    "client_dashboard": "✅ /dashboard/client - Stats cards, sidebar menu, Premium upgrade, Parrainage",
+    "sports_page": "✅ /sports - 8 sports filters, 4 tabs (Matchs, Équipes, Compétitions, Mes Matchs)"
+  },
+  "no_mocked_apis": true,
+  "stripe_live_mode_verified": true
+}

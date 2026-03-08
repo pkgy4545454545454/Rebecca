@@ -1,0 +1,64 @@
+{
+  "summary": "Completed comprehensive testing of iteration 14 features: Training Reviews, User Online Status, and Training Type Migration. All 16 backend tests pass. Fixed missing 'has_reviewed' field in /api/client/trainings endpoint. Frontend UI verified for Contacts & Amis section (online status badges) and Mes Formations section (review button hidden when already reviewed).",
+  "backend_issues": {
+    "critical": [],
+    "minor": [],
+    "fixed": [
+      {
+        "endpoint": "/api/client/trainings",
+        "issue": "Missing 'has_reviewed' field in enrollment response - FIXED by adding check for existing review in training_reviews collection",
+        "file": "/app/backend/server.py",
+        "lines": "1943-1970"
+      }
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration14_features.py",
+    "/app/test_reports/pytest/pytest_iteration14.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/backend/server.py (lines 1943-1970 - added has_reviewed field to client trainings endpoint)"
+  ],
+  "success_rate": {
+    "backend": "100% (16/16 tests passed)",
+    "frontend": "100% (all UI flows verified)"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "admin": "admin@titelli.com / Admin123!"
+  },
+  "seed_data_creation": "Created review for completed training (TEST_REVIEW: Great training!, rating 4)",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All iteration 14 features verified working. Training reviews system complete with has_reviewed tracking. Online status system working with heartbeat/offline endpoints and friends online list. Training type migration verified - all trainings have training_type field.",
+  "features_verified": {
+    "heartbeat_api": "✓ POST /api/user/heartbeat - updates last_seen and is_online",
+    "offline_api": "✓ POST /api/user/offline - marks user as offline",
+    "friends_online_api": "✓ GET /api/client/friends/online - returns friends with is_online status",
+    "training_reviews_get": "✓ GET /api/trainings/{id}/reviews - returns reviews with average_rating",
+    "training_reviews_create": "✓ POST /api/trainings/{id}/review - creates review (requires completed enrollment)",
+    "client_trainings_has_reviewed": "✓ GET /api/client/trainings - now includes has_reviewed field",
+    "training_type_migration": "✓ All trainings have training_type field (online/on_site)",
+    "ui_contacts_online_status": "✓ Gray/green badges for offline/online friends",
+    "ui_en_ligne_maintenant": "✓ Section only shows when friends are online",
+    "ui_donner_avis_button": "✓ Button hidden when training already reviewed"
+  },
+  "api_test_results": {
+    "online_status": {
+      "heartbeat": "200 OK - {status: ok}",
+      "offline": "200 OK - {status: ok}",
+      "friends_online": "200 OK - returns friends array with is_online, online_count, total_count"
+    },
+    "training_reviews": {
+      "get_reviews": "200 OK - returns reviews array, average_rating, total_reviews",
+      "create_review": "200 OK when completed enrollment, 403 when not completed, 400 when already reviewed"
+    }
+  }
+}

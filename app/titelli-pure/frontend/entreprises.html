@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprises - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html" class="active">Entreprises</a>
+        </nav>
+        <div class="header-actions">
+            <a href="auth.html" class="btn btn-primary">Connexion</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section style="padding: 140px 32px 60px; text-align: center; background: linear-gradient(to bottom, rgba(0, 71, 171, 0.1) 0%, var(--bg-default) 100%);">
+        <h1 style="font-size: 48px; margin-bottom: 16px;">Nos Entreprises</h1>
+        <p style="color: var(--text-secondary); font-size: 18px;">Découvrez les prestataires de confiance de Lausanne</p>
+    </section>
+
+    <!-- Filters -->
+    <section class="section" style="padding-top: 0;">
+        <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap; align-items: center;">
+            <input type="text" class="input" id="search-input" placeholder="Rechercher une entreprise..." style="max-width: 300px;">
+            <select class="input" id="category-filter" style="max-width: 250px;">
+                <option value="">Toutes les catégories</option>
+            </select>
+            <div style="display: flex; gap: 12px;">
+                <button class="btn btn-small" id="filter-certified" onclick="toggleFilter('certified')">
+                    ✓ Certifiés
+                </button>
+                <button class="btn btn-small" id="filter-labeled" onclick="toggleFilter('labeled')">
+                    ★ Labellisés
+                </button>
+                <button class="btn btn-small" id="filter-premium" onclick="toggleFilter('premium')">
+                    👑 Premium
+                </button>
+            </div>
+        </div>
+
+        <div id="enterprises-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+
+        <div id="no-results" style="display: none; text-align: center; padding: 64px;">
+            <div style="font-size: 48px; margin-bottom: 16px;">🔍</div>
+            <p style="color: var(--text-secondary);">Aucune entreprise trouvée</p>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" style="text-align: center; border-top: 1px solid var(--border);">
+        <h2 style="font-size: 32px; margin-bottom: 16px;">Vous êtes un prestataire ?</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 32px;">Rejoignez Titelli et développez votre activité</p>
+        <a href="auth.html?type=entreprise&mode=register" class="btn btn-gold">Inscrire mon entreprise</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-circle">T</div>
+                    <span class="logo-text">Titelli</span>
+                </div>
+                <p>Les meilleurs prestataires de la région de Lausanne.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="entreprises.html">Entreprises</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>📍 Lausanne, Suisse</li>
+                    <li>📧 contact@titelli.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Titelli. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        let allEnterprises = [];
+        let categories = [];
+        let filters = {
+            certified: false,
+            labeled: false,
+            premium: false,
+            category: '',
+            search: ''
+        };
+
+        // Check URL params
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('filter') === 'certified') filters.certified = true;
+        if (urlParams.get('filter') === 'labeled') filters.labeled = true;
+        if (urlParams.get('filter') === 'premium') filters.premium = true;
+
+        async function loadCategories() {
+            try {
+                const [services, products] = await Promise.all([
+                    API.getServiceCategories(),
+                    API.getProductCategories()
+                ]);
+                categories = [...services, ...products];
+                
+                const select = document.getElementById('category-filter');
+                select.innerHTML = '<option value="">Toutes les catégories</option>' + 
+                    categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+            } catch (e) {
+                console.error('Error loading categories:', e);
+            }
+        }
+
+        async function loadEnterprises() {
+            try {
+                const { enterprises } = await API.getEnterprises();
+                allEnterprises = enterprises;
+                applyFilters();
+                updateFilterButtons();
+            } catch (e) {
+                console.error('Error loading enterprises:', e);
+            }
+        }
+
+        function renderEnterprises(enterprises) {
+            const grid = document.getElementById('enterprises-grid');
+            const noResults = document.getElementById('no-results');
+
+            if (enterprises.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            grid.innerHTML = enterprises.map(enterprise => {
+                const badges = [];
+                if (enterprise.is_certified) badges.push('<span class="badge badge-certified">✓ Certifié</span>');
+                if (enterprise.is_labeled) badges.push('<span class="badge badge-labeled">★ Labellisé</span>');
+                if (enterprise.is_premium) badges.push('<span class="badge badge-premium">👑 Premium</span>');
+
+                return `
+                    <a href="entreprise.html?id=${enterprise.id}" class="card" data-testid="enterprise-card">
+                        <div class="card-image" style="background: linear-gradient(135deg, #0047AB 0%, #001a3f 100%); display: flex; align-items: center; justify-content: center; font-size: 48px; color: white;">
+                            ${enterprise.business_name.charAt(0)}
+                        </div>
+                        <div class="card-body">
+                            ${badges.length > 0 ? `<div class="badges">${badges.join('')}</div>` : ''}
+                            <h3 class="card-title">${enterprise.business_name}</h3>
+                            ${enterprise.slogan ? `<p class="card-slogan">${enterprise.slogan}</p>` : ''}
+                            <p class="card-description">${enterprise.description || ''}</p>
+                            <div class="card-footer">
+                                <span class="card-category">${getCategoryName(enterprise.category)}</span>
+                                ${enterprise.rating > 0 ? `<span class="card-rating">⭐ ${enterprise.rating.toFixed(1)} (${enterprise.review_count})</span>` : ''}
+                            </div>
+                        </div>
+                    </a>
+                `;
+            }).join('');
+        }
+
+        function getCategoryName(categoryId) {
+            const cat = categories.find(c => c.id === categoryId);
+            return cat ? cat.name : categoryId || 'Autre';
+        }
+
+        function toggleFilter(filterName) {
+            filters[filterName] = !filters[filterName];
+            updateFilterButtons();
+            applyFilters();
+        }
+
+        function updateFilterButtons() {
+            document.getElementById('filter-certified').className = 
+                `btn btn-small ${filters.certified ? 'btn-gold' : 'btn-secondary'}`;
+            document.getElementById('filter-labeled').className = 
+                `btn btn-small ${filters.labeled ? 'btn-gold' : 'btn-secondary'}`;
+            document.getElementById('filter-premium').className = 
+                `btn btn-small ${filters.premium ? 'btn-gold' : 'btn-secondary'}`;
+        }
+
+        function applyFilters() {
+            let filtered = allEnterprises;
+
+            if (filters.certified) {
+                filtered = filtered.filter(e => e.is_certified);
+            }
+            if (filters.labeled) {
+                filtered = filtered.filter(e => e.is_labeled);
+            }
+            if (filters.premium) {
+                filtered = filtered.filter(e => e.is_premium);
+            }
+            if (filters.category) {
+                filtered = filtered.filter(e => e.category === filters.category);
+            }
+            if (filters.search) {
+                const search = filters.search.toLowerCase();
+                filtered = filtered.filter(e => 
+                    e.business_name.toLowerCase().includes(search) || 
+                    (e.description && e.description.toLowerCase().includes(search)) ||
+                    (e.slogan && e.slogan.toLowerCase().includes(search))
+                );
+            }
+
+            renderEnterprises(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            filters.search = e.target.value;
+            applyFilters();
+        });
+
+        document.getElementById('category-filter').addEventListener('change', (e) => {
+            filters.category = e.target.value;
+            applyFilters();
+        });
+
+        // Init
+        loadCategories();
+        loadEnterprises();
+    </script>
+</body>
+</html>

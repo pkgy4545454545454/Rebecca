@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Espace - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions"></div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-avatar" id="user-avatar">C</div>
+                <div>
+                    <div id="user-name" style="font-weight: 600;">Client</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">Client</div>
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#overview" class="active" onclick="showSection('overview', this)">📊 Vue d'ensemble</a></li>
+                <li><a href="#orders" onclick="showSection('orders', this)">📦 Mes commandes</a></li>
+                <li><a href="#cashback" onclick="showSection('cashback', this)">💰 Cashback</a></li>
+                <li><a href="#favorites" onclick="showSection('favorites', this)">❤️ Favoris</a></li>
+                <li><a href="#agenda" onclick="showSection('agenda', this)">📅 Agenda</a></li>
+                <li><a href="#profile" onclick="showSection('profile', this)">👤 Mon profil</a></li>
+                <li style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 24px;">
+                    <a href="#" onclick="logout()" style="color: var(--error);">🚪 Déconnexion</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Section -->
+            <section id="section-overview" class="dashboard-section">
+                <h1 style="margin-bottom: 32px;">Bienvenue, <span id="welcome-name">Client</span> !</h1>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="icon">📦</div>
+                        <div class="value" id="stat-orders">0</div>
+                        <div class="label">Commandes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">💰</div>
+                        <div class="value" id="stat-cashback">0 CHF</div>
+                        <div class="label">Cashback disponible</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">⭐</div>
+                        <div class="value" id="stat-reviews">0</div>
+                        <div class="label">Avis donnés</div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 48px;">
+                    <h2 style="font-size: 24px; margin-bottom: 24px;">Découvrez nos prestataires</h2>
+                    <div class="hero-buttons" style="justify-content: flex-start;">
+                        <a href="services.html" class="btn btn-primary">Explorer les services</a>
+                        <a href="products.html" class="btn btn-secondary">Voir les produits</a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 48px;">
+                    <h3 style="font-size: 20px; margin-bottom: 16px;">Dernières commandes</h3>
+                    <div id="recent-orders" class="card" style="padding: 24px;">
+                        <p class="empty-state">Aucune commande pour le moment</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section id="section-orders" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mes commandes</h1>
+                <div id="orders-list">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+            </section>
+
+            <!-- Cashback Section -->
+            <section id="section-cashback" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mon Cashback</h1>
+                
+                <div class="card" style="padding: 32px; text-align: center; margin-bottom: 32px;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">💰</div>
+                    <div style="font-size: 36px; font-weight: 700; color: var(--secondary);" id="cashback-balance">0.00 CHF</div>
+                    <div style="color: var(--text-secondary); margin-top: 8px;">Solde cashback disponible</div>
+                </div>
+
+                <div class="card" style="padding: 24px;">
+                    <h3 style="margin-bottom: 16px;">Comment ça marche ?</h3>
+                    <ul style="color: var(--text-secondary); list-style: none;">
+                        <li style="margin-bottom: 12px;">✓ Gagnez du cashback sur chaque commande</li>
+                        <li style="margin-bottom: 12px;">✓ Utilisez votre cashback pour vos prochains achats</li>
+                        <li style="margin-bottom: 12px;">✓ Bonus spéciaux pour les membres Premium</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Favorites Section -->
+            <section id="section-favorites" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mes favoris</h1>
+                <div id="favorites-grid" class="grid grid-3">
+                    <div class="empty-state">
+                        <div class="icon">❤️</div>
+                        <p>Aucun favori pour le moment</p>
+                        <a href="entreprises.html" class="btn btn-primary" style="margin-top: 16px;">Découvrir les prestataires</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Agenda Section -->
+            <section id="section-agenda" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mon Agenda</h1>
+                <div class="card" style="padding: 32px; text-align: center;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">📅</div>
+                    <p style="color: var(--text-secondary);">Aucun rendez-vous prévu</p>
+                    <p style="color: var(--text-muted); font-size: 14px; margin-top: 8px;">
+                        Vos réservations de services apparaîtront ici
+                    </p>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="section-profile" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mon Profil</h1>
+                
+                <div class="card" style="padding: 32px; max-width: 600px;">
+                    <form id="profile-form">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="form-group">
+                                <label class="form-label">Prénom</label>
+                                <input type="text" class="input" name="first_name" id="profile-first-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Nom</label>
+                                <input type="text" class="input" name="last_name" id="profile-last-name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="input" name="email" id="profile-email" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Téléphone</label>
+                            <input type="tel" class="input" name="phone" id="profile-phone">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enregistrer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Check auth
+        if (!isLoggedIn()) {
+            window.location.href = 'auth.html';
+        }
+
+        const user = getUser();
+        if (user && user.user_type === 'entreprise') {
+            window.location.href = 'dashboard-entreprise.html';
+        }
+
+        // Show section
+        function showSection(sectionId, linkEl) {
+            // Hide all sections
+            document.querySelectorAll('.dashboard-section').forEach(s => s.style.display = 'none');
+            // Show target section
+            document.getElementById('section-' + sectionId).style.display = 'block';
+            // Update nav
+            document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+            if (linkEl) linkEl.classList.add('active');
+        }
+
+        // Load dashboard data
+        async function loadDashboard() {
+            if (!user) return;
+
+            // Update UI
+            document.getElementById('user-avatar').textContent = user.first_name.charAt(0);
+            document.getElementById('user-name').textContent = `${user.first_name} ${user.last_name}`;
+            document.getElementById('welcome-name').textContent = user.first_name;
+
+            // Profile form
+            document.getElementById('profile-first-name').value = user.first_name;
+            document.getElementById('profile-last-name').value = user.last_name;
+            document.getElementById('profile-email').value = user.email;
+            document.getElementById('profile-phone').value = user.phone || '';
+
+            // Load orders
+            try {
+                const orders = await API.getOrders();
+                document.getElementById('stat-orders').textContent = orders.length;
+
+                if (orders.length > 0) {
+                    document.getElementById('recent-orders').innerHTML = orders.slice(0, 5).map(order => `
+                        <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid var(--border);">
+                            <div>
+                                <div style="font-weight: 600;">Commande #${order.id.slice(0, 8)}</div>
+                                <div style="font-size: 14px; color: var(--text-secondary);">${formatDate(order.created_at)}</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-weight: 600;">${order.total.toFixed(2)} CHF</div>
+                                <div style="font-size: 12px; color: ${order.status === 'completed' ? 'var(--success)' : 'var(--secondary)'};">
+                                    ${order.status === 'completed' ? 'Terminée' : order.status === 'pending' ? 'En attente' : order.status}
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+
+                    document.getElementById('orders-list').innerHTML = orders.map(order => `
+                        <div class="card" style="padding: 24px; margin-bottom: 16px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <div style="font-weight: 600; font-size: 18px;">Commande #${order.id.slice(0, 8)}</div>
+                                    <div style="color: var(--text-secondary); font-size: 14px;">${formatDate(order.created_at)}</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div style="font-size: 24px; font-weight: 700;">${order.total.toFixed(2)} CHF</div>
+                                    <span class="badge ${order.status === 'completed' ? 'badge-labeled' : 'badge-certified'}">
+                                        ${order.status === 'completed' ? 'Terminée' : 'En cours'}
+                                    </span>
+                                </div>
+                            </div>
+                            <div style="margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+                                <div style="font-size: 14px; color: var(--text-secondary);">
+                                    ${order.items.length} article(s)
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('orders-list').innerHTML = '<div class="empty-state"><p>Aucune commande</p></div>';
+                }
+            } catch (e) {
+                console.error('Error loading orders:', e);
+            }
+
+            // Load cashback
+            try {
+                const cashback = await API.getCashbackBalance();
+                document.getElementById('stat-cashback').textContent = `${cashback.balance.toFixed(2)} CHF`;
+                document.getElementById('cashback-balance').textContent = `${cashback.balance.toFixed(2)} CHF`;
+            } catch (e) {
+                console.error('Error loading cashback:', e);
+            }
+        }
+
+        loadDashboard();
+    </script>
+</body>
+</html>

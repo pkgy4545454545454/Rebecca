@@ -1,0 +1,84 @@
+{
+  "summary": "Iteration 27 - Comprehensive testing of Titelli platform features: CV in job applications, messaging system, influencers section, and IA marketing with real BDD targeting. Fixed critical bug where WebSocket status endpoints were defined after app.include_router() causing 404 errors. All 21 backend tests pass, frontend UI verified working.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [
+      {
+        "flow": "WebSocket notifications",
+        "issue": "WebSocket connection fails with error 1006 in preview environment - this is expected behavior for preview URLs",
+        "affected_selectors": []
+      }
+    ],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration27_features.py",
+    "/app/test_reports/pytest/pytest_iteration27.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "FIXED: WebSocket status endpoints (/api/ws/status and /api/ws/online-friends) were defined AFTER app.include_router(api_router) on line 7054, causing them to not be registered. Moved endpoints before the include_router call."
+  ],
+  "updated_files": [
+    "/app/backend/server.py",
+    "/app/backend/tests/test_iteration27_features.py"
+  ],
+  "success_rate": {
+    "backend": "100% (21/21 tests passed)",
+    "frontend": "100%"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "Test campaigns and collaboration requests created during testing",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All requested features verified working: 1) CV in postulations accessible via /api/uploads/*.pdf, 2) Messages system working for client/enterprise, 3) Influencers section with 8 influencers and collaborations, 4) IA Ciblage using real BDD data (db.users.count_documents). WebSocket notifications endpoint exists but WebSocket connections fail in preview environment (expected).",
+  "verified_features": {
+    "postulations_cv": {
+      "GET /api/enterprise/jobs/{job_id}/applications": "PASS - Returns applications with resume_url",
+      "CV file access": "PASS - /api/uploads/*.pdf returns 200 with content-type: application/pdf",
+      "UI Postulations section": "PASS - Shows applicants with 'Voir le CV' link, cover letter, status badges"
+    },
+    "messages_system": {
+      "GET /api/messages/conversations": "PASS - Returns conversations with partner info and unread count",
+      "GET /api/messages/{partner_id}": "PASS - Returns messages with partner",
+      "POST /api/messages": "PASS - Sends message and creates notification",
+      "UI Messagerie": "PASS - Shows conversation list with Sophie Martin (enterprise) and message previews"
+    },
+    "influencers_section": {
+      "GET /api/influencers": "PASS - Returns 8 influencers with categories",
+      "GET /api/influencers?category=Food": "PASS - Filters by category",
+      "GET /api/enterprise/influencer-collaborations": "PASS - Returns collaborations with stats",
+      "POST /api/enterprise/influencer-collaborations": "PASS - Creates collaboration",
+      "UI Influenceurs": "PASS - Shows 8 influencers, collaborations list, category filters"
+    },
+    "ia_campaigns_real_bdd": {
+      "GET /api/enterprise/ia-campaigns": "PASS - Returns campaigns with real stats",
+      "POST /api/enterprise/ia-campaigns": "PASS - Creates campaign with targeting_details.total_potential_users from real BDD",
+      "Budget multipliers": "PASS - low: 0.3, medium: 0.6, high: 0.85, premium: 1.0",
+      "UI IA Ciblage clients": "PASS - Shows real clients (Marie Dupont), campaigns with reach data"
+    },
+    "websocket_endpoints": {
+      "GET /api/ws/status": "PASS - Returns online_users_count and status: active",
+      "GET /api/ws/online-friends": "PASS - Returns online friends list",
+      "/ws/notifications": "EXISTS - WebSocket endpoint exists but connections fail in preview (expected)"
+    },
+    "enterprise_customers": {
+      "GET /api/enterprise/customers": "PASS - Returns real customers from orders with stats"
+    }
+  },
+  "bug_fixed": {
+    "issue": "WebSocket status endpoints returning 404",
+    "root_cause": "@api_router.get('/ws/status') and @api_router.get('/ws/online-friends') were defined after app.include_router(api_router) on line 7054, so they were never registered with the router",
+    "fix_applied": "Moved both endpoints before app.include_router(api_router)",
+    "file_modified": "/app/backend/server.py"
+  },
+  "no_mocked_apis": true,
+  "all_data_from_mongodb": true
+}

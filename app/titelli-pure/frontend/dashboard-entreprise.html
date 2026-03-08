@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Entreprise - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions"></div>
+    </header>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-avatar" style="background: var(--secondary); color: black;" id="enterprise-avatar">E</div>
+                <div>
+                    <div id="enterprise-name" style="font-weight: 600;">Mon Entreprise</div>
+                    <div style="font-size: 12px; color: var(--text-secondary);">Entreprise</div>
+                </div>
+            </div>
+
+            <ul class="sidebar-nav">
+                <li><a href="#overview" class="active" onclick="showSection('overview', this)">📊 Vue d'ensemble</a></li>
+                <li><a href="#profile" onclick="showSection('profile', this)">🏢 Mon profil</a></li>
+                <li><a href="#services" onclick="showSection('services', this)">📋 Services/Produits</a></li>
+                <li><a href="#orders" onclick="showSection('orders', this)">📦 Commandes</a></li>
+                <li><a href="#reviews" onclick="showSection('reviews', this)">⭐ Avis clients</a></li>
+                <li><a href="#finances" onclick="showSection('finances', this)">💰 Finances</a></li>
+                <li><a href="#subscription" onclick="showSection('subscription', this)">👑 Abonnement</a></li>
+                <li style="margin-top: 24px; border-top: 1px solid var(--border); padding-top: 24px;">
+                    <a href="#" onclick="logout()" style="color: var(--error);">🚪 Déconnexion</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Overview Section -->
+            <section id="section-overview" class="dashboard-section">
+                <h1 style="margin-bottom: 32px;">Tableau de bord</h1>
+
+                <div id="no-enterprise-alert" class="card" style="padding: 32px; text-align: center; border-color: var(--secondary); display: none;">
+                    <div style="font-size: 48px; margin-bottom: 16px;">🏢</div>
+                    <h2 style="margin-bottom: 16px;">Créez votre profil entreprise</h2>
+                    <p style="color: var(--text-secondary); margin-bottom: 24px;">
+                        Pour commencer à vendre sur Titelli, vous devez d'abord créer votre profil entreprise.
+                    </p>
+                    <button class="btn btn-gold" onclick="showSection('profile', document.querySelector('[href=\'#profile\']'))">
+                        Créer mon profil
+                    </button>
+                </div>
+
+                <div id="enterprise-dashboard">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="icon">📦</div>
+                            <div class="value" id="stat-orders">0</div>
+                            <div class="label">Commandes</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">💰</div>
+                            <div class="value" id="stat-revenue">0 CHF</div>
+                            <div class="label">Chiffre d'affaires</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">⭐</div>
+                            <div class="value" id="stat-rating">-</div>
+                            <div class="label">Note moyenne</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="icon">📋</div>
+                            <div class="value" id="stat-services">0</div>
+                            <div class="label">Services/Produits</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 48px;">
+                        <h3 style="font-size: 20px; margin-bottom: 16px;">Dernières commandes</h3>
+                        <div id="recent-orders" class="card" style="padding: 24px;">
+                            <p class="empty-state">Aucune commande pour le moment</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Profile Section -->
+            <section id="section-profile" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Profil Entreprise</h1>
+                
+                <div class="card" style="padding: 32px;">
+                    <form id="enterprise-form">
+                        <div class="form-group">
+                            <label class="form-label">Nom de l'entreprise *</label>
+                            <input type="text" class="input" name="business_name" required placeholder="Mon Entreprise">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Slogan</label>
+                            <input type="text" class="input" name="slogan" placeholder="Votre slogan accrocheur">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Description *</label>
+                            <textarea class="input" name="description" required placeholder="Décrivez votre activité..."></textarea>
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="form-group">
+                                <label class="form-label">Catégorie *</label>
+                                <select class="input" name="category" id="category-select" required>
+                                    <option value="">Sélectionner...</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Téléphone *</label>
+                                <input type="tel" class="input" name="phone" required placeholder="+41 XX XXX XX XX">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Adresse *</label>
+                            <input type="text" class="input" name="address" required placeholder="Rue, Numéro">
+                        </div>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                            <div class="form-group">
+                                <label class="form-label">Email professionnel *</label>
+                                <input type="email" class="input" name="email" required placeholder="contact@entreprise.ch">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Site web</label>
+                                <input type="url" class="input" name="website" placeholder="https://www.entreprise.ch">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold" style="width: 100%; padding: 16px; margin-top: 16px;">
+                            Enregistrer le profil
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Services Section -->
+            <section id="section-services" class="dashboard-section" style="display: none;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 32px;">
+                    <h1>Services & Produits</h1>
+                    <button class="btn btn-primary" onclick="openAddServiceModal()">+ Ajouter</button>
+                </div>
+                
+                <div id="services-list" class="grid grid-3">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+            </section>
+
+            <!-- Orders Section -->
+            <section id="section-orders" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Commandes reçues</h1>
+                <div id="orders-list">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+            </section>
+
+            <!-- Reviews Section -->
+            <section id="section-reviews" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Avis clients</h1>
+                <div id="reviews-list">
+                    <div class="loading"><div class="spinner"></div></div>
+                </div>
+            </section>
+
+            <!-- Finances Section -->
+            <section id="section-finances" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mes Finances</h1>
+                
+                <div class="stats-grid" style="grid-template-columns: repeat(2, 1fr);">
+                    <div class="stat-card">
+                        <div class="icon">💵</div>
+                        <div class="value" id="finance-total">0 CHF</div>
+                        <div class="label">Total des ventes</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="icon">📊</div>
+                        <div class="value" id="finance-commission">0 CHF</div>
+                        <div class="label">Commissions Titelli</div>
+                    </div>
+                </div>
+
+                <div class="card" style="padding: 24px; margin-top: 32px;">
+                    <h3 style="margin-bottom: 16px;">Commissions</h3>
+                    <ul style="color: var(--text-secondary); list-style: none;">
+                        <li style="margin-bottom: 12px;">• Services : 5% par transaction</li>
+                        <li style="margin-bottom: 12px;">• Produits : 8% par transaction</li>
+                        <li style="margin-bottom: 12px;">• Premium : Commissions réduites de 2%</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Subscription Section -->
+            <section id="section-subscription" class="dashboard-section" style="display: none;">
+                <h1 style="margin-bottom: 32px;">Mon Abonnement</h1>
+                
+                <div class="grid grid-3">
+                    <div class="card" style="padding: 32px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 16px;">📋</div>
+                        <h3 style="margin-bottom: 8px;">Abonnement Annuel</h3>
+                        <div style="font-size: 36px; font-weight: 700; margin: 16px 0;">250 CHF</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 24px;">par an</div>
+                        <ul style="text-align: left; color: var(--text-secondary); font-size: 14px; margin-bottom: 24px;">
+                            <li style="margin-bottom: 8px;">✓ Profil entreprise</li>
+                            <li style="margin-bottom: 8px;">✓ Gestion des commandes</li>
+                            <li style="margin-bottom: 8px;">✓ Support standard</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="subscribe('annual')">Choisir</button>
+                    </div>
+
+                    <div class="card" style="padding: 32px; text-align: center; border-color: var(--secondary);">
+                        <div style="background: var(--secondary); color: black; padding: 4px 12px; border-radius: 999px; font-size: 12px; display: inline-block; margin-bottom: 16px;">Recommandé</div>
+                        <div style="font-size: 32px; margin-bottom: 16px;">👑</div>
+                        <h3 style="margin-bottom: 8px;">Premium Annuel</h3>
+                        <div style="font-size: 36px; font-weight: 700; margin: 16px 0; color: var(--secondary);">540 CHF</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 24px;">par an (45 CHF/mois)</div>
+                        <ul style="text-align: left; color: var(--text-secondary); font-size: 14px; margin-bottom: 24px;">
+                            <li style="margin-bottom: 8px;">✓ Tout l'abonnement standard</li>
+                            <li style="margin-bottom: 8px;">✓ Badge Premium</li>
+                            <li style="margin-bottom: 8px;">✓ Commissions réduites</li>
+                            <li style="margin-bottom: 8px;">✓ Visibilité prioritaire</li>
+                            <li style="margin-bottom: 8px;">✓ Support prioritaire</li>
+                        </ul>
+                        <button class="btn btn-gold" onclick="subscribe('premium_annual')">Devenir Premium</button>
+                    </div>
+
+                    <div class="card" style="padding: 32px; text-align: center;">
+                        <div style="font-size: 32px; margin-bottom: 16px;">⏱️</div>
+                        <h3 style="margin-bottom: 8px;">Premium Mensuel</h3>
+                        <div style="font-size: 36px; font-weight: 700; margin: 16px 0;">45 CHF</div>
+                        <div style="color: var(--text-secondary); margin-bottom: 24px;">par mois</div>
+                        <ul style="text-align: left; color: var(--text-secondary); font-size: 14px; margin-bottom: 24px;">
+                            <li style="margin-bottom: 8px;">✓ Tous les avantages Premium</li>
+                            <li style="margin-bottom: 8px;">✓ Sans engagement</li>
+                            <li style="margin-bottom: 8px;">✓ Résiliable à tout moment</li>
+                        </ul>
+                        <button class="btn btn-secondary" onclick="subscribe('premium_monthly')">Choisir</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Add Service Modal -->
+    <div class="modal-overlay" id="add-service-modal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Ajouter un service/produit</h2>
+                <button class="modal-close" onclick="closeAddServiceModal()">&times;</button>
+            </div>
+            <form id="add-service-form">
+                <div class="form-group">
+                    <label class="form-label">Type</label>
+                    <select class="input" name="type" required>
+                        <option value="service">Service</option>
+                        <option value="product">Produit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Nom *</label>
+                    <input type="text" class="input" name="name" required placeholder="Nom du service/produit">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Description *</label>
+                    <textarea class="input" name="description" required placeholder="Description..."></textarea>
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label class="form-label">Prix (CHF) *</label>
+                        <input type="number" class="input" name="price" required step="0.01" min="0" placeholder="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Catégorie *</label>
+                        <select class="input" name="category" id="service-category-select" required>
+                            <option value="">Sélectionner...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label style="display: flex; align-items: center; gap: 8px; cursor: pointer;">
+                        <input type="checkbox" name="is_delivery">
+                        <span>Livraison disponible</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Ajouter</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Check auth
+        if (!isLoggedIn()) {
+            window.location.href = 'auth.html';
+        }
+
+        const user = getUser();
+        if (user && user.user_type === 'client') {
+            window.location.href = 'dashboard-client.html';
+        }
+
+        let currentEnterprise = null;
+
+        function showSection(sectionId, linkEl) {
+            document.querySelectorAll('.dashboard-section').forEach(s => s.style.display = 'none');
+            document.getElementById('section-' + sectionId).style.display = 'block';
+            document.querySelectorAll('.sidebar-nav a').forEach(a => a.classList.remove('active'));
+            if (linkEl) linkEl.classList.add('active');
+        }
+
+        function openAddServiceModal() {
+            document.getElementById('add-service-modal').classList.add('active');
+        }
+
+        function closeAddServiceModal() {
+            document.getElementById('add-service-modal').classList.remove('active');
+        }
+
+        async function subscribe(packageType) {
+            try {
+                const result = await API.createCheckout(packageType);
+                if (result.url) {
+                    window.location.href = result.url;
+                } else {
+                    showToast(result.detail || 'Erreur de paiement', 'error');
+                }
+            } catch (e) {
+                showToast('Erreur de connexion', 'error');
+            }
+        }
+
+        async function loadCategories() {
+            try {
+                const [services, products] = await Promise.all([
+                    API.getServiceCategories(),
+                    API.getProductCategories()
+                ]);
+                
+                const categorySelect = document.getElementById('category-select');
+                const allCategories = [...services, ...products];
+                categorySelect.innerHTML = '<option value="">Sélectionner...</option>' + 
+                    allCategories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+
+                const serviceSelect = document.getElementById('service-category-select');
+                serviceSelect.innerHTML = '<option value="">Sélectionner...</option>' + 
+                    allCategories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+            } catch (e) {
+                console.error('Error loading categories:', e);
+            }
+        }
+
+        async function loadDashboard() {
+            if (!user) return;
+
+            document.getElementById('enterprise-avatar').textContent = user.first_name.charAt(0);
+            document.getElementById('enterprise-name').textContent = `${user.first_name} ${user.last_name}`;
+
+            await loadCategories();
+
+            // Check if enterprise profile exists
+            try {
+                const { enterprises } = await API.getEnterprises();
+                currentEnterprise = enterprises.find(e => e.user_id === user.id);
+
+                if (!currentEnterprise) {
+                    document.getElementById('no-enterprise-alert').style.display = 'block';
+                    document.getElementById('enterprise-dashboard').style.display = 'none';
+                } else {
+                    document.getElementById('no-enterprise-alert').style.display = 'none';
+                    document.getElementById('enterprise-dashboard').style.display = 'block';
+                    
+                    document.getElementById('enterprise-avatar').textContent = currentEnterprise.business_name.charAt(0);
+                    document.getElementById('enterprise-name').textContent = currentEnterprise.business_name;
+
+                    // Fill profile form
+                    const form = document.getElementById('enterprise-form');
+                    form.business_name.value = currentEnterprise.business_name;
+                    form.slogan.value = currentEnterprise.slogan || '';
+                    form.description.value = currentEnterprise.description;
+                    form.category.value = currentEnterprise.category;
+                    form.phone.value = currentEnterprise.phone;
+                    form.address.value = currentEnterprise.address;
+                    form.email.value = currentEnterprise.email;
+                    form.website.value = currentEnterprise.website || '';
+
+                    // Stats
+                    document.getElementById('stat-rating').textContent = 
+                        currentEnterprise.rating > 0 ? currentEnterprise.rating.toFixed(1) : '-';
+
+                    // Load services
+                    loadServices();
+
+                    // Load orders
+                    loadOrders();
+
+                    // Load reviews
+                    loadReviews();
+                }
+            } catch (e) {
+                console.error('Error loading enterprise:', e);
+            }
+        }
+
+        async function loadServices() {
+            if (!currentEnterprise) return;
+            
+            try {
+                const { items } = await API.getServicesProducts({ enterprise_id: currentEnterprise.id });
+                document.getElementById('stat-services').textContent = items.length;
+
+                if (items.length > 0) {
+                    document.getElementById('services-list').innerHTML = items.map(item => `
+                        <div class="card">
+                            <div class="card-image" style="background: linear-gradient(135deg, ${item.type === 'service' ? '#0047AB' : '#D4AF37'} 0%, #001a3f 100%); display: flex; align-items: center; justify-content: center;">
+                                <span style="background: rgba(255,255,255,0.2); padding: 4px 12px; border-radius: 999px; font-size: 12px;">
+                                    ${item.type === 'service' ? 'Service' : 'Produit'}
+                                </span>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">${item.name}</h3>
+                                <p class="card-description">${item.description}</p>
+                                <div class="card-footer">
+                                    <span style="font-weight: 700;">${item.price.toFixed(2)} CHF</span>
+                                    <button class="btn btn-small" style="background: var(--error); color: white;" onclick="deleteService('${item.id}')">
+                                        Supprimer
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('services-list').innerHTML = `
+                        <div class="empty-state">
+                            <p>Aucun service ou produit</p>
+                            <button class="btn btn-primary" style="margin-top: 16px;" onclick="openAddServiceModal()">Ajouter</button>
+                        </div>
+                    `;
+                }
+            } catch (e) {
+                console.error('Error loading services:', e);
+            }
+        }
+
+        async function loadOrders() {
+            try {
+                const orders = await API.getOrders();
+                document.getElementById('stat-orders').textContent = orders.length;
+
+                const totalRevenue = orders.reduce((sum, o) => sum + o.total, 0);
+                document.getElementById('stat-revenue').textContent = `${totalRevenue.toFixed(2)} CHF`;
+                document.getElementById('finance-total').textContent = `${totalRevenue.toFixed(2)} CHF`;
+                document.getElementById('finance-commission').textContent = `${(totalRevenue * 0.05).toFixed(2)} CHF`;
+
+                if (orders.length > 0) {
+                    document.getElementById('recent-orders').innerHTML = orders.slice(0, 5).map(order => `
+                        <div style="display: flex; justify-content: space-between; padding: 16px 0; border-bottom: 1px solid var(--border);">
+                            <div>
+                                <div style="font-weight: 600;">Commande #${order.id.slice(0, 8)}</div>
+                                <div style="font-size: 14px; color: var(--text-secondary);">${formatDate(order.created_at)}</div>
+                            </div>
+                            <div style="text-align: right;">
+                                <div style="font-weight: 600;">${order.total.toFixed(2)} CHF</div>
+                                <span class="badge ${order.status === 'completed' ? 'badge-labeled' : 'badge-certified'}">
+                                    ${order.status === 'completed' ? 'Terminée' : 'En cours'}
+                                </span>
+                            </div>
+                        </div>
+                    `).join('');
+
+                    document.getElementById('orders-list').innerHTML = orders.map(order => `
+                        <div class="card" style="padding: 24px; margin-bottom: 16px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <div>
+                                    <div style="font-weight: 600; font-size: 18px;">Commande #${order.id.slice(0, 8)}</div>
+                                    <div style="color: var(--text-secondary); font-size: 14px;">${formatDate(order.created_at)}</div>
+                                </div>
+                                <div style="text-align: right;">
+                                    <div style="font-size: 24px; font-weight: 700;">${order.total.toFixed(2)} CHF</div>
+                                    <span class="badge ${order.status === 'completed' ? 'badge-labeled' : 'badge-certified'}">
+                                        ${order.status === 'completed' ? 'Terminée' : 'En cours'}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('orders-list').innerHTML = '<div class="empty-state"><p>Aucune commande</p></div>';
+                }
+            } catch (e) {
+                console.error('Error loading orders:', e);
+            }
+        }
+
+        async function loadReviews() {
+            if (!currentEnterprise) return;
+
+            try {
+                const reviews = await API.getReviews(currentEnterprise.id);
+                
+                if (reviews.length > 0) {
+                    document.getElementById('reviews-list').innerHTML = reviews.map(review => `
+                        <div class="card" style="padding: 24px; margin-bottom: 16px;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                                <div style="font-weight: 600;">${review.user_name}</div>
+                                <div style="color: var(--secondary);">${'⭐'.repeat(review.rating)}</div>
+                            </div>
+                            <p style="color: var(--text-secondary);">${review.comment}</p>
+                            <div style="font-size: 12px; color: var(--text-muted); margin-top: 12px;">${formatDate(review.created_at)}</div>
+                        </div>
+                    `).join('');
+                } else {
+                    document.getElementById('reviews-list').innerHTML = '<div class="empty-state"><p>Aucun avis pour le moment</p></div>';
+                }
+            } catch (e) {
+                console.error('Error loading reviews:', e);
+            }
+        }
+
+        async function deleteService(id) {
+            if (!confirm('Supprimer ce service/produit ?')) return;
+            
+            try {
+                await API.deleteServiceProduct(id);
+                showToast('Supprimé avec succès');
+                loadServices();
+            } catch (e) {
+                showToast('Erreur lors de la suppression', 'error');
+            }
+        }
+
+        // Enterprise form submit
+        document.getElementById('enterprise-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+            
+            const data = {
+                business_name: form.business_name.value,
+                slogan: form.slogan.value,
+                description: form.description.value,
+                category: form.category.value,
+                phone: form.phone.value,
+                address: form.address.value,
+                email: form.email.value,
+                website: form.website.value
+            };
+
+            try {
+                if (currentEnterprise) {
+                    await API.updateEnterprise(currentEnterprise.id, data);
+                    showToast('Profil mis à jour !');
+                } else {
+                    const result = await API.createEnterprise(data);
+                    if (result.id) {
+                        showToast('Profil créé avec succès !');
+                        currentEnterprise = result;
+                        loadDashboard();
+                    } else {
+                        showToast(result.detail || 'Erreur', 'error');
+                    }
+                }
+            } catch (e) {
+                showToast('Erreur de connexion', 'error');
+            }
+        });
+
+        // Add service form
+        document.getElementById('add-service-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const form = e.target;
+
+            const data = {
+                type: form.type.value,
+                name: form.name.value,
+                description: form.description.value,
+                price: parseFloat(form.price.value),
+                category: form.category.value,
+                is_delivery: form.is_delivery.checked
+            };
+
+            try {
+                const result = await API.createServiceProduct(data);
+                if (result.id) {
+                    showToast('Ajouté avec succès !');
+                    closeAddServiceModal();
+                    form.reset();
+                    loadServices();
+                } else {
+                    showToast(result.detail || 'Erreur', 'error');
+                }
+            } catch (e) {
+                showToast('Erreur de connexion', 'error');
+            }
+        });
+
+        loadDashboard();
+    </script>
+</body>
+</html>

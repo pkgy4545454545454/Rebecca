@@ -1,0 +1,116 @@
+
+🛡️  SCRIPT DE SAUVEGARDE OPTIMISÉ
+
+============================================================
+🔄 COPIE OPTIMISÉE DE BASE DE DONNÉES MONGODB
+============================================================
+📤 Source: secondevie
+📥 Destination: rebecca
+🕐 Début: 2026-02-21 21:33:22
+============================================================
+✅ Connexion réussie!
+
+📋 88 collections à copier
+
+📁 email_preferences (1 docs)... ✅ 1
+📁 annonce_attente (4 docs)... ✅ 4
+📁 training_enrollments (4 docs)... ✅ 4
+📁 enterprise_contacts (6 docs)... ✅ 6
+📁 managers (5 docs)... ✅ 5
+📁 pro_subscriptions (11 docs)... ✅ 11
+📁 enterprise_favorites (1 docs)... ✅ 1
+📁 electromenager (6 docs)... ✅ 6
+📁 rangement (2 docs)... ✅ 2
+📁 donations (4 docs)... ✅ 4
+📁 client_investments (4 docs)... ✅ 4
+📁 enterprise_activity_likes (0 docs)... ⚪ vide
+📁 enterprises (8251 docs)... ✅ 8251
+📁 electronique (1 docs)... ✅ 1
+📁 investments (2 docs)... ✅ 2
+📁 enterprise_invoices (7 docs)... ✅ 7
+📁 profile_views (23 docs)... ✅ 23
+📁 client_agenda (0 docs)... ⚪ vide
+📁 fs.files (22 docs)... ✅ 22
+📁 romantic_subscriptions (16 docs)... ✅ 16
+📁 platform_settings (2 docs)... ✅ 2
+📁 job_applications (6 docs)... ✅ 6
+📁 annonce (9 docs)... ✅ 9
+📁 referral_codes (2 docs)... ✅ 2
+📁 services (18 docs)... ✅ 18
+📁 collection_d (1 docs)... ✅ 1
+📁 personal_providers (5 docs)... ✅ 5
+📁 friendships (18 docs)... ✅ 18
+📁 decoration (1 docs)... ✅ 1
+📁 user_gamification (3 docs)... ✅ 3
+📁 cashback_withdrawals (3 docs)... ✅ 3
+📁 video_orders (7 docs)... ✅ 7
+📁 subscriptions (8 docs)... ✅ 8
+📁 client_invitations (2 docs)... ✅ 2
+📁 registration_requests (7 docs)... ✅ 7
+📁 influencer_profiles (5 docs)... ✅ 5
+📁 wishlist (19 docs)... ✅ 19
+📁 orders (27 docs)... ✅ 27
+📁 agenda (11 docs)... ✅ 11
+📁 collection_gg (1 docs)... ✅ 1
+📁 offers (4 docs)... ✅ 4
+📁 commercial_gestures (1 docs)... ✅ 1
+📁 enterprise_activity_posts (9 docs)... ✅ 9
+📁 advertising (7 docs)... ✅ 7
+📁 notification_preferences (1 docs)... ✅ 1
+📁 lifestyle_subscriptions (20 docs)... ✅ 20
+📁 cuisine (5 docs)... ✅ 5
+📁 pending_subscriptions (19 docs)... ✅ 19
+📁 annonce_gg (2 docs)... ✅ 2
+📁 payment_transactions (29 docs)... ✅ 29
+📁 shared_offers (5 docs)... ✅ 5
+📁 notifications (313 docs)... ✅ 313
+📁 referral_uses (1 docs)... ✅ 1
+📁 training_reviews (1 docs)... ✅ 1
+📁 services_products (1747 docs)... ✅ 1747
+📁 documents (0 docs)... ⚪ vide
+📁 disponibilite_entreprise (2 docs)... ✅ 2
+📁 activity_posts (25 docs)... ✅ 25
+📁 pub_orders (23 docs)... ✅ 23
+📁 collection_xx (0 docs)... ⚪ vide
+📁 transactions (29 docs)... ✅ 29
+📁 fs.chunks (51 docs)... ✅ 51
+📁 client_documents (6 docs)... ✅ 6
+📁 reviews (19 docs)... ✅ 19
+📁 trainings (8 docs)... ✅ 8
+📁 team_members (5 docs)... ✅ 5
+📁 stock_movements (5 docs)... ✅ 5
+📁 points_history (3 docs)... ✅ 3
+📁 stock (1 docs)... ✅ 1
+📁 influencer_collaborations (5 docs)... ✅ 5
+📁 influencers (8 docs)... ✅ 8
+📁 annonce_frfr (3 docs)... ✅ 3
+📁 bookings (7 docs)... ✅ 7
+📁 products (274 docs)... ✅ 274
+📁 finance_transactions (8 docs)... ✅ 8
+📁 users (76 docs)... ✅ 76
+📁 expert_bookings (2 docs)... ✅ 2
+📁 jobs (12 docs)... ✅ 12
+📁 cashback_transactions (19 docs)... ✅ 19
+📁 collection_fr (1 docs)... ✅ 1
+📁 favorite_guests (0 docs)... ⚪ vide
+📁 ia_campaigns (18 docs)... ✅ 18
+📁 messages (14 docs)... ✅ 14
+📁 specialist_requests (1 docs)... ✅ 1
+📁 pending_certifications (3 docs)... ✅ 3
+📁 annonce_INVITE (1 docs)... ✅ 1
+📁 payment_cards (2 docs)... ✅ 2
+📁 enterprise_documents (7 docs)... ✅ 7
+
+============================================================
+✅ COPIE TERMINÉE!
+============================================================
+📊 Total: 11327 documents copiés
+🕐 Fin: 2026-02-21 21:35:08
+
+🔍 Vérification de 'rebecca':
+   • users: 76 documents
+   • enterprises: 8251 documents
+   • services_products: 1747 documents
+   • orders: 27 documents
+
+💡 Backup terminé dans la BDD 'rebecca'

@@ -1,0 +1,6 @@
+file 'produit_soins_beaute_v2.mp4'
+file 'produit_restaurant_gourmet_v2.mp4'
+file 'produit_chocolat_suisse_v2.mp4'
+file 'produit_montre_luxe_v2.mp4'
+file 'produit_vin_premium_v2.mp4'
+file 'produit_soins_beaute_v2.mp4'

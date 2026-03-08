@@ -1,0 +1,7 @@
+file 'titelli_v2_avant_pov_bureau.mp4'
+file 'titelli_v2_avant_stress.mp4'
+file 'titelli_v3_scroll_site.mp4'
+file 'screen_home_anim.mp4'
+file 'screen_entreprises_anim.mp4'
+file 'screen_dashboard_anim.mp4'
+file 'screen_produits_anim.mp4'

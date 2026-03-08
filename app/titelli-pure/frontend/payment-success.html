@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement réussi - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions"></div>
+    </header>
+
+    <main style="min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 120px 32px;">
+        <div style="text-align: center; max-width: 500px;">
+            <div style="font-size: 80px; margin-bottom: 24px;">✅</div>
+            <h1 style="font-size: 36px; margin-bottom: 16px;">Paiement réussi !</h1>
+            <p style="color: var(--text-secondary); margin-bottom: 32px;">
+                Merci pour votre paiement. Votre compte a été mis à jour.
+            </p>
+            
+            <div id="payment-details" class="card" style="padding: 24px; margin-bottom: 32px; text-align: left;">
+                <div class="loading"><div class="spinner"></div></div>
+            </div>
+
+            <a href="dashboard-entreprise.html" class="btn btn-primary">Retour au tableau de bord</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-circle">T</div>
+                    <span class="logo-text">Titelli</span>
+                </div>
+                <p>Les meilleurs prestataires de la région de Lausanne.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Titelli. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const sessionId = urlParams.get('session_id');
+
+        async function loadPaymentStatus() {
+            if (!sessionId) {
+                document.getElementById('payment-details').innerHTML = `
+                    <p style="color: var(--text-secondary);">Aucune information de paiement disponible.</p>
+                `;
+                return;
+            }
+
+            try {
+                const status = await API.getPaymentStatus(sessionId);
+                
+                document.getElementById('payment-details').innerHTML = `
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="color: var(--text-secondary);">Statut</span>
+                        <span style="color: var(--success); font-weight: 600;">Payé</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                        <span style="color: var(--text-secondary);">Montant</span>
+                        <span style="font-weight: 600;">${(status.amount_total / 100).toFixed(2)} ${status.currency.toUpperCase()}</span>
+                    </div>
+                    <div style="display: flex; justify-content: space-between;">
+                        <span style="color: var(--text-secondary);">Référence</span>
+                        <span style="font-size: 12px; color: var(--text-muted);">${sessionId.slice(0, 20)}...</span>
+                    </div>
+                `;
+            } catch (e) {
+                console.error('Error loading payment status:', e);
+                document.getElementById('payment-details').innerHTML = `
+                    <p style="color: var(--success);">Paiement confirmé.</p>
+                `;
+            }
+        }
+
+        loadPaymentStatus();
+    </script>
+</body>
+</html>

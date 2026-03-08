@@ -1,0 +1,104 @@
+{
+  "summary": "Iteration 22 - All new features tested and verified. 10/10 backend tests passed. Fixed minor bug in expert-services/book endpoint (enterprise_id None -> empty string). Wishlist heart button bug fix verified working on both ServiceProductCard and ServiceProductDetailPage.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {
+        "endpoint": "POST /api/expert-services/book",
+        "issue": "enterprise_id was None for non-enterprise users causing Stripe metadata validation error",
+        "status": "FIXED - changed None to empty string",
+        "priority": "LOW"
+      }
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration22_new_features.py",
+    "/app/test_reports/pytest/pytest_iteration22.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/backend/server.py (line 6137: enterprise_id = enterprise['id'] if enterprise else '')",
+    "/app/backend/tests/test_iteration22_new_features.py"
+  ],
+  "success_rate": {
+    "backend": "100% (10/10 tests passed)",
+    "frontend": "100% (wishlist button verified working)"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "TEST_Recommandation activity post created during testing",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All iteration 22 features verified: 1) Certifications system with 4 types (quality, eco, expert, premium_partner) - GET /api/certifications returns all, POST /api/enterprise/certifications/apply creates Stripe checkout, 2) Expert services with 4 types - GET /api/expert-services returns all, POST /api/expert-services/book creates Stripe checkout, 3) Client invoices - GET /api/client/invoices aggregates orders/subscriptions/trainings, 4) Activity posts - POST /api/client/activity-post creates public posts for friends feed, 5) Order fees verified: subtotal, transaction_fee (2.9%), management_fee (10%), 6) Investment commission verified: 12% on returns, 7) Wishlist bug fix verified: titelli_token used correctly, no React errors",
+  "verified_features": {
+    "certifications": {
+      "GET /api/certifications": "PASS - returns 4 certification types with prices",
+      "POST /api/enterprise/certifications/apply": "PASS - creates real Stripe checkout URL",
+      "GET /api/enterprise/certifications": "PASS - returns enterprise's active certifications",
+      "certification_types": ["quality (199 CHF)", "eco (149 CHF)", "expert (299 CHF)", "premium_partner (499 CHF)"]
+    },
+    "expert_services": {
+      "GET /api/expert-services": "PASS - returns 4 expert service types",
+      "POST /api/expert-services/book": "PASS - creates real Stripe checkout URL (after fix)",
+      "service_types": ["image_optimization (299 CHF)", "fiscal_optimization (399 CHF)", "marketing_strategy (499 CHF)", "business_starter (799 CHF)"]
+    },
+    "client_invoices": {
+      "GET /api/client/invoices": "PASS - returns invoices from orders, subscriptions, trainings",
+      "response_structure": {
+        "invoices": "array of invoice objects",
+        "total_invoices": "count",
+        "total_spent": "sum of paid invoices"
+      },
+      "invoice_fields": ["id", "type", "reference_id", "description", "subtotal", "transaction_fee", "total", "status", "date"]
+    },
+    "activity_posts": {
+      "POST /api/client/activity-post": "PASS - creates public activity post",
+      "GET /api/client/activity-posts": "PASS - returns user's posts",
+      "POST /api/client/activity-posts/{id}/like": "PASS - toggles like"
+    },
+    "order_fees": {
+      "subtotal": "PASS - base price of items",
+      "transaction_fee": "PASS - 2.9% of subtotal",
+      "management_fee": "PASS - 10% of subtotal (for enterprise payout)",
+      "total": "PASS - subtotal + transaction_fee"
+    },
+    "investment_commission": {
+      "POST /api/investments/{id}/invest": "PASS - includes 12% commission calculation",
+      "fees_breakdown": {
+        "management_fee_10pct": "PASS",
+        "transaction_fee_2_9pct": "PASS",
+        "titelli_commission_12pct": "PASS - 12% of expected returns",
+        "expected_net_return_to_you": "PASS - gross return minus commission"
+      }
+    },
+    "wishlist_bug_fix": {
+      "token_key": "PASS - uses 'titelli_token' instead of 'token'",
+      "ServiceProductCard": "PASS - heart button works, no React errors",
+      "ServiceProductDetailPage": "PASS - Favoris button works, toggles state",
+      "toast_notifications": "PASS - shows success/error messages correctly"
+    }
+  },
+  "stripe_integration": {
+    "status": "REAL PRODUCTION",
+    "verified_endpoints": [
+      "POST /api/enterprise/certifications/apply",
+      "POST /api/expert-services/book"
+    ],
+    "checkout_url_format": "https://checkout.stripe.com/c/pay/cs_live_*"
+  },
+  "no_mocked_apis": true,
+  "all_data_from_mongodb": true,
+  "titelli_fees_config": {
+    "management_fee": "10%",
+    "transaction_fee": "2.9%",
+    "investment_commission": "12%"
+  }
+}

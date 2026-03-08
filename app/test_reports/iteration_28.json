@@ -1,0 +1,72 @@
+{
+  "summary": "Iteration 28 - Complete testing of invoice generation, finance transactions, and enterprise documents. All 15 tests passed. Verified that order creation generates: 1) Invoice in enterprise_invoices with correct fees, 2) Document entry in enterprise_documents, 3) Finance transaction with enterprise_net amount. Verified order status updates correctly affect invoice status and finance transactions.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration28_invoices_finances.py",
+    "/app/test_reports/pytest/pytest_iteration28.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "Refactored routers in /app/backend/routers/ (auth.py, payments.py, websocket.py, shared.py) are well-structured but NOT YET integrated into server.py - this is noted as future work",
+    "TITELLI_FEES configuration is duplicated in both server.py (line 954) and routers/shared.py (line 25) - should be consolidated when routers are integrated"
+  ],
+  "updated_files": [
+    "/app/backend/tests/test_iteration28_invoices_finances.py"
+  ],
+  "success_rate": {
+    "backend": "100% (15/15 tests passed)",
+    "frontend": "N/A - backend only testing"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "Test orders created during testing with TEST_ prefix in item names",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All invoice and finance features verified working: 1) Order creation generates invoice with invoice_number, order_id, client_info, subtotal, fees (2.9% transaction, 10% management), enterprise_net, 2) Document entry created in enterprise_documents with category='factures', 3) Finance transaction created with enterprise_net as amount, 4) GET /api/enterprise/invoices returns list with summary, 5) GET /api/enterprise/invoices/{id} returns detail with related order, 6) GET /api/enterprise/documents?category=factures returns invoices, 7) GET /api/enterprise/finances returns transactions with summary, 8) Order status 'completed' marks invoice as 'paid', 9) Order status 'cancelled' removes finance transaction and marks invoice as 'cancelled'. Enterprise ID Spa Luxury: b34dd7dd-e7ac-4308-83c8-173163ebc819.",
+  "verified_features": {
+    "invoice_generation": {
+      "create_order_generates_invoice": "PASS - Invoice created in enterprise_invoices collection",
+      "invoice_contains_required_fields": "PASS - invoice_number, order_id, client_info, subtotal, transaction_fee, management_fee, enterprise_net, total_ttc, status",
+      "fee_calculations": "PASS - transaction_fee=2.9%, management_fee=10%, enterprise_net=subtotal-management_fee"
+    },
+    "document_generation": {
+      "create_order_generates_document": "PASS - Document entry created in enterprise_documents",
+      "document_category": "PASS - category='factures'",
+      "document_metadata": "PASS - Contains invoice_number, order_id, client_name, total, enterprise_net"
+    },
+    "finance_transaction_generation": {
+      "create_order_generates_transaction": "PASS - Transaction created in finance_transactions",
+      "transaction_structure": "PASS - enterprise_id, reference_id (order_id), amount (enterprise_net), transaction_type='income', category='ventes'"
+    },
+    "enterprise_invoices_endpoint": {
+      "GET /api/enterprise/invoices": "PASS - Returns invoices list with summary",
+      "GET /api/enterprise/invoices?status=pending": "PASS - Filters by status",
+      "GET /api/enterprise/invoices/{id}": "PASS - Returns invoice detail with related order",
+      "summary_fields": "PASS - total_invoices, pending_invoices, paid_invoices, total_pending_amount, total_paid_amount, total_net_revenue, total_fees_paid"
+    },
+    "enterprise_documents_endpoint": {
+      "GET /api/enterprise/documents?category=factures": "PASS - Returns invoice documents",
+      "merges_both_collections": "PASS - Merges documents and enterprise_documents collections"
+    },
+    "enterprise_finances_endpoint": {
+      "GET /api/enterprise/finances": "PASS - Returns transactions with summary",
+      "summary_fields": "PASS - total_income, total_expenses, net_profit, orders_revenue"
+    },
+    "order_status_updates": {
+      "completed_marks_invoice_paid": "PASS - Invoice status='paid', payment_date set",
+      "cancelled_removes_finance_transaction": "PASS - Finance transaction deleted, invoice status='cancelled'"
+    }
+  },
+  "no_mocked_apis": true,
+  "all_data_from_mongodb": true
+}

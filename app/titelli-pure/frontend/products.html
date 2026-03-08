@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits - Titelli</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <div class="logo-circle">T</div>
+            <span class="logo-text">Titelli</span>
+        </a>
+        <nav class="nav">
+            <a href="index.html">Accueil</a>
+            <a href="services.html">Services</a>
+            <a href="products.html" class="active">Produits</a>
+            <a href="entreprises.html">Entreprises</a>
+        </nav>
+        <div class="header-actions">
+            <a href="auth.html" class="btn btn-primary">Connexion</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section style="padding: 140px 32px 60px; text-align: center; background: linear-gradient(to bottom, rgba(212, 175, 55, 0.1) 0%, var(--bg-default) 100%);">
+        <h1 style="font-size: 48px; margin-bottom: 16px;">Les meilleurs produits</h1>
+        <p style="color: var(--text-secondary); font-size: 18px;">Découvrez les produits de qualité de la région de Lausanne</p>
+    </section>
+
+    <!-- Filters -->
+    <section class="section" style="padding-top: 0;">
+        <div style="display: flex; gap: 16px; margin-bottom: 32px; flex-wrap: wrap;">
+            <input type="text" class="input" id="search-input" placeholder="Rechercher..." style="max-width: 300px;">
+            <select class="input" id="category-filter" style="max-width: 250px;">
+                <option value="">Toutes les catégories</option>
+            </select>
+        </div>
+
+        <div class="categories" id="category-buttons"></div>
+
+        <div id="products-grid" class="grid grid-3">
+            <div class="loading"><div class="spinner"></div></div>
+        </div>
+
+        <div id="no-results" style="display: none; text-align: center; padding: 64px;">
+            <div style="font-size: 48px; margin-bottom: 16px;">🔍</div>
+            <p style="color: var(--text-secondary);">Aucun produit trouvé</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-circle">T</div>
+                    <span class="logo-text">Titelli</span>
+                </div>
+                <p>Les meilleurs prestataires de la région de Lausanne.</p>
+            </div>
+            <div>
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Produits</a></li>
+                    <li><a href="entreprises.html">Entreprises</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-title">Contact</h4>
+                <ul class="footer-links">
+                    <li>📍 Lausanne, Suisse</li>
+                    <li>📧 contact@titelli.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2024 Titelli. Tous droits réservés.
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        let allProducts = [];
+        let categories = [];
+        let currentCategory = '';
+
+        async function loadCategories() {
+            try {
+                categories = await API.getProductCategories();
+                
+                // Dropdown
+                const select = document.getElementById('category-filter');
+                select.innerHTML = '<option value="">Toutes les catégories</option>' + 
+                    categories.map(c => `<option value="${c.id}">${c.name}</option>`).join('');
+
+                // Buttons (show first 8)
+                const buttons = document.getElementById('category-buttons');
+                buttons.innerHTML = `<button class="category-btn active" onclick="filterByCategory('')">Tous</button>` +
+                    categories.slice(0, 8).map(c => `<button class="category-btn" onclick="filterByCategory('${c.id}')">${c.name}</button>`).join('');
+            } catch (e) {
+                console.error('Error loading categories:', e);
+            }
+        }
+
+        async function loadProducts() {
+            try {
+                const { items } = await API.getServicesProducts({ type: 'product' });
+                allProducts = items;
+                renderProducts(items);
+            } catch (e) {
+                console.error('Error loading products:', e);
+            }
+        }
+
+        function renderProducts(products) {
+            const grid = document.getElementById('products-grid');
+            const noResults = document.getElementById('no-results');
+
+            if (products.length === 0) {
+                grid.innerHTML = '';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            noResults.style.display = 'none';
+            grid.innerHTML = products.map(item => `
+                <div class="card" data-testid="product-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #D4AF37 0%, #A38320 100%); display: flex; align-items: center; justify-content: center;">
+                        <span style="background: var(--secondary); color: black; padding: 4px 12px; border-radius: 999px; font-size: 12px;">
+                            Produit
+                        </span>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="card-title">${item.name}</h3>
+                        <p class="card-description">${item.description}</p>
+                        <div class="card-footer">
+                            <span class="card-category">${getCategoryName(item.category)}</span>
+                            <span style="font-weight: 700; font-size: 18px; color: var(--secondary);">${item.price.toFixed(2)} CHF</span>
+                        </div>
+                        ${item.is_delivery ? '<div style="margin-top: 12px; font-size: 12px; color: var(--success);">🚚 Livraison disponible</div>' : ''}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function getCategoryName(categoryId) {
+            const cat = categories.find(c => c.id === categoryId);
+            return cat ? cat.name : categoryId;
+        }
+
+        function filterByCategory(categoryId) {
+            currentCategory = categoryId;
+            
+            // Update buttons
+            document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
+            if (categoryId === '') {
+                document.querySelector('.category-btn').classList.add('active');
+            } else {
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    if (btn.textContent === getCategoryName(categoryId)) btn.classList.add('active');
+                });
+            }
+
+            // Update dropdown
+            document.getElementById('category-filter').value = categoryId;
+
+            applyFilters();
+        }
+
+        function applyFilters() {
+            const search = document.getElementById('search-input').value.toLowerCase();
+            
+            let filtered = allProducts;
+
+            if (currentCategory) {
+                filtered = filtered.filter(p => p.category === currentCategory);
+            }
+
+            if (search) {
+                filtered = filtered.filter(p => 
+                    p.name.toLowerCase().includes(search) || 
+                    p.description.toLowerCase().includes(search)
+                );
+            }
+
+            renderProducts(filtered);
+        }
+
+        // Event listeners
+        document.getElementById('search-input').addEventListener('input', applyFilters);
+        document.getElementById('category-filter').addEventListener('change', (e) => {
+            filterByCategory(e.target.value);
+        });
+
+        // Init
+        loadCategories();
+        loadProducts();
+    </script>
+</body>
+</html>

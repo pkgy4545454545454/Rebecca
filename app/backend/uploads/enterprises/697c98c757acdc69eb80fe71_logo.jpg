@@ -1,0 +1,4860 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Include Page Designer Campaign Banner JavaScript and Styles only once here rather than at component level. -->
+<!-- There should only be one Campagin Banner added on a PD page. Multiple Banners is unsupported at the moment. -->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!--[if gt IE 9]><!-->
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/main-react.js"></script>
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/experience/einsteinCustomCarousel.js"></script>
+    
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/campaignBanner.js"></script>
+    
+
+
+<script>window.Properties = {"form":{"regex":{"email":"^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$","orderNumber":"^[A-Za-z0-9-]{8,15}$"},"error":{"required":"Ce champ est requis.","invalidEmail":"Merci de renseigner une adresse e-mail"},"orderTrack":{"error":{"missingNumber":"Le numéro de commande est requis.","invalidNumber":"Le numéro de commande est invalide."},"info":"Vous souhaitez accéder directement à une commande?","emailLabel":"E-mail","numberLabel":"Numéro de commande","submitBtn":"<span>Suivre ma commande</span><span>ou</span><span>Déclarer un retour</span>"}},"plp":{"seoCategory":{"buttonLabelOpen":"Lire plus","buttonLabelClose":"Fermer"}}}</script>
+
+<!--<![endif]-->
+<meta charset=UTF-8>
+
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+
+    <title>E-Boutique Officielle CAROLL – Vêtements femme et accessoires de mode</title>
+
+
+<meta name="description" content="D&eacute;couvrez l'ensemble des derni&egrave;res collections de v&ecirc;tements et accessoires pour femmes de Caroll"/>
+<meta name="keywords" content="Commerce Cloud Storefront Reference Architecture"/>
+
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwfdcbe423/images/favicons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="57x57" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw15a8e3d1/images/favicons/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwaa995e39/images/favicons/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw5758b62a/images/favicons/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwb34cbbf7/images/favicons/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwcc4408ed/images/favicons/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwe31c50b0/images/favicons/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw75dd1084/images/favicons/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwaf3f3e12/images/favicons/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw38505e36/images/favicons/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwbb59e158/images/favicons/android-icon-48x48.png" />
+<link rel="icon" type="image/png" sizes="72x72" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw360d45a4/images/favicons/android-icon-72x72.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwedfbe3f2/images/favicons/android-icon-96x96.png" />
+<link rel="icon" type="image/png" sizes="144x144" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwb983a7fe/images/favicons/android-icon-144x144.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwbfa45860/images/favicons/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw628b9e78/images/favicons/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwa00ec7e6/images/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="48x48" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw612f5886/images/favicons/favicon-48x48.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwab7b5ed4/images/favicons/favicon-96x96.png" />
+
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/css/global.css" />
+
+    <link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/css/experience/components/commerceAssets/campaignBanner.css" />
+
+
+
+
+    <meta name="google-site-verification" content="zMllVo3hbGgGIiT5xWtfCf3Yu2VwcX3B_ycGq9aZ4Xg" />
+
+
+
+
+
+
+
+
+
+<script>
+var pageContext = {"title":"Home page","type":"storefront","ns":"homepage"};
+var tc_vars = JSON.parse('{"env_template":"homepage","env_work":"prod","env_brand":"crl","page_name":"e-boutique_officielle_caroll_–_vêtements_femme_et_accessoires_de_mode","page_cat1":"","page_cat2":"","page_cat3":"","page_cat4":""}');
+var tc_container = '/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/v1770435148649/tagcommander/20260128/tc_CRL_FR.js';
+
+var tc_vars_session = JSON.parse('{"env_language":"fr","env_country":"fr","env_currency":"eur","env_channel":"desktop","user_logged":"anonyme","user_loyalty_program":"0","basket_id":"452c1e7cccde040995a65be329","order_id":null,"order_amount_ati_without_sf":"0","order_amount_tf_without_sf":"0","order_amount_ati_with_sf":"0","order_amount_tf_with_sf":"0","order_ship_ati":"0","order_ship_tf":"0","order_discount_ati":"0","order_discount_tf":"0","order_tax":"0","order_promo_code":[],"order_promo_code_value":[],"order_currency":"eur","order_products_number":"0","order_shipping_method":"","order_payment_methods":"","order_first_purchase":true,"order_products":[]}');
+
+</script>
+
+
+
+    <link rel="stylesheet" href="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/v1770435148649/giftcard-balance-CRL.css">  
+
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/css/skin/skin.css" />
+
+
+
+
+
+    <script type="text/javascript" src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+
+
+
+<link rel="canonical" href="https://www.caroll.com/fr_fr/"/>
+
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Europe/Paris",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bcmj-CRL_FR_SFRA';
+CQuotient.realm = 'BCMJ';
+CQuotient.siteId = 'CRL_FR_SFRA';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'fr_FR';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+
+
+
+</head>
+<body>
+
+<div class="page" data-action="Home-Show" data-querystring="" >
+
+
+
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/css/globale/flags.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/css/globale/styles.css" />
+<script type="text/javascript" id="globale-script-loader-data" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/geScriptLoader.js">
+{
+  "action": "Globale-ScriptLoaderData",
+  "queryString": "",
+  "locale": "fr_FR",
+  "clientJsUrl": "https://web.global-e.com/merchant/clientsdk/1555",
+  "apiVersion": "2.1.4",
+  "clientJsMerchantId": 1555,
+  "clientSettings": "{\"AllowClientTracking\":{\"Value\":\"true\"},\"CDNEnabled\":{\"Value\":\"true\"},\"CheckoutContainerSuffix\":{\"Value\":\"Global-e_International_Checkout\"},\"FT_IsAnalyticsSDKEnabled\":{\"Value\":\"true\"},\"FullClientTracking\":{\"Value\":\"true\"},\"IsMonitoringMerchant\":{\"Value\":\"true\"},\"IsV2Checkout\":{\"Value\":\"true\"},\"SetGEInCheckoutContainer\":{\"Value\":\"true\"},\"ShowFreeShippingBanner\":{\"Value\":\"true\"},\"TabletAsMobile\":{\"Value\":\"false\"},\"AdScaleClientSDKURL\":{\"Value\":\"https://web.global-e.com/merchant/GetAdScaleClientScript?merchantId=1555\"},\"AmazonUICulture\":{\"Value\":\"en-GB\"},\"AnalyticsSDKCDN\":{\"Value\":\"https://globale-analytics-sdk.global-e.com/PROD/bundle.js\"},\"AnalyticsUrl\":{\"Value\":\"https://services.global-e.com/\"},\"BfGoogleAdsEnabled\":{\"Value\":\"false\"},\"BfGoogleAdsLifetimeInDays\":{\"Value\":\"30\"},\"CashbackServiceDomainUrl\":{\"Value\":\"https://finance-cashback.global-e.com\"},\"CDNUrl\":{\"Value\":\"https://webservices.global-e.com/\"},\"ChargeMerchantForPrepaidRMAOfReplacement\":{\"Value\":\"false\"},\"CheckoutCDNURL\":{\"Value\":\"https://webservices.global-e.com/\"},\"EnableReplaceUnsupportedCharactersInCheckout\":{\"Value\":\"false\"},\"Environment\":{\"Value\":\"PRODUCTION\"},\"FinanceServiceBaseUrl\":{\"Value\":\"https://finance-calculations.global-e.com\"},\"FT_AnalyticsSdkEnsureClientIdSynchronized\":{\"Value\":\"true\"},\"FT_BrowsingStartCircuitBreaker\":{\"Value\":\"true\"},\"FT_BrowsingStartEventInsteadOfPageViewed\":{\"Value\":\"true\"},\"FT_IsLegacyAnalyticsSDKEnabled\":{\"Value\":\"true\"},\"FT_IsShippingCountrySwitcherPopupAnalyticsEnabled\":{\"Value\":\"false\"},\"FT_IsWelcomePopupAnalyticsEnabled\":{\"Value\":\"false\"},\"FT_PostponePageViewToPageLoadComplete\":{\"Value\":\"true\"},\"FT_UseGlobalEEngineConfig\":{\"Value\":\"true\"},\"FT_UtmRaceConditionEnabled\":{\"Value\":\"true\"},\"GTM_ID\":{\"Value\":\"GTM-PWW94X2\"},\"InternalTrackingEnabled\":{\"Value\":\"false\"},\"InvoiceEditorURL\":{\"Value\":\"documents/invoice_editor\"},\"PixelAddress\":{\"Value\":\"https://utils.global-e.com\"},\"RangeOfAdditionalPaymentFieldsToDisplayIDs\":{\"Value\":\"[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]\"},\"ReconciliationServiceBaseUrl\":{\"Value\":\"https://finance-reconciliation-engine.global-e.com\"},\"RefundRMAReplacementShippingTypes\":{\"Value\":\"[2,3,4]\"},\"RefundRMAReplacementStatuses\":{\"Value\":\"[9,11,12]\"},\"TrackingV2\":{\"Value\":\"true\"},\"UseShopifyCheckoutForPickUpDeliveryMethod\":{\"Value\":\"false\"},\"MerchantIdHashed\":{\"Value\":\"mZwG\"}}",
+  "clientJsDomain": "https://web.global-e.com",
+  "cookieDomain": "www.caroll.com",
+  "globaleOperatedCountry": false,
+  "performFrontendSiteUrlRedirect": true,
+  "getSiteRedirectUrl": "https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Globale-GetSiteRedirectUrl",
+  "globaleConvertPriceUrl": "https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Globale-ConvertPrice",
+  "country": "FR",
+  "currency": "EUR",
+  "culture": "fr",
+  "allowedSite": true,
+  "languageSwitcher": {
+    "enabled": true,
+    "countriesConfig": {
+      "BE": [
+        "fr_BE",
+        "nl_BE"
+      ],
+      "CH": [
+        "fr_CH",
+        "de_CH"
+      ]
+    },
+    "languagesConfig": {
+      "fr_BE": {
+        "culture": "fr",
+        "label": "French"
+      },
+      "nl_BE": {
+        "culture": "nl-NL",
+        "label": "Dutch"
+      },
+      "fr_CH": {
+        "culture": "fr",
+        "label": "French"
+      },
+      "de_CH": {
+        "culture": "de",
+        "label": "German"
+      }
+    },
+    "isLanguageDropDownShown": false,
+    "selectedLanguage": "fr_FR"
+  }
+}
+</script>
+
+
+
+
+
+<header data-sticky-effect-enabled='true'>
+    
+        <!-- Campaign Banner Component renders here -->
+        <div class="experience-region experience-headerbanner"></div>
+    
+    
+	 
+
+
+	<div class="header-banner slide-up d-none">
+    
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.js"></script>
+
+
+
+<!-- ------------------------ CAROUSSEL BANNER CRL ---------------------------- -->
+<div class="wrapper_carroussel_CRL">  
+    <div class="swiperCRL swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Banner 1 -->
+                <div class="swiper-slide">
+                    <a href="https://www.caroll.com/fr_fr/femme/amour-d-hiver" class="lienglobal"></a>
+                        <div>
+                            <p><strong>Amour d'hiver : -30%* sur les pulls et une sélection</strong></p>
+                        </div>
+                    
+                </div>
+
+                    <!-- Banner 2 -->
+               <div class="swiper-slide">
+                    <a href="https://www.caroll.com/fr_fr/femme/petits-prix" class="lienglobal"></a>
+                        <div>
+                            <p>Retrouvez nos petits prix :<strong>-10% dès 2 & -15% dès 3</strong></p>
+                        </div>
+                    
+                </div>
+
+
+                    <!-- Banner 3 -->
+                     <div class="swiper-slide">
+                        <div>
+                            <p><strong>Livraison offerte</strong> dès 100€ d'achat</p>
+						</div>
+                    </div> 
+
+            </div>
+    </div>
+</div>
+
+    
+<style>
+
+    .swiperCRL {
+        width: 100%;
+		position: relative;
+        display: block;
+		margin: auto;
+		overflow: hidden;
+    }
+
+    .swiperCRL a{
+        text-decoration: none;
+    }
+
+    .swiperCRL .swiper-wrapper {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .swiperCRL .swiper-wrapper .lienglobal{
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top:0;
+        left: 0;
+    }
+
+    .swiperCRL .swiper-wrapper .swiper-slide {
+        position: relative;
+		display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .swiperCRL .swiper-wrapper .swiper-slide p{
+       text-align: center;
+       font-size: clamp(11px, 2vw, 14px);
+		font-family: 'Montserrat', sans-serif;
+		margin: 0;
+		width: 100%;
+		background-color: #00112e;
+		padding: 5px;
+		color: #fff
+    }
+
+</style>
+
+<script>
+
+window.addEventListener("DOMContentLoaded", function(){      
+
+var swiperCRL = new Swiper('.swiperCRL', {
+    slidesPerView: 1,
+    spacebetween: 0, 
+    loopAdditionalSlides: 50,
+    draggable: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false
+      },
+    loop:true,
+    speed: 1500,
+    loopedSlides: 50,
+    });
+})    
+
+</script>
+        
+    
+    <div class="close-button">
+        <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+</div> 
+	
+    <nav role="navigation">
+        <div class="header header-container">
+            <div class="row bmnr-header">
+                <div class="col-12">
+                    <div id="btn-filters-wrapper-sticky"></div>
+                    <div class="navbar-header-container">
+                        <div class="navbar-header">
+                            
+                                <div class="d-none d-md-block">
+                                    <div class="brand center">
+                                        
+                                            <h1>
+    <a class="logo-home" href="/fr_fr/" title="Caroll logo">
+        <img loading="lazy" src="https://www.caroll.com/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw8bba1b1d/images/logo.svg" alt="Caroll logo" width="102" height="24"/>
+<span class="d-none">Caroll</span>
+    </a>
+</h1>
+                                        
+                                    </div>
+                                </div>
+                            
+                            
+
+
+
+<div class="pull-left">
+    <button class="navbar-button btn open-nav" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="icon-menu"></i>
+    </button>
+    
+        <div class="menu-utility-left">
+            
+                <div class="search">
+    
+
+<div class="site-search">
+    <div class="header-search js-btn-open-search">
+        <div class="header-search--icon">
+            <i class="icon-search"></i>
+        </div>
+        <div class="header-search--text">
+            <span>Recherche</span>
+            <span
+                data-typewriter
+                data-typewriter-words="pull, pantalon, chemise, robe, gilet, jupe"
+                class="header-search--typewriter"
+            >
+            </span>
+        </div>
+    </div>
+</div>
+
+</div>
+            
+        </div>
+    
+</div>
+
+
+    <div class="d-block d-md-none">
+        <div class="brand center">
+            
+                <h1>
+    <a class="logo-home" href="/fr_fr/" title="Caroll logo">
+        <img loading="lazy" src="https://www.caroll.com/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw8bba1b1d/images/logo.svg" alt="Caroll logo" width="102" height="24"/>
+<span class="d-none">Caroll</span>
+    </a>
+</h1>
+            
+        </div>
+    </div>
+
+
+<div class="pull-right">
+    
+        <div class="menu-utility-right">
+            
+                <div class="search">
+    
+
+<div class="site-search">
+    <div class="header-search js-btn-open-search">
+        <div class="header-search--icon">
+            <i class="icon-search"></i>
+        </div>
+        <div class="header-search--text">
+            <span>Recherche</span>
+            <span
+                data-typewriter
+                data-typewriter-words="pull, pantalon, chemise, robe, gilet, jupe"
+                class="header-search--typewriter"
+            >
+            </span>
+        </div>
+    </div>
+</div>
+
+</div>
+            
+                 
+            
+                <div class="store-selector hidden-sm-down text-center">
+    <a href="https://www.caroll.com/fr_fr/magasins/" class="header-store-link tc-link-store">
+        <i class="icon-store"></i>
+        <span class="user-message menu-icon-label">Magasins</span>
+    </a>
+    
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="popover popover-bottom not-connected popover-storelocator ">
+    
+        <div>
+            <div>
+                <h2 class="title">Nos magasins</h2>
+
+                <div class="subtitle">Connectez-vous pour retrouver votre magasin favori</div>
+            </div>
+            <div class="omniconnect">
+                <a class="btn btn-block btn-primary"
+                    href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=storeSelectorPopinNotConnected">Connectez-vous</a>
+            </div>
+            <div class="actions-separator">
+                <div class="separator-line"></div>
+                <span class="separator-or">Ou
+                </span>
+            </div>
+            <a href="https://www.caroll.com/fr_fr/magasins/" class="btn btn-block btn-secondary tc-link-store">
+                Trouver mon magasin
+            </a>
+        </div>
+    
+
+</div>
+    
+</div>
+            
+                    <div id="wishlistIds" class="wishlist hidden-sm-down text-center" data-wishlist-ids="">
+        
+        <a href="https://www.caroll.com/fr_fr/mon-espace-personnel/ma-wishlist/" class="wishlist-link tc-link-my-wishlist">
+            <i class="icon-favorite-empty"></i>
+            <span class="wishlist-quantity d-none">
+                0
+            </span>
+            <span class="user-message menu-icon-label">Favoris</span>
+        </a>
+    </div>
+
+
+            
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="popover-overlay"></div>
+
+    <div class="user not-connected">
+        <div class="omniconnect">
+            <button class="btn btn-link header-account-link" type="button" data-href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=header" aria-label="Login to your account">
+                <i class="icon-user"></i>
+                <span class="user-message menu-icon-label">Se connecter</span>
+                
+                    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="3fb2068b769ea2e374cf612bca" -->
+        <span class="tooltip d-none">
+        <p><strong>Connectez-vous pour profiter de vos avantages</strong></p>
+    </span>
+    <style>
+        .not-connected>.omniconnect {
+            position: relative;
+            cursor: pointer;
+            display: inline-block;
+            border: none;
+            padding: 0;
+            background: inherit;
+        }
+
+        .not-connected>.omniconnect .tooltip {
+            position: absolute;
+            top: 65px;
+            padding: 0 10px;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+            border-radius: 4px;
+            background-color: #d1aa65;
+            color: #fff;
+            min-width: 16rem;
+            transform: translate(-50%, calc(-1.5em / 2));
+            left: -27px;
+            animation: fade-in 0.5s linear forwards;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .not-connected>.omniconnect .tooltip {
+                top: 49px;
+                left: -41px;
+            }
+        }
+
+        .not-connected>.omniconnect .tooltip p {
+            text-align: center;
+        }
+
+        .not-connected>.omniconnect .tooltip::before {
+            border-left: solid transparent calc(1.5em / 2);
+            border-right: solid transparent calc(1.5em / 2);
+            border-bottom: solid #d1aa65 calc(1.5em);
+            bottom: 30px;
+            content: " ";
+            height: 0;
+            left: 77%;
+            margin-left: -10px;
+            position: relative;
+            width: 0;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (!sessionStorage.getItem('popupConnectionIncentive') &&  $('.not-connected .tooltip').length > 0 ) {
+            $('.not-connected .tooltip').removeClass('d-none');
+            sessionStorage.setItem('popupConnectionIncentive', 'true');
+        setTimeout(function()
+
+{             $('.not-connected .tooltip').fadeOut();         }
+
+, 9000);
+        }
+        $('body').on('hover:popoverMiniaccount', function()
+    
+    {         $('.not-connected .tooltip').addClass('d-none');     }
+    
+    );
+    });
+</script>
+    </div> <!-- End content-asset -->
+
+
+                
+            </button>
+        </div>
+        <div class="popover popover-bottom popover-user">
+            <div class="container">
+                <span class="guest-welcome">Votre compte</span>
+                <div class="content-not-connected">
+                    
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="9da1660c9e85b633dd510c947a" -->
+        <p style="text-align: center;">
+<strong>Connectez-vous ou créez un compte pour :</strong><br>
+<br>
+Profiter d'offres exclusives<br>
+<br>
+Cumuler vos ch&egrave;ques fid&eacute;lit&eacute;<br>
+<br>
+Ajouter vos favoris &agrave; la wishlist<br>
+&nbsp;</p>
+    </div> <!-- End content-asset -->
+
+
+                </div>
+                <div class="omniconnect">
+                    <button class="btn btn-block btn-primary" type="button" data-href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=header">
+                        Connectez-vous
+                    </button>
+                </div>
+                <div class="quick-access">
+                    
+    <div class="order-track-container" is-authenticated="false"
+        csrf-token="qTEdeaL4io2ZfFjwstDRNS5s7YlN1OhxKz8aDpIlpaoWTqoT2Ae_haS_GizKVUloyXiXs8FU458HlbOMQbfxFePA_CPpGF9FGxX9s69PwGPBhO9KrZ7IHuLYtzcx7YsvL6SyUpE-P5zuHD93_-EFegKnwMZG1UrlhauKjCXHY1wMHL5hG7M="
+        csrf-token-name="csrf_token"
+        order-number-name="dwfrm_orderTrack_number" order-number-value=""
+        email-name="dwfrm_orderTrack_email" email-value=""
+        submit-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Order-TrackAjax"
+        
+    >
+    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        (function() {
+            var _scs = [];
+            _scs.push(['app_key', "fcbf2d4d243e69bd5b7a36a8f3806f33"]);
+            
+            (function(d, s, id, _scs) {
+                if (d.getElementById(id)) return;
+                var i, sc = d.createElement(s), sj = d.getElementsByTagName(s)[0];
+                sc.id = id; sc.async = true; sc.src = "https://api.socloz.com/v4/js/popup.js";
+                for (i = 0; i < _scs.length; i++) {
+                    sc.setAttribute('data-socloz-'+_scs[i][0], _scs[i][1]);
+                }
+                sj.parentNode.insertBefore(sc, sj);
+            })(document, 'script', 'soclozjs', _scs);
+        })();
+    </script>
+
+            
+                <div class="minicart" data-action-url="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Cart-MiniCartShow">
+    <div class="minicart-total hide-link-med">
+    <a class="minicart-link" href="https://www.caroll.com/fr_fr/panier/" title="Panier 0 articles" aria-label="Panier 0 articles" aria-haspopup="true">
+        <i class="icon-basket"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+        <span class="user-message menu-icon-label">Panier</span>
+    </a>
+</div>
+
+<div class="minicart-total hide-no-link">
+    <i class="icon-basket"></i>
+        <span class="minicart-quantity">
+            0
+        </span>
+</div>
+<div class="popover popover-bottom"></div>
+
+</div>
+            
+        </div>
+    
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="main-menu">
+    <div class="main-menu-wrapper">
+        <div class="main-menu-header-wrapper">
+            <div class="burger-menu-header d-md-none">
+                <div class="search-component">
+                    
+
+<div class="site-search">
+    <div class="header-search js-btn-open-search">
+        <div class="header-search--icon">
+            <i class="icon-search"></i>
+        </div>
+        <div class="header-search--text">
+            <span>Recherche</span>
+            <span
+                data-typewriter
+                data-typewriter-words="pull, pantalon, chemise, robe, gilet, jupe"
+                class="header-search--typewriter"
+            >
+            </span>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+            <div class="close-main-menu">
+                <div class="icon-cross-light"></div>
+            </div>
+        </div>
+        <div class="main-menu-nav-wrapper">
+            <div class="main-menu-nav">
+                <div class="menu-level top-level show" role="navigation">
+                    <ul class="menu-level-list" role="menu">
+                        
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw8671e93d/Soldes_AmourH.png?sh=200'); order: 100;">
+                                        
+    <a href="/fr_fr/femme/amour-d-hiver" id="amour_hiver" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            <strong><span style="color:#ffffff;">&nbsp;<span style="background-color:#f7b999;"> Amour d'hiver </span>&nbsp;</span></strong></span>
+        
+    </a>
+
+                                    </li>
+                                
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw179e7111/Fond_promo_burger.jpg?sh=200'); order: 100;">
+                                        
+    <a href="/fr_fr/femme/nouveautes" id="nouveautes" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Nouveautés</span>
+        
+    </a>
+
+                                    </li>
+                                
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item sub-level"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw8ab41482/bm_pap.jpg?sh=200'); order: 100;">
+                                        
+    <a href="/fr_fr/femme/pret-a-porter" id="CF_010000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Prêt-à-porter</span>
+        
+    </a>
+
+                                        
+                                        
+                                        
+    
+<div class="menu-level menu-level-last  threecolumnstwopushs">
+    
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw8ab41482/bm_pap.jpg?sh=200');">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter" id="CF_010000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Prêt-à-porter</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+    <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="CF_010000">
+        <div class="last-level-items">
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" id="SCF_011000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pulls et Gilets</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" id="SCF_011000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pulls et Gilets</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/pulls-et-gilets" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_011000">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/pulls" id="TPF_011002" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pulls</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/gilets" id="TPF_011001" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Gilets</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pulls-et-gilets/ponchos" id="TPF_011003" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Ponchos</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" id="SCF_010600" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pantalons et Jeans</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" id="SCF_010600" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pantalons et Jeans</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010600">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/pantalons" id="TPF_010601" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pantalons</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/jeans" id="TPF_010602" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Jeans</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans/combinaisons" id="TPF_010603" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Combinaisons</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" id="SCF_010200" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Blouses et Chemises</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" id="SCF_010200" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Blouses et Chemises</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/blouses-et-chemises" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010200">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises/blouses" id="TPF_010201" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Blouses</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises/chemises" id="TPF_010202" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Chemises</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/robes" id="SCF_010100" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Robes</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" id="SCF_010900" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Manteaux et Trenchs</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" id="SCF_010900" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Manteaux et Trenchs</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010900">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/trenchs" id="TPF_010902" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Trenchs</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/manteaux" id="TPF_010901" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Manteaux</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/doudounes" id="TPF_010903" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Doudounes</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/parkas" id="TPF_010904" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Parkas</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/fausses-fourrures" id="TPF_010905" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Fausses fourrures</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" id="SCF_010800" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Vestes et Blousons</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" id="SCF_010800" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Vestes et Blousons</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010800">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons/vestes" id="TPF_010804" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Vestes</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons/blazers" id="TPF_010801" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Blazers</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/jupes" id="SCF_010400" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Jupes</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/tops-et-t-shirts" id="SCF_010300" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Tops et T-shirts</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/tailleurs" id="tailleurs" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Tailleurs</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections" id="nos_selections" role="menuitem"
+        class="item-link  no-clickable">
+        
+        
+        <span>
+            Nos sélections</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections" id="nos_selections" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Nos sélections</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/nos-selections" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="nos_selections">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/top-ventes" id="best-sellers" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Top Ventes</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/nos-cachemires" id="cachemire" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Cachemire<span style="color:#E00A19;"></span></span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/soie" id="soie" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Soie</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/velours" id="selection-velours" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Velours</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/nos-indispensables" id="nos_indispensables" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Nos indispensables</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/pret-a-porter/nos-selections/caroll-s-engage" id="collection_engagee" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Caroll s'engage</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/carte-cadeau-35967728273291000.html" id="mea-categ-2" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            <strong>La carte cadeau</strong></span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/nos-selections/capsule" id="mea-categ" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            <strong><span style="color:#0D2ABF;">Collection CRLL</span></strong></span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/pret-a-porter/decouvrir" id="decouvrir" role="menuitem"
+        class="item-link  no-clickable">
+        
+        
+        <span>
+            Découvrir</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/pret-a-porter/decouvrir" id="decouvrir" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Découvrir</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/pret-a-porter/decouvrir" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="decouvrir">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="https://www.caroll.com/fr_fr/collectionmanteaux.html" id="Lookbook" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Lookbook</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="https://www.caroll.com/fr_fr/stylesdepantalons.html" id="guide-pantalon" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Guide Pantalon</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="https://www.caroll.com/fr_fr/guiderobe.html" id="guide-robe" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Guide Robe</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            </div>
+        
+        </div>
+        
+            <div class="last-level-pushs">
+                
+
+                
+	 
+
+
+	
+
+
+
+<div class="pushs-template two-pushs">
+
+<div class="push-container">
+
+
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/amour-d-hiver"><img alt="" height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwf2a43e5f/menu/push-image-menu-amour.jpg" title="" width="350" /></a></p>
+</div>
+
+
+
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/nouveautes"><img alt="" height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwabf7d204/menu/push-image-menu-soft.jpg" title="" width="350" /></a></p>
+</div>
+
+
+</div>
+</div>
+ 
+	
+            </div>
+        
+    </ul>
+</div>
+
+                                    </li>
+                                
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item sub-level"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw81609870/Burger_Access_05janv.png?sh=200'); order: 100;">
+                                        
+    <a href="/fr_fr/femme/sacs-et-accessoires" id="CF_020000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sacs et Accessoires</span>
+        
+    </a>
+
+                                        
+                                        
+                                        
+    
+<div class="menu-level menu-level-last  twocolumnstwopushs">
+    
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw81609870/Burger_Access_05janv.png?sh=200');">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/sacs-et-accessoires" id="CF_020000" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sacs et Accessoires</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/sacs-et-accessoires" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+    <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="CF_020000">
+        <div class="last-level-items">
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes" id="SCF_020500" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Foulards et Echarpes</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes" id="SCF_020500" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Foulards et Echarpes</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_020500">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes/echarpes" id="TPF_020501" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Echarpes</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/foulards-et-echarpes/foulards" id="TPF_020502" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Foulards</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/sacs" id="SCF_020100" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sacs</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/sacs-et-accessoires/sacs" id="SCF_020100" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sacs</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/sacs-et-accessoires/sacs" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_020100">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/sacs/petite-maroquinerie" id="TPF_020103" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Petite maroquinerie</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/chaussures" id="SCF_020200" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Chaussures</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/ceintures" id="SCF_020300" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Ceintures</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item sub-level" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires" id="SCF_020600" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Autres accessoires</span>
+        
+            <i class="icon-light-arrow-full-right d-md-none"></i>
+        
+    </a>
+
+
+                            
+                            <div class="menu-level no-slide-level">
+                                
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires" id="SCF_020600" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Autres accessoires</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+                                <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_020600">
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires/bonnets" id="TPF_020601" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Bonnets</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires/chapeau" id="TPF_020604" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Chapeaux</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires/casquette" id="TPF_020605" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Casquettes</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires/gants" id="TPF_020603" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Gants</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                        
+                                        <li class="list-item" role="presentation" style="order: 100;">
+                                            
+    <a href="/fr_fr/femme/sacs-et-accessoires/autres-accessoires/autres" id="TPF_020606" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Autres</span>
+        
+    </a>
+
+
+                                        </li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+            </div>
+        
+        </div>
+        
+            <div class="last-level-pushs">
+                
+
+                
+	 
+
+
+	
+
+
+
+<div class="pushs-template two-pushs">
+
+<div class="push-container">
+
+
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/sacs-et-accessoires"><img alt="" height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwcb96e8b5/menu/push-image-menu-access-nov.jpg" title="" width="350" /></a></p>
+</div>
+
+
+</div>
+</div>
+ 
+	
+            </div>
+        
+    </ul>
+</div>
+
+                                    </li>
+                                
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item sub-level"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw39674046/bm_marque.jpg?sh=200'); order: 100;">
+                                        
+    <a href="https://www.caroll.com/fr_fr/lamarque.html" id="lamarque" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            La Marque</span>
+        
+    </a>
+
+                                        
+                                        
+                                        
+    
+<div class="menu-level menu-level-last  onecolumnfourpushs">
+    
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dw39674046/bm_marque.jpg?sh=200');">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="https://www.caroll.com/fr_fr/lamarque.html" id="lamarque" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            La Marque</span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="https://www.caroll.com/fr_fr/lamarque.html" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+    <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="lamarque">
+        <div class="last-level-items">
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/lamarque.html" id="la-marque-caroll" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Notre Univers</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/caroll-associations.html" id="caroll-association" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Caroll Soutient</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/nosengagements.html" id="caroll-association-1" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Nos Engagements</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/collectionmanteaux.html" id="caroll-lookbook" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Lookbook</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="https://www.caroll.com/fr_fr/guide-entretien-guideentretien.html" id="guide-entretien" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Guide d'entretien</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+            </div>
+        
+        </div>
+        
+            <div class="last-level-pushs">
+                
+
+                
+	 
+
+
+	
+
+
+
+<div class="pushs-template four-push">
+
+<div class="push-container">
+
+
+<div class="push-item">
+<p><a href="http://www.caroll.com/fr_fr/lamarque.html"><img src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw12d4e79a/menu/Push_menu_LaMarque - FR.jpg" width="350" height="213" alt="La marque" loading="lazy" /></a></p>
+</div>
+
+
+
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/nosengagements.html"><img src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw334ba895/menu/Push_menu_Engagements - FR.jpg" width="350" height="213" alt="Nos engagements" loading="lazy" /></a></p>
+</div>
+
+
+</div>
+</div>
+ 
+	
+            </div>
+        
+    </ul>
+</div>
+
+                                    </li>
+                                
+                            
+                                
+                                
+                                
+                                    <li
+                                        class="list-item sub-level"
+                                        role="presentation"
+                                        style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dwb54f72d8/petits-prix.jpg?sh=200'); order: 100;">
+                                        
+    <a href="/fr_fr/femme/petits-prix" id="petits-prix" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            <div class="cont-cat">
+  <div>
+    <p class="txt_principal">
+      <strong><span style="color:#FFFFFF;"><span style="background-color:#08245c;">&nbsp;Petits Prix&nbsp;</span></span></strong>
+    </p>
+  </div>
+  <div>
+    <p><span class="mention_v_mob">-10% dès 2 & -15% dès 3</span></p> <!-- classe "clignotant" supprimée -->
+  </div>
+</div>
+
+<style>
+.cont-cat {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 10px;
+}
+
+.cont-cat p {
+  margin: 0;
+}
+
+.cont-cat .mention_v_mob {
+  display: block;
+  font-size: 12px;
+  color: #FFFFFF !important;
+  padding-top: 1px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .cont-cat .txt_principal {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cont-cat .mention_v_mob {
+    display: none;
+  }
+}
+</style></span>
+        
+    </a>
+
+                                        
+                                        
+                                        
+    
+<div class="menu-level menu-level-last  threecolumnstwopushs">
+    
+
+
+
+<div class="mobile-level-nav d-md-none">
+    <div class="mobile-level-nav-header-container" style="background-image:url('https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_storefront/default/dwb54f72d8/petits-prix.jpg?sh=200');">
+        <button class="btn go-to-prev-level">
+            <i class="icon-backspace-arrow"></i>
+            
+    <a href="/fr_fr/femme/petits-prix" id="petits-prix" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            <div class="cont-cat">
+  <div>
+    <p class="txt_principal">
+      <strong><span style="color:#FFFFFF;"><span style="background-color:#08245c;">&nbsp;Petits Prix&nbsp;</span></span></strong>
+    </p>
+  </div>
+  <div>
+    <p><span class="mention_v_mob">-10% dès 2 & -15% dès 3</span></p> <!-- classe "clignotant" supprimée -->
+  </div>
+</div>
+
+<style>
+.cont-cat {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 10px;
+}
+
+.cont-cat p {
+  margin: 0;
+}
+
+.cont-cat .mention_v_mob {
+  display: block;
+  font-size: 12px;
+  color: #FFFFFF !important;
+  padding-top: 1px;
+}
+
+
+@media screen and (min-width: 768px) {
+  .cont-cat .txt_principal {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .cont-cat .mention_v_mob {
+    display: none;
+  }
+}
+</style></span>
+        
+    </a>
+
+        </button>
+        <div class="close-main-menu open">
+            <div class="icon-cross-light"></div>
+        </div>
+    </div>
+    <button data-href="/fr_fr/femme/petits-prix" class="btn go-to-category">
+        Voir tout
+    </button>
+</div>
+    <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="petits-prix">
+        <div class="last-level-items">
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/pulls-et-gilets" id="petits_prix_pulls" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pulls et Gilets</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/blouses-et-chemises" id="petits_prix_blouses_chemises" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Blouses et Chemises</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/pantalons" id="petits_prix_pantalons" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Pantalons</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/robes" id="petits_prix_robes" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Robes</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/vestes-et-blousons" id="petits_prix_vestes" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Vestes et Blousons</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/tops-et-t-shirts" id="petits_prix_tops_tshirts" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Tops et T-shirts</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/jupes" id="petits_prix_jupes" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Jupes</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/manteaux" id="petits_prix_manteaux" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Manteaux</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/sacs-et-accessoires" id="petits_prix_accessoires" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sacs et Accessoires</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        
+            <div class="last-level-col">
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/selection-a-moins-de-35%E2%82%AC" id="selection_35" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sélection -35€</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/selection-a-moins-de-65%E2%82%AC" id="selection_65" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sélection -65€</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+                    
+                    
+                        <li class="list-item" role="presentation" style="order: 100;">
+                            
+    <a href="/fr_fr/femme/petits-prix/selection-a-moins-de-130%E2%82%AC" id="selection_130" role="menuitem"
+        class="item-link ">
+        
+        
+        <span>
+            Sélection -130€</span>
+        
+    </a>
+
+                        </li>
+                    
+                
+            </div>
+        
+        </div>
+        
+            <div class="last-level-pushs">
+                
+
+                
+	 
+
+
+	
+
+
+
+<div class="pushs-template two-pushs">
+
+<div class="push-container">
+
+
+<div class="push-item">
+<p><a href="https://www.caroll.com/fr_fr/femme/petits-prix"><img alt="" height="175" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw4d026e3c/menu/Push_Menu__Petitsprix FR -hori Boost1.jpg" title="" width="350" /></a></p>
+</div>
+
+
+</div>
+</div>
+ 
+	
+            </div>
+        
+    </ul>
+</div>
+
+                                    </li>
+                                
+                            
+                        
+                    </ul>
+                    <div class="mobile-menu-link d-md-none">
+                        
+                    </div>
+                    <div class="user-info d-md-none">
+                        
+    <ul class="user-links" aria-label="My account navigation">
+    <li class="omniconnect hideInMobileMenu" redirect-url="https://www.caroll.com/fr_fr/mon-espace-personnel/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=1" class="tc-link-my-account">
+            <i class="icon-user"></i>
+            <span>Se connecter</span>
+        </a>
+    </li>
+
+    <li class="omniconnect hideInMobileMenu" redirect-url="https://www.caroll.com/fr_fr/mes-offres/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=5" class="tc-link-my-offers">
+            <i class="icon-offers"></i>
+            <span>Vos offres</span>
+        </a>
+    </li>
+
+    <li class="omniconnect hideInMobileMenu" redirect-url="https://www.caroll.com/fr_fr/mon-espace-personnel/mes-commandes/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=6" class="tc-link-order-history">
+            <i class="icon-orders"></i>
+            <span>Vos commandes et retours</span>
+        </a>
+    </li>
+
+    <div class="hideInMobileMenu">
+        <li class="mobile-wishlist-link favorite-icon  ">
+    <a href="https://www.caroll.com/fr_fr/mon-espace-personnel/ma-wishlist/" class="wishlist-link tc-link-my-wishlist">
+        <i class="icon-favorite-empty"></i>
+        <span class="wishlist-quantity d-none"></span>
+        <span>Vos favoris</span>
+    </a>
+</li>
+
+    </div>
+
+    
+        <li class="omniconnect " redirect-url="https://www.caroll.com/fr_fr/mon-compte-fidelite/">
+            <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=7" class="tc-link-loyalty">
+                <i class="icon-account-loyalty"></i>
+                <span>Votre compte fid&eacute;lit&eacute;</span>
+            </a>
+        </li>
+     
+
+    <div class="">
+        <li>
+    <a href="https://www.caroll.com/fr_fr/magasins/" class="header-store-link tc-link-store">
+        <i class="icon-store"></i>
+        <span>Trouver une boutique</span>
+    </a>
+</li>
+
+    </div>
+    
+    <div class="">
+        <li>
+    <a href="/fr_fr/aide/" class="tc-need-help-link">
+        <i class="icon-account-help"></i>
+        <span>Besoin d'aide ?</span>
+    </a>
+</li>
+
+    </div>
+</ul>
+    <div class="mobile-menu-personnalized-content">
+        
+	 
+
+	
+    </div>
+    
+    <div class="order-track-container" is-authenticated="false"
+        csrf-token="fCPNSA5rP9K3SM92EM5TvmWV0WpDGS3O1wQhecn-qb61C613UUnAFs8qGOYKUy4DIOmQWtq6S9tWIF2LiLqbnI0xyVL-hc9PZeElxONYdo7t8QHjg5rLlfb3jkjNgVeBUMXfGyeGc-K_vfAC8mOkV-GRQWtQi6zN07_AuFKnAc51kCx8gj8="
+        csrf-token-name="csrf_token"
+        order-number-name="dwfrm_orderTrack_number" order-number-value=""
+        email-name="dwfrm_orderTrack_email" email-value=""
+        submit-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Order-TrackAjax"
+        
+    >
+    </div>
+
+
+
+
+
+<div class="menu-sticky-mobile">
+    
+        <ul class="user-links-stickyMenu menu-utility-sticky-mobile">
+            
+                
+    <li class="omniconnect menu-sticky-mobile-user-element" redirect-url="https://www.caroll.com/fr_fr/mon-espace-personnel/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=1" class="tc-link-account">
+            <i class="icon-user"></i>
+            <span class="user-message menu-icon-label">Se connecter</span>
+        </a>
+    </li>
+
+
+            
+                
+
+    <li class="omniconnect menu-sticky-mobile-offers-element" redirect-url="https://www.caroll.com/fr_fr/mes-offres/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=5" class="tc-link-my-offers">
+            <i class="icon-offers"></i><span>Offres</span>
+        </a>
+    </li>
+
+            
+                
+
+    <li class="omniconnect menu-sticky-mobile-orders-element" redirect-url="https://www.caroll.com/fr_fr/mon-espace-personnel/mes-commandes/">
+        <a href="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=headerLinksNotConnected&amp;oAuthReentryEndpoint=6" class="tc-link-order-history">
+            <i class="icon-orders"></i>
+            <span>Commandes</span>
+        </a>
+    </li>
+
+            
+                <li class="menu-sticky-mobile-wishlist-element wishlist text-center mobile-wishlist-link">
+    <a href="https://www.caroll.com/fr_fr/mon-espace-personnel/ma-wishlist/" class="wishlist-link tc-link-my-wishlist">
+        <i class="icon-favorite-empty"></i>
+        <span class="user-message menu-icon-label">Wishlist</span>
+                <span class="wishlist-quantity d-none">
+            0
+        </span>
+    </a>
+</li>
+            
+        </ul>
+    
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+        <div class="search-mobile header-container d-sm-none">
+            
+
+<div class="site-search">
+    <div class="header-search js-btn-open-search">
+        <div class="header-search--icon">
+            <i class="icon-search"></i>
+        </div>
+        <div class="header-search--text">
+            <span>Recherche</span>
+            <span
+                data-typewriter
+                data-typewriter-words="pull, pantalon, chemise, robe, gilet, jupe"
+                class="header-search--typewriter"
+            >
+            </span>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="search-form-container">
+<div class="search-form-wrapper" suggest="true">
+<span class="search-callout-message">
+Bonjour, que recherchez-vous ?
+</span>
+
+<form role="search" action="/fr_fr/recherche/" method="get" name="simpleSearch" class="search-form">
+<fieldset>
+<label class="visually-hidden" for="q">global.searchcatalog</label>
+<i class="icon-search"></i>
+<input
+type="text" id="q"
+name="q" value=""
+placeholder="Rechercher"
+data-urlattribute="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/SearchServices-GetSuggestions"
+/>
+<input type="hidden" name="lang" value="" />
+<button type="submit" class="btn simple-search-btn">
+<span class="d-none d-sm-block">
+Rechercher
+</span>
+<span class="d-block d-sm-none">
+Voir
+</span>
+</button>
+<div class="last-search-terms">
+<ul class="last-search-terms-list">
+<li class="list-item label-item">
+<span>Vos derni&egrave;res recherches</span>
+<div class="delete-history">
+<span>Effacer</span>
+</div>
+</li>
+</ul>
+</div>
+</fieldset>
+</form>
+
+</div>
+<div class="slot-global-nohits">
+
+	 
+
+
+	
+
+
+
+
+<div class="bloc-search-soldes-50">
+  <div class="nohits-keyword-tendance">
+    <p><span class="vi-normale">Nos </span><span class="vi-bold">recommandations</span></p>
+  </div>
+  <div class="bulles-keyword-container">
+    <div class="wrap_keyword">
+<a class="tag-item tag-rouge" href="https://www.caroll.com/fr_fr/femme/amour-d-hiver">Amour d'hiver</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pulls-et-gilets">Pulls</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans">Pantalons</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/manteaux-et-trenchs">Manteaux</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons">Vestes</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/robes">Robes</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/pret-a-porter/blouses-et-chemises">Chemises</a>
+      <a class="tag-item" href="https://www.caroll.com/fr_fr/femme/petits-prix">Petits Prix</a>
+
+    </div>
+  </div>
+</div>
+
+<style>
+.bloc-search-soldes-50 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: var(--skin-body-font);
+}
+
+.nohits-keyword-tendance {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nohits-keyword-tendance p {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 300;
+  color: #00112e;
+}
+
+.vi-normale {
+  color: #00112e;
+  font-weight: 300;
+}
+
+.vi-bold {
+  color: #00112e;
+  font-weight: 800;
+}
+
+.bulles-keyword-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap_keyword {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.tag-item {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f0f0f0;
+  color: #00112e;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.tag-item:hover {
+  background-color: #00112e;
+  color: #fff;
+  border-color: #00112e;
+  text-decoration: none;
+}
+
+.tag-rouge {
+  background-color: #f7b999;
+  color: #ffffff;
+  border-color: #f7b999;
+}
+
+.tag-rouge:hover {
+  background-color: #00112e;
+  border-color: #00112e;
+  text-decoration: none;
+}
+
+</style>
+
+<div class="visuel_categories"><span>Si vous ne trouvez pas ce que vous cherchez, laissez-nous vous aider !</span>
+<div class="grid_categories">
+<a class="item" href="https://www.caroll.com/fr_fr/femme/amour-d-hiver">
+<img alt="op" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dwc50bd454/push_search/push-search-amour.jpg" /> 
+</a>
+<a class="item" href="https://www.caroll.com/fr_fr/femme/nouveautes">
+<img alt="carte-cadeau" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw08da7141/push_search/push-search-soft.jpg" title="" /> 
+</a>
+<a class="item" href="https://www.caroll.com/fr_fr/femme/petits-prix">
+<img alt="op" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw0a3ea81e/push_search/Petitsprix FR.jpg" /> 
+</a>
+<a class="item" href="https://www.caroll.com/fr_fr/newsletter/inscription/">
+ <img alt="Newsletter" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/dw458971b1/push_search/Push_Search_Newsletter_FR.jpg" title="" />
+ </a>
+</div>
+</div>
+<style type="text/css">.visuel_categories {
+  max-width: 890px;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+.grid_categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.grid_categories .item {
+  width: 100%;
+}
+.grid_categories .item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+/* Mobile (max 768px): 2 images par ligne */
+@media (max-width: 768px) {
+  .grid_categories {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+
+ 
+	
+</div>
+<button type="button" class="btn btn-link js-btn-close-search"><i class="icon-close" aria-hidden="true"></i></button>
+
+</div>
+<div role="main" id="maincontent">
+
+
+
+<div class="storepage" id="homepage">
+<div class="container">
+<div class="row">
+<div class=" col-12"><div class="experience-component experience-commerce_assets-contentAsset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="5257052c7d2903baead02e330c" -->
+        <link rel="stylesheet" href="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/2026/s7_fevrier/style_crl_ahiver.css"><script src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/2026/s7_fevrier/script_crl_ahiver.js" defer></script>    
+<!-- HANKEN --> <link rel="stylesheet" href="https://use.typekit.net/knd4fmg.css">
+<!-- ACUMIN --> <link rel="stylesheet" href="https://use.typekit.net/rse3lkm.css">
+<!--  HELIVETICA --><link rel="stylesheet" href="https://use.typekit.net/dys7uyp.css">
+  
+
+<div class="ResetBloc">
+
+
+                <div class="crl_ahiver_b1 AllBloc" data-lang="fr_fr" data-bloc="bloc1">
+
+                        <div class="bloctxt_b1">
+                        <p class="titre AllTxt">&nbsp;</p> 
+                         <p class="offre AllTxt">&nbsp;</p>
+                           <a href="https://www.caroll.com/fr_fr/femme/amour-d-hiver">
+                            <div class="bloccta upper AllButton">&nbsp;</div>
+                        </a>                        
+                        <a href="https://www.caroll.com/fr_fr/femme/amour-d-hiver" class="lienglobal"></a>
+                        </div>
+
+                        <a href="https://www.caroll.com/fr_fr/femme/amour-d-hiver" class="lienglobal"></a>
+
+                </div>
+
+                <div class="crl_ahiver_b2 AllBloc" data-lang="fr_fr" data-bloc="bloc2">
+
+                    <div class="cont_global">
+
+                    <div class="left">
+                        <div class="cont_img"></div>
+                    </div>
+
+                    <div class="right">
+                        <div class="bloctxt">
+                        <p class="titre AllTxt">&nbsp;</p>                      
+                        <a href="https://www.caroll.com/fr_fr/femme/nouveautes" class="lienglobal"></a>
+                        </div>
+
+                        <a href="https://www.caroll.com/fr_fr/femme/nouveautes">
+                            <div class="bloccta upper AllButton">&nbsp;</div>
+                        </a>
+
+                    </div>
+
+                    
+
+                    </div>
+                    
+                    <a href="https://www.caroll.com/fr_fr/femme/nouveautes" class="lienglobal"></a>
+
+                    <div class="mentions"><p class="AllTxt">&nbsp;</p></div>
+
+                </div>
+
+                 <div class="crl_ahiver_b3 AllBloc" data-lang="fr_fr" data-bloc="bloc3">
+
+                    <div class="cont_elem">
+
+                        <div class="cont_img part1"></div>
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/blouses-et-chemises">
+                            <div class="bloccta upper AllTxt">&nbsp;</div>
+                        </a> 
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/blouses-et-chemises" class="lienglobal"></a>
+
+                    </div>
+
+                     <div class="cont_elem">
+
+                        <div class="cont_img part2"></div>
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons">
+                            <div class="bloccta upper AllTxt">&nbsp;</div>
+                        </a> 
+
+                       <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="lienglobal"></a>
+                    </div>
+
+                     <div class="cont_elem">
+                        
+                        <div class="cont_img part3"></div>
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/tops-et-t-shirts">
+                            <div class="bloccta upper AllTxt">&nbsp;</div>
+                        </a>
+
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/tops-et-t-shirts" class="lienglobal"></a>
+ 
+                    </div>
+
+                     <div class="cont_elem">
+
+                        <div class="cont_img part4"></div>
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans">
+                            <div class="bloccta upper AllTxt">&nbsp;</div>
+                        </a> 
+
+                        <a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="lienglobal"></a>
+
+                    </div>
+
+                     <div class="cont_elem">
+
+                        <div class="cont_img part5"></div>
+                        <a href="https://www.caroll.com/fr_fr/femme/sacs-et-accessoires/sacs">
+                            <div class="bloccta upper AllTxt">&nbsp;</div>
+                        </a> 
+
+                        <a href="https://www.caroll.com/fr_fr/femme/sacs-et-accessoires/sacs" class="lienglobal"></a>
+
+                    </div>
+
+                 </div>
+
+            
+</div>
+    </div> <!-- End content-asset -->
+
+</div><div class="experience-component experience-commerce_assets-contentAsset">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="2710017ea8d6ff8c9708b0e219" -->
+        <link href="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/style_insta.css" type="text/css" rel="stylesheet"/>
+<script src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/script_insta.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    
+
+<div class="s45_bloc_insta">
+    <div class="picto_wrapper">
+        <a href="https://www.instagram.com/carollparis/" target="_blank">
+            <img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/pushinsta_picto_insta_v2.png" loading="lazy">
+        </a>
+        <a href="https://www.facebook.com/carollparis" target="_blank">
+            <img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/pushinsta_picto_fb_v2.png" loading="lazy">
+        </a>
+    </div>
+    <div class="desktop">
+        <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+            <picture>
+                <source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_01.webp" loading="lazy">
+                <img src="" alt="" loading="lazy">
+            </picture>
+        </a>
+        <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+            <picture>
+                <source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_02.webp" loading="lazy">
+                <img src="" alt="" loading="lazy">
+            </picture>
+        </a>
+        <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+            <picture>
+                <source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_03.webp" loading="lazy">
+                <img src="" alt="" loading="lazy">
+            </picture>
+        </a>
+        <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
+            <picture>
+                <source media="(min-width: 769px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_04.webp" loading="lazy">
+                <img src="" alt="" loading="lazy">
+            </picture>
+        </a>
+    </div>
+    <div class="mobile">
+        <!-- SWIPER -->
+        <div class="insta-swiper-container">
+            <div class="swiper-wrapper"> 
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/carollparis/" class="entree entree1" target="_blank">
+                        <picture>
+                            <source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_01.webp">
+                            <img src="" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/carollparis/" class="entree entree2" target="_blank">
+                        <picture>
+                            <source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_02.webp">
+                            <img src="" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/carollparis/" class="entree entree3" target="_blank">
+                        <picture>
+                            <source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_03.webp">
+                            <img src="" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/carollparis/" class="entree entree4" target="_blank">
+                        <picture>
+                            <source media="(max-width: 768.98px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/home_jan_s4_insta_04.webp">
+                            <img src="" alt="">
+                        </picture>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination-insta"></div>
+        </div>  
+        <!-- FIN SWIPER -->
+    </div>
+</div>
+    </div> <!-- End content-asset -->
+
+</div><div class="experience-component experience-einstein-einsteinCustomCarousel">
+    
+
+    
+        <div class="row">
+            <div class="col-12">
+                <h2 class="custom-carousel-title">Nos meilleures ventes</h2>
+            </div>
+        </div>
+    
+
+    <div class="experience-einstein-carousel tc-recommendation">
+        <input type="hidden" name="nbSlidesCarousel" value="5" />
+        <div id="carousel-649fad7449bccc6ccbeb635948" href="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Tile-ShowRecommendations" class="carousel einstein-carousel" data-recommender="products-in-all-categories" swiper-short-swipes--lg="false">
+        </div>
+    </div>
+
+</div></div>
+</div>
+</div>
+
+</div>
+
+
+
+    
+
+	 
+
+	
+
+
+
+
+
+</div>
+
+
+
+
+<footer id="footercontent">
+    
+    
+        
+        
+<div class="footer-newsletter-social">
+<div class="footer-container">
+<div class="footer-newsletter">
+<div class="footer-item">
+<span class="footer-item__title">
+<div class="newsletter-title-wrapper">
+<div class="icon-envelope"></div>
+<span class="footer-item__subtitle">
+Bénéficiez de <span>-15% sur votre coup de coeur</span> en vous inscrivant à notre newsletter</span>
+</div>
+</span>
+</div>
+<div class="form-group required">
+<label for="hpEmailSignUp"
+class="form-control-label">Votre e-mail</label>
+<input type="text" class="form-control" name="hpEmailSignUp"
+aria-label="Email" />
+<button type="button" class="btn btn-input subscribe-email"
+data-href="/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Newsletter-ShowAjax">Envoyer </button>
+</div>
+<div class="invalid-feedback" id="newsletter_footer_subscribe_error"></div>
+</div>
+<div class="footer-social">
+<div class="footer-item">
+<span class="footer-item__title">
+Suivez-nous
+<span class="footer-item__subtitle"></span>
+</span>
+</div>
+<div class="footer-social__links">
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="2e7e6a1082d80bcbe389fd7853" -->
+        <ul>
+	<li><span style="font-size:10px;"><a href="http://www.facebook.com/carollparis/" rel="nofollow"><img alt="" height="23" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/dw23d00ff0/facebook-caroll.png" title="" width="23" /></a></span></li>
+	<li><span style="font-size:10px;"><a href="http://www.instagram.com/carollparis/" rel="nofollow"><img alt="" height="23" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/dw08764fed/instagram-caroll.png" title="" width="23" /></a></span></li>
+	<li><span style="font-size:10px;"><a href="https://www.pinterest.fr/CarollFr/" rel="nofollow"><img alt="" height="23" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/dwcb5a33f7/pinterest-caroll.png" title="" width="23" /></a></span></li>
+</ul>
+    </div> <!-- End content-asset -->
+
+
+</div>
+</div>
+</div>
+</div>
+    
+        
+        
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="2e460ae1654917d1873aaa372d" -->
+        <div class="footer_reassurance_popin_container">
+    <div class="footer-container container">
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="js_footer_reassurance_popin lienglobal" datahref="1" href="javascript:void(0)"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto1.png" alt="Livraison offerte dès 100€">
+                <p>Livraison offerte<br>dès 100€</p>
+            </div>
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="js_footer_reassurance_popin lienglobal" datahref="2" href="javascript:void(0)"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto2.png" alt="Retours gratuits">
+                <p>Retours<br>gratuits</p>
+            </div>
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="js_footer_reassurance_popin lienglobal" datahref="3" href="javascript:void(0)"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto3.png" alt="Paiement 100% sécurisé">
+                <p>Paiement<br>100% sécurisé</p>             
+            </div>
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="js_footer_reassurance_popin lienglobal" datahref="4" href="javascript:void(0)"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto4.png" alt="Paiement 4x sans frais">
+                <p>Paiement<br>4x sans frais</p>
+            </div>
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="lienglobal" href="https://www.caroll.com/fr_fr/aide/"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto5.png" alt="Service client à votre écoute">
+                <p>Service client<br>à votre écoute</p>
+            </div>
+
+            <div class="footer_reassurance_popin_container__item">
+                <a class="lienglobal" href="https://www.caroll.com/fr_fr/programmefidelite.html"></a>
+                <img class="footer_reassurance_popin_container__icon" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-reinsurance/Picto6.png" alt="Programme de fidélité">
+                <p>Programme<br>de fidélité</p>
+            </div>
+
+    </div>
+</div>
+
+<style type="text/css">
+
+
+.footer_reassurance_popin_container{
+        position: relative;
+        width: 100%;
+        margin: auto;
+    margin-bottom: 2%;}
+
+        .footer_reassurance_popin_container p{
+        font-family: 'Montserrat', sans-serif;
+        margin:0;
+    font-size: 13px;}
+
+.footer_reassurance_popin_container .footer-container{
+        position: relative;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+    text-align: center;}
+
+.footer_reassurance_popin_container .footer-container .footer_reassurance_popin_container__icon{
+        width: 100px;}
+
+.footer_reassurance_popin_container .footer-container .lienglobal{    
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        z-index: 5;
+        }
+
+
+ .footer_reassurance_popin_container .footer-container .footer_reassurance_popin_container__item{
+        position: relative;
+        display: flex;
+        flex-flow:column;
+        align-items: center;
+    justify-content: center;
+margin: 0 3%;}
+
+
+.footer-item__title h3 
+{text-align: center;}
+
+#footer_reassurance_popin_layout {
+    background: rgba(0, 0, 0, 0.4);     /* éclaircie ou fonce le layout noir derrière la pop in */
+    bottom: 0;
+    left: 0;
+    display:none;
+    overflow: auto;
+    position: fixed;
+    right:0;
+    z-index:100;
+    top: 0;
+}
+
+#footer_reassurance_popin_container {
+    display:none;
+    padding: 0px 20px 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 500px;                   /* taille maximum de la pop in en largeur */
+    max-height: 450px;                  /* taille maximum de la pop in en hauteur */
+    transform: translate(-50%, -50%);
+    background: #fefefe;
+    border-radius: 5px;
+    z-index: 110;
+    overflow: auto;
+}
+
+#footer_reassurance_popin_content {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    background-color: #fefefe;
+    padding: 15px 0 20px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    gap:10px;
+}
+
+#footer_reassurance_popin_content p, #footer_reassurance_popin_content h3, #footer_reassurance_popin_content ul{
+margin: 0;
+}
+#footer_reassurance_popin_content li{
+margin-bottom: 1em;
+}
+
+#footer_reassurance_popin_content h3{
+color:#00112e;}
+
+
+#footer_reassurance_popin_container  .icon-close{                
+align-self: flex-end; 
+width: 12px;
+  height: 11px;
+line-height: 11px;/* espacement entre le haut de la pop in et la croix de fermeture */
+}
+
+
+#footer_reassurance_popin_container .bloccta {
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  z-index: 6;
+  font-weight: 600;
+  font-size: clamp(0.8461538462rem, 0.6892470924rem + 0.2652519894vw, 1.0769230769rem);
+  text-decoration: none;
+  color: #00112e;
+  padding-bottom: 0.1em;
+}
+
+@media screen and (max-width: 768.98px) {
+  #footer_reassurance_popin_container .bloccta {
+    font-size: clamp(1rem, 0.8351648352rem + 0.6696428571vw, 1.2307692308rem);
+  }
+}
+
+#footer_reassurance_popin_container .bloccta::after {
+  content: "";
+  position: absolute;
+  bottom: 6%;
+  left: 0em;
+  width: calc(100% - 0em);
+  height: 1px;
+  background-color: #00112e;
+}
+
+#footer_reassurance_popin_container .bloccta a:hover, #footer_reassurance_popin_container .bloccta a:active, #footer_reassurance_popin_container .bloccta a:link, #footer_reassurance_popin_container .bloccta a:visited {
+  text-decoration: none;
+  color: #00112e;
+}
+
+#footer_reassurance_popin_container .bloccta:hover::after {
+  width: calc(100% - 0em);
+  animation-name: soulignement;
+  animation-timing-function: ease-in-out;
+  animation-duration: 480ms;
+}
+@keyframes soulignement {
+  0% {
+    left: unset;
+    right: 0;
+    width: calc(100% - 1em);
+  }
+  33% {
+    width: 0;
+  }
+  66% {
+    right: unset;
+    left: 0;
+  }
+  100% {
+    width: calc(100% - 1em);
+  }
+}
+
+@media screen and (max-width: 768.98px) {
+    .footer_reassurance_popin_container{
+    margin-bottom: 8%;}
+
+    .footer_reassurance_popin_container .footer-container .footer_reassurance_popin_container__icon{
+        width: 80px;}
+
+        .footer_reassurance_popin_container .footer-container .footer_reassurance_popin_container__item {
+    margin: 0 15px;
+}
+
+}
+
+</style>
+<div id="footer_reassurance_popin_layout">&nbsp;</div>
+
+<div id="footer_reassurance_popin_container">
+<div id="footer_reassurance_popin_content"><span id="icon-close" class="icon-close"></span>
+
+<h3 id="footer_reassurance_title_popin">&nbsp;</h3>
+
+<ul id="footer_reassurance_ul_popin">
+</ul>
+<a href="#" id="footer_reassurance_lienEnSavoirPlus" class="bloccta">En savoir plus</a></div>
+</div>
+<script>
+    var popinContainer = document.getElementById("footer_reassurance_popin_container");
+    var layoutPopin = document.getElementById("footer_reassurance_popin_layout");
+    var buttons = document.getElementsByClassName("js_footer_reassurance_popin");
+    var buttonClose = document.getElementById("icon-close");
+    var lienPopin = document.getElementById("footer_reassurance_lienEnSavoirPlus")
+    var h1 = document.getElementById("footer_reassurance_title_popin");
+    var ul = document.getElementById("footer_reassurance_ul_popin");
+    for (let i = 0, l = buttons.length; i < l; i++) {
+        buttons[i].addEventListener("click", (e) => displayPopIn(e));
+    }
+
+    const datasPopinContent = [
+        {
+            id: 1,
+            titre: "Livraison offerte dès 100€",
+            paragraphes: [
+                "Profitez de la livraison gratuite en boutique.",
+                "Livraison offerte à domicile et en point relais dès 100€ d'achat (hors point relais express)."
+            ],
+            lien:"https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-livraison",
+        },
+        {
+            id: 2,
+            titre: "Retours gratuits",
+            paragraphes: [
+                "Vous avez 30 jours à partir de votre achat en boutique ou de la réception de votre commande en ligne pour changer d'avis.",
+                "Retournez vos achats gratuitement en boutique, en point relais ou en boîte aux lettres.",
+            ],
+            lien: "https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-retours",
+        },
+        {
+            id: 3,
+            titre: "Paiement 100% sécurisé",
+            paragraphes: [
+                "Réglez votre commande en ligne en toute sécurité.",
+                "Réglez par carte bancaire, Paypal, Carte Cadeau Caroll, Google Pay ou Apple Pay."
+            ],
+            lien:"https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-paiement",
+        },
+        {
+            id: 4,
+            titre: "Paiement 4x sans frais",
+            paragraphes: [
+                "Paiement fractionné",
+                "- Par PayPal en 1 à 4 fois.",
+                "- Par Alma en 3 fois sans frais (si disponible).",
+                "- Par Klarna en 3 fois sans frais (si disponible).",
+            ],
+            lien:"https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-paiement",
+        }
+    ];
+
+    displayPopIn = (e) => {
+        var datasPopin = datasPopinContent.find(el => {
+            if (e.target.classList.contains("js_footer_reassurance_popin")) {
+                return el.id == e.target.getAttribute("datahref");
+            } else {
+                return el.id == e.target.parentNode.getAttribute("datahref");
+            }
+        });
+
+        layoutPopin.style ="display: block";
+        h1.innerHTML = datasPopin.titre;
+
+        for(var i = 0; i < datasPopin.paragraphes.length; i++ ){
+            var paragraphe = datasPopin.paragraphes[i];
+            var li = document.createElement("li");
+            li.classList.add("footer_reassurance_li");
+            li.textContent= paragraphe;
+            ul.appendChild(li);
+        }
+
+        lienPopin.setAttribute("href", datasPopin.lien);
+        popinContainer.style ="display: block";
+        layoutPopin.addEventListener("click", (e) => disappearPopin(e));
+        buttonClose.addEventListener("click", (e) => disappearPopin(e));
+    }
+
+    disappearPopin = (e) => {
+        h1.innerHTML="";
+        ul.innerHTML="";
+        layoutPopin.style = "display : none";
+        popinContainer.style = "display : none";
+    }
+</script>
+    </div> <!-- End content-asset -->
+
+
+
+    
+        
+        
+
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="5e481daae9d4843b43d4a60ba0" -->
+        <div class="footer-links">
+	<div class="footer-container container">
+		<div class="footer-item collapsible-xs">
+			<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-order">Nos services</button>
+			<h2 class="title d-none d-sm-block footer-item__title">Nos services</h2>
+			<ul id="collapsible-order" class="menu-footer content">
+<li><a href="https://www.caroll.com/fr_fr/programmefidelite.html">Programme Fidélité</a>
+</li>
+
+<li><a href="https://www.caroll.com/fr_fr/guide-des-tailles-gdt.html">Guide des tailles</a>
+
+</li>
+
+<li><a href="https://www.caroll.com/fr_fr/ereservation.html">E-réservation</a>
+
+</li>
+				
+				
+<li><a href="https://www.caroll.com/fr_fr/magasins/ ">Nos Boutiques</a> 
+
+</li>
+<li><a href="https://www.caroll.com/fr_fr/cartescadeaux.html">Carte cadeau</a></li>
+
+<li><a href="https://www.caroll.com/fr_fr/nos-operations-commerciales-caroll.html">Nos Opérations Commerciales</a>
+
+</li>
+<li><a href="https://www.caroll.com/fr_fr/magazine.html">Le Magazine Caroll</a></li>				
+<li><a href="https://www.caroll.com/fr_fr/conditions-generales-vente#cgv-prix ">Paiement s&eacute;curis&eacute;</a>
+
+</li>
+
+
+			</ul>
+		</div>
+		<div class="footer-item collapsible-xs">
+			<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-services">Informations</button>
+			<h2 class="title d-none d-sm-block footer-item__title">Informations</h2>
+			<ul id="collapsible-services" class="menu-footer content">				
+				<li><a href="https://www.caroll.com/fr_fr/jeux-et-offres-en-cours ">Offres en cours</a></li>
+				<li><a href="https://www.caroll.com/fr_fr/conditions-generales-vente ">Conditions g&eacute;n&eacute;rales de vente</a></li>
+				<li><a href="https://www.caroll.com/fr_fr/mentions-legales ">Mentions L&eacute;gales</a></li>
+				<li><a href="https://www.caroll.com/fr_fr/charte-confidentialite">Politique de confidentialité</a></li>
+				<li><a href="https://www.caroll.com/fr_fr/politique-cookies">Cookies</a></li>
+                                <li><a href="https://moderesponsable.groupe-beaumanoir.com/caroll" target="_blank"> Traçabilité de nos produits</a></li>
+			</ul>
+		</div>
+		<div class="footer-item collapsible-xs">
+			<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-group">La marque Caroll</button>
+			<h2 class="title d-none d-sm-block footer-item__title">La marque Caroll</h2>
+			<ul id="collapsible-group" class="menu-footer content">
+				<li><a href="https://www.caroll.com/fr_fr/lamarque.html">La marque</a>
+				</li>
+				<li><a href="https://fr.linkedin.com/company/caroll" target="_recrutement" title="Recrutement">Nous rejoindre</a>
+				</li>
+				<li><a href="https://www.caroll.com/fr_fr/carollbusiness.html">Caroll business</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer-item collapsible-xs">
+			<button class="title btn text-left btn-block d-sm-none footer-item__title" aria-expanded="false" aria-controls="collapsible-informations">Groupe Beaumanoir</button>
+			<h2 class="title d-none d-sm-block footer-item__title align-text-bottom">Groupe Beaumanoir</h2>
+			<ul id="collapsible-informations" class="menu-footer content">
+				<li><a href="https://www.morgandetoi.fr/" rel="nofollow">Morgan</a>
+				</li>
+				<li><a href="https://www.cache-cache.fr/" rel="nofollow">Cache cache</a>
+				</li>
+				<li><a href="https://www.bonoboplanet.com" rel="nofollow">Bonobo</a>
+				</li>
+				<li><a href="https://www.breal.net/" rel="nofollow">Br&eacute;al</a>
+				</li>
+				<li><a href="https://www.vibs.com/" rel="nofollow">Vib's</a>
+				</li>
+				<li><a href="https://www.sarenza.com/" rel="nofollow">Sarenza</a>
+				</li>
+				<li><a href="https://www.groupe-beaumanoir.com/nos-offres/#page-search---index" target="_recrutement" title="Recrutement">Recrutement</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="footer-item collapsible-xs"><button aria-controls="collapsible-informations" aria-expanded="false" class="title btn text-left btn-block d-sm-none footer-item__title">Service Client</button>
+
+<h2 class="title d-none d-sm-block footer-item__title align-text-bottom">Service Client</h2>
+
+<ul class="menu-footer content" id="collapsible-informations">
+	<li><a href="https://caroll.easi.care/fr-FR/Post/8567">Livraisons &amp; retours</a></li>
+                                <li><a href="https://www.caroll.com/fr_fr/aide/" rel="nofollow">FAQ</a></li>
+                                <li><a href="https://www.caroll.com/fr_fr/aide/" rel="nofollow">Nous contacter</a></li>
+	<li><img  style="width: 90px;" class="" src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/2025/prix_satisfaction.png" alt=""></li>
+	
+</ul>
+</div>
+		
+	</div>
+</div>
+    </div> <!-- End content-asset -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+
+    <div class="country-selector globale-selector pt-4">
+        
+
+
+<span class="btn">
+<i class="fi fi-fr"></i>
+</span>
+<span class="country-name">
+
+France | Fran&ccedil;ais
+
+</span>
+
+
+    </div>
+
+
+
+    
+        
+        
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="117df5be34ba737f5fe41dfae0" -->
+        <div class="footer-copyright">
+<div class="footer-container container">
+<h2 class="col-12 footer-item__title">&copy; 2026 Caroll</h2>
+</div>
+</div>
+    </div> <!-- End content-asset -->
+
+
+
+
+    
+    <div class="content-asset"><!-- dwMarker="content" dwContentID="1453d0bdc834ebc66fe950c832" -->
+        <link rel="stylesheet" href="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-seo/style_seo.css">   
+    <script src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/content_asset/footer-seo/script_seo.js"></script>
+   
+    
+        <div class="bloc_txt_seo SeoBloc" data-lang="fr_fr" data-bloc="bloc-seo-home">
+             <div class="cont-texte-in">
+                    <p class="AllTxt text-in">
+                      &nbsp;
+                    </p>
+
+                    <div class="Button"><div class="Button-plus"><div class="BackButton"></div><div><p class="AllButtonPlus">&nbsp;</p></div></div></div>
+
+                    <div class="cont_cta">
+                        <div><p class="AllTxt">&nbsp;</p></div> 
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pulls-et-gilets"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/pantalons-et-jeans"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/manteaux-et-trenchs"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/blouses-et-chemises"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/robes"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/vestes-et-blousons"><p class="AllTxt">&nbsp;</p></a></div>
+                        <div class="bloccta"><a href="https://www.caroll.com/fr_fr/femme/pret-a-porter/jupes"><p class="AllTxt">&nbsp;</p></a></div>
+                    </div>
+                    
+                
+
+            </div>
+        </div>
+    </div> <!-- End content-asset -->
+
+
+
+    
+</footer>
+
+<button class="btn-scroll-top js-btn-scroll-top" title="global.top">
+    <i class="icon-back-to-top"></i>
+</button>
+
+</div>
+<div class="error-messaging"></div>
+<div class="modal-background"></div>
+<div id="omniconnect-url" class="d-none" data-url="https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/Omniconnect-Show?context=data"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="atc-dialog" class="dialog">
+<div class="atc-dialog-container">
+<i class="icon-close"></i>
+<div class="atc-dialog-text">
+<img loading="lazy" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw7ba05db7/images/checkbox-animated.svg" alt="checkicon" />
+<span>Votre produit a &eacute;t&eacute; ajout&eacute; au panier</span>
+</div>
+<div class="atc-dialog-buttons">
+<button class="btn btn-secondary btn-continue">Continuer votre shopping</button>
+
+<a href="/fr_fr/panier/" class="btn btn-primary btn-purchase" >Voir votre panier</a>
+
+</div>
+
+<div class="atc-dialog-reco hidden">
+
+
+
+    
+
+
+	
+<!-- =============== This snippet of JavaScript handles fetching the dynamic recommendations from the remote recommendations server
+and then makes a call to render the configured template with the returned recommended products: ================= -->
+
+<script>
+(function(){
+// window.CQuotient is provided on the page by the Analytics code:
+var cq = window.CQuotient;
+var dc = window.DataCloud;
+var isCQ = false;
+var isDC = false;
+if (cq && ('function' == typeof cq.getCQUserId)
+&& ('function' == typeof cq.getCQCookieId)
+&& ('function' == typeof cq.getCQHashedEmail)
+&& ('function' == typeof cq.getCQHashedLogin)) {
+isCQ = true;
+}
+if (dc && ('function' == typeof dc.getDCUserId)) {
+isDC = true;
+}
+if (isCQ || isDC) {
+var recommender = '[[&quot;viewed-recently-popin-panier&quot;]]';
+var slotRecommendationType = decodeHtml('RECOMMENDATION');
+// removing any leading/trailing square brackets and escaped quotes:
+recommender = recommender.replace(/\[|\]|&quot;/g, '');
+var separator = '|||';
+var slotConfigurationUUID = '97d73ee3f972a10909cdb972ca';
+var contextAUID = decodeHtml('');
+var contextSecondaryAUID = decodeHtml('');
+var contextAltAUID = decodeHtml('');
+var contextType = decodeHtml('');
+var anchorsArray = [];
+var contextAUIDs = contextAUID.split(separator);
+var contextSecondaryAUIDs = contextSecondaryAUID.split(separator);
+var contextAltAUIDs = contextAltAUID.split(separator);
+var contextTypes = contextType.split(separator);
+var slotName = decodeHtml('slot-success-add-cart-reco-einstein');
+var slotConfigId = decodeHtml('viewed-recently-cart');
+var slotConfigTemplate = decodeHtml('slots/recommendation/lazyEinstein_3.isml');
+if (contextAUIDs.length == contextSecondaryAUIDs.length) {
+for (i = 0; i < contextAUIDs.length; i++) {
+anchorsArray.push({
+id: contextAUIDs[i],
+sku: contextSecondaryAUIDs[i],
+type: contextTypes[i],
+alt_id: contextAltAUIDs[i]
+});
+}
+} else {
+anchorsArray = [{id: contextAUID, sku: contextSecondaryAUID, type: contextType, alt_id: contextAltAUID}];
+}
+var urlToCall = '/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/CQRecomm-Start';
+var params = null;
+if (isCQ) {
+params = {
+userId: cq.getCQUserId(),
+cookieId: cq.getCQCookieId(),
+emailId: cq.getCQHashedEmail(),
+loginId: cq.getCQHashedLogin(),
+anchors: anchorsArray,
+slotId: slotName,
+slotConfigId: slotConfigId,
+slotConfigTemplate: slotConfigTemplate,
+ccver: '1.03'
+};
+}
+// console.log("Recommendation Type - " + slotRecommendationType + ", Recommender Selected - " + recommender);
+if (isDC && slotRecommendationType == 'DATA_CLOUD_RECOMMENDATION') {
+// Set DC variables for API call
+dcIndividualId = dc.getDCUserId();
+dcUrl = dc.getDCPersonalizationPath();
+if (dcIndividualId && dcUrl && dcIndividualId != '' && dcUrl != '') {
+// console.log("Fetching CDP Recommendations");
+var productRecs = {};
+productRecs[recommender] = getCDPRecs(dcUrl, dcIndividualId, recommender);
+cb(productRecs);
+}
+} else if (isCQ && slotRecommendationType != 'DATA_CLOUD_RECOMMENDATION') {
+if (cq.getRecs) {
+cq.getRecs(cq.clientId, recommender, params, cb);
+} else {
+cq.widgets = cq.widgets || [];
+cq.widgets.push({
+recommenderName: recommender,
+parameters: params,
+callback: cb
+});
+}
+}
+};
+function decodeHtml(html) {
+var txt = document.createElement("textarea");
+txt.innerHTML = html;
+return txt.value;
+}
+function cb(parsed) {
+var arr = parsed[recommender].recs;
+if (arr && 0 < arr.length) {
+var filteredProductIds = '';
+for (i = 0; i < arr.length; i++) {
+filteredProductIds = filteredProductIds + 'pid' + i + '=' + encodeURIComponent(arr[i].id) + '&';
+}
+filteredProductIds = filteredProductIds.substring(0, filteredProductIds.length - 1);//to remove the trailing '&'
+var formData = 'auid=' + encodeURIComponent(contextAUID)
++ '&scid=' + slotConfigurationUUID
++ '&' + filteredProductIds;
+var request = new XMLHttpRequest();
+request.open('POST', urlToCall, true);
+request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+request.onreadystatechange = function() {
+if (this.readyState === 4) {
+// Got the product data from DW, showing the products now by changing the inner HTML of the DIV:
+var divId = 'cq_recomm_slot-' + slotConfigurationUUID;
+document.getElementById(divId).innerHTML = this.responseText;
+//find and evaluate scripts in response:
+var scripts = document.getElementById(divId).getElementsByTagName('script');
+if (null != scripts) {
+for (var i=0;i<scripts.length;i++) {//not combining script snippets on purpose
+var srcScript = document.createElement('script');
+srcScript.text = scripts[i].innerHTML;
+srcScript.asynch = scripts[i].asynch;
+srcScript.defer = scripts[i].defer;
+srcScript.type = scripts[i].type;
+srcScript.charset = scripts[i].charset;
+document.head.appendChild( srcScript );
+document.head.removeChild( srcScript );
+}
+}
+}
+};
+request.send(formData);
+request = null;
+}
+};
+})();
+</script>
+<!-- The DIV tag id below is unique on purpose in case there are multiple recommendation slots on the same .isml page: -->
+<div id="cq_recomm_slot-97d73ee3f972a10909cdb972ca"></div>
+<!-- ====================== snippet ends here ======================== -->
+ 
+	
+
+
+</div>
+
+</div>
+</div>
+<div id="wishlist-limit" class="dialog-wishlist-limit">
+    <div class="wishlist-limit-dialog-container">
+        <i class="icon-close close-layer"></i>
+        <div class="wishlist-limit-title">
+            <span>Votre liste de favoris est pleine !</span>
+        </div>
+        <div class="wishlist-limit-dialog-text">
+            <span>Vous avez atteint le nombre maximum d'articles dans votre liste de favoris.</span>
+            <span>Modifiez-la pour y ajouter d'autres articles.</span>
+        </div>
+        <div class="wishlist-limit-dialog-buttons">
+            <a href="https://www.caroll.com/fr_fr/mon-espace-personnel/ma-wishlist/" class="btn btn-primary">
+                Modifier ma liste
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="quickSize"></div>
+
+
+
+<!--[if lt IE 10]>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/main-react.js"></script>
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/experience/einsteinCustomCarousel.js"></script>
+    
+
+    
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/js/campaignBanner.js"></script>
+    
+
+
+<script>window.Properties = {"form":{"regex":{"email":"^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$","orderNumber":"^[A-Za-z0-9-]{8,15}$"},"error":{"required":"Ce champ est requis.","invalidEmail":"Merci de renseigner une adresse e-mail"},"orderTrack":{"error":{"missingNumber":"Le numéro de commande est requis.","invalidNumber":"Le numéro de commande est invalide."},"info":"Vous souhaitez accéder directement à une commande?","emailLabel":"E-mail","numberLabel":"Numéro de commande","submitBtn":"<span>Suivre ma commande</span><span>ou</span><span>Déclarer un retour</span>"}},"plp":{"seoCategory":{"buttonLabelOpen":"Lire plus","buttonLabelClose":"Fermer"}}}</script>
+
+<![endif]-->
+
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.caroll.com/on/demandware.store/Sites-CRL_FR_SFRA-Site/fr_FR/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1770435148649/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
+

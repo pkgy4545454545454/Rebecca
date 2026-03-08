@@ -1,0 +1,50 @@
+{
+  "summary": "Completed comprehensive testing of Training/Formation features. Fixed critical bug in purchase endpoint (stripe_checkout not instantiated). All 16 backend tests pass. Frontend UI verified for Homepage trainings section, Enterprise Dashboard training form, and Client Dashboard 'Mes Formations' section with downloadable files.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "/api/trainings", "issue": "Old trainings in DB missing 'training_type' field (use 'is_online' boolean instead) - data migration needed for consistency"}
+    ],
+    "fixed": [
+      {"endpoint": "/api/trainings/{id}/purchase", "issue": "stripe_checkout was not instantiated before use - FIXED by adding StripeCheckout initialization"},
+      {"endpoint": "/api/trainings/{id}/enroll", "issue": "stripe_checkout.get_session_status should be get_checkout_status - FIXED"}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_trainings_features.py",
+    "/app/test_reports/pytest/pytest_trainings_results.xml"
+  ],
+  "action_items": [
+    "Consider data migration to add 'training_type' field to old trainings (currently using 'is_online' boolean)"
+  ],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/backend/server.py (lines 1836-1866 and 1867-1882 - fixed stripe_checkout instantiation)"
+  ],
+  "success_rate": {
+    "backend": "100% (16/16 tests passed)",
+    "frontend": "100% (all UI flows verified)"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "Created and cleaned up TEST_ prefixed trainings for testing",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Training system fully functional. Stripe integration working for purchases. Client can see downloadable files for online trainings. Enterprise can create both online (with files) and on-site (with dates/location) trainings.",
+  "features_verified": {
+    "homepage_trainings_section": "✓ Shows public trainings with 'S'inscrire' button, redirects to auth if not logged in",
+    "enterprise_training_form": "✓ Conditional fields for online (downloadable_files) vs on_site (location, dates)",
+    "enterprise_training_crud": "✓ Create, Read, Update, Delete all working",
+    "client_mes_formations": "✓ Shows enrollments with tabs (Toutes/En cours/Terminées), stats, progress bar",
+    "downloadable_files": "✓ Online trainings show downloadable files (PDF, video) in client dashboard",
+    "stripe_purchase": "✓ Creates Stripe checkout session correctly",
+    "enrollment_api": "✓ Creates enrollment with training details and files"
+  }
+}

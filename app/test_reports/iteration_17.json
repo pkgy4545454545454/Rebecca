@@ -1,0 +1,84 @@
+{
+  "summary": "Iteration 17 - Enterprise page new tabs (Photos/Videos, Formations, Offres d'emploi) tested and working. Fixed 2 API bugs: trainingsAPI.getAll() -> listAll() and jobsAPI.list() -> listAll(). All 7 tabs navigate correctly. Empty states display properly when no data available.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/test_reports/iteration_17.json"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/frontend/src/pages/EnterprisePage.js"
+  ],
+  "success_rate": {
+    "backend": "N/A (frontend only testing)",
+    "frontend": "100%"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "None - used existing test data",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "Enterprise page tabs fully functional. Photos/Videos, Formations, and Offres d'emploi tabs display data from database or show appropriate empty state messages. Lightbox modal code is implemented but cannot be tested as no photos/videos exist in database.",
+  "features_tested": {
+    "photos_videos_tab": {
+      "status": "PASS",
+      "details": "Tab displays 'Galerie Photos & Vidéos' header. Empty state shows 'Aucune photo ou vidéo disponible' with secondary message 'Cette entreprise n'a pas encore ajouté de médias à sa galerie.' when no media exists."
+    },
+    "formations_tab": {
+      "status": "PASS",
+      "details": "Tab displays 'Formations proposées' header. Shows training cards with 'En ligne' and 'Présentiel' badges when trainings exist. Empty state shows 'Aucune formation disponible' with secondary message 'Cette entreprise ne propose pas encore de formations.'"
+    },
+    "offres_emploi_tab": {
+      "status": "PASS",
+      "details": "Tab displays 'Offres d'emploi' header. Shows job listings with title, location, contract type (CDI), salary range, and date. Empty state shows 'Aucune offre d'emploi' with secondary message 'Cette entreprise ne recrute pas actuellement.'"
+    },
+    "tab_navigation": {
+      "status": "PASS",
+      "details": "All 7 tabs (Présentation, Services, Produits, Photos/Vidéos, Formations, Offres d'emploi, Contact) navigate correctly with proper highlighting of active tab."
+    },
+    "lightbox_modal": {
+      "status": "NOT_TESTED",
+      "details": "Lightbox modal code is implemented correctly but cannot be tested as no photos/videos exist in database. Code review confirms: modal opens on media click, has close button (X), displays photos as img and videos with controls, clicking outside closes modal."
+    }
+  },
+  "bugs_fixed": {
+    "trainings_api_method": {
+      "issue": "trainingsAPI.getAll is not a function error in console",
+      "fix": "Changed trainingsAPI.getAll() to trainingsAPI.listAll() in EnterprisePage.js line 56",
+      "status": "FIXED"
+    },
+    "jobs_api_auth": {
+      "issue": "Error fetching jobs: AxiosError with 401 status - jobsAPI.list() requires authentication",
+      "fix": "Changed jobsAPI.list() to jobsAPI.listAll() in EnterprisePage.js line 65 - listAll() is a public endpoint",
+      "status": "FIXED"
+    }
+  },
+  "enterprises_tested": [
+    {
+      "name": "Spa Luxury Lausanne",
+      "id": "b34dd7dd-e7ac-4308-83c8-173163ebc819",
+      "has_trainings": true,
+      "has_jobs": true,
+      "has_photos": false,
+      "has_videos": false
+    },
+    {
+      "name": "Restaurant Les Alpes",
+      "id": "217142b2-4ad5-4851-be5f-51f82bc4d9b9",
+      "has_trainings": false,
+      "has_jobs": false,
+      "has_photos": false,
+      "has_videos": false
+    }
+  ]
+}

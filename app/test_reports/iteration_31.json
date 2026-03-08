@@ -1,0 +1,85 @@
+{
+  "summary": "Iteration 31 - Enterprise Subscription Testing Complete. All 10 subscription plans generate valid Stripe checkout URLs. Fixed critical bugs: 1) Frontend optimisation plan IDs (starter_2k → opti_starter_2k), 2) Frontend addon IDs to match backend ADDON_OPTIONS, 3) Added separate handleAddonSubscribe function for addon checkout. All 28 backend tests passed. Frontend UI verified working.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "bugs_fixed_by_testing_agent": [
+    {
+      "file": "/app/frontend/src/components/dashboard/SubscriptionsSection.js",
+      "issue": "Optimisation plan IDs mismatch - frontend used 'starter_2k' and 'starter_3k' but backend expects 'opti_starter_2k' and 'opti_starter_3k'",
+      "fix": "Changed plan IDs to match backend SUBSCRIPTION_PLANS",
+      "lines_changed": "127-134"
+    },
+    {
+      "file": "/app/frontend/src/components/dashboard/SubscriptionsSection.js",
+      "issue": "Addon IDs mismatch - frontend used incorrect IDs like 'extra_ads', 'investors', 'local' etc. but backend expects 'pub_extra', 'investors_access', 'local_access' etc.",
+      "fix": "Updated all addon IDs to match backend ADDON_OPTIONS",
+      "lines_changed": "136-151"
+    },
+    {
+      "file": "/app/frontend/src/components/dashboard/SubscriptionsSection.js",
+      "issue": "Addon 'Ajouter' button was calling subscription checkout instead of addon checkout endpoint",
+      "fix": "Added handleAddonSubscribe function that calls subscriptionsAPI.createAddonCheckout and updated button onClick",
+      "lines_changed": "45-58, 363"
+    }
+  ],
+  "test_report_links": [
+    "/app/backend/tests/test_iteration31_subscriptions.py",
+    "/app/test_reports/pytest/pytest_iteration31.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [
+    "activate_subscription correctly stores in both db.subscriptions AND db.enterprise_subscriptions collections - bug fix verified",
+    "get_enterprise_subscription_tier correctly reads from db.enterprise_subscriptions - algorithm access working",
+    "Activity feed algorithm correctly restricts premium features (market_trend, investment_opportunity) to premium/optimisation tiers",
+    "All 10 subscription plans have correct tier assignments: basic (standard, guest), premium (premium, premium_mvp), optimisation (opti_* plans)"
+  ],
+  "updated_files": [
+    "/app/frontend/src/components/dashboard/SubscriptionsSection.js",
+    "/app/backend/tests/test_iteration31_subscriptions.py"
+  ],
+  "success_rate": {
+    "backend": "100% (28/28 tests passed)",
+    "frontend": "100% - All subscription buttons verified working"
+  },
+  "test_credentials": {
+    "enterprise": "spa.luxury@titelli.com / Demo123!"
+  },
+  "seed_data_creation": "None - used existing test accounts",
+  "retest_needed": false,
+  "should_main_agent_self_test": false,
+  "context_for_next_testing_agent": "All subscription features verified working: 1) All 10 plans (standard, guest, premium, premium_mvp, opti_starter_2k, opti_starter_3k, opti_5k, opti_10k, opti_20k, opti_50k) generate valid Stripe checkout URLs. 2) Addon checkout endpoint works for all addon options. 3) Enterprise subscription status returns correct tier and ads_limit based on plan. 4) Activity feed algorithm correctly restricts premium features to premium/optimisation tiers. Fixed frontend plan/addon ID mismatches.",
+  "verified_features": {
+    "subscription_checkout": {
+      "all_10_plans_tested": true,
+      "stripe_urls_generated": true,
+      "plans": ["standard", "guest", "premium", "premium_mvp", "opti_starter_2k", "opti_starter_3k", "opti_5k", "opti_10k", "opti_20k", "opti_50k"]
+    },
+    "addon_checkout": {
+      "endpoint_working": true,
+      "addons_tested": ["pub_extra", "expert_label", "investors_access", "delivery_24", "local_access", "suppliers_access", "premium_trainings"]
+    },
+    "subscription_status": {
+      "endpoint_working": true,
+      "returns_correct_tier": true,
+      "returns_correct_ads_limit": true
+    },
+    "activity_feed_algorithm": {
+      "endpoint_working": true,
+      "tier_based_features_restricted": true,
+      "premium_features": ["market_trend", "investment_opportunity"]
+    },
+    "activate_subscription": {
+      "stores_in_db_subscriptions": true,
+      "stores_in_db_enterprise_subscriptions": true
+    }
+  },
+  "no_mocked_apis": true,
+  "all_data_from_mongodb": true
+}

@@ -1,0 +1,3 @@
+file 'titelli_v2_avant_pov_bureau.mp4'
+file 'titelli_v2_avant_stress.mp4'
+file 'titelli_v2_avant_pov_bureau.mp4'

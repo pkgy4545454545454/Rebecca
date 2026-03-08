@@ -1,0 +1,3 @@
+file 'video_avant_audio.mp4'
+file 'video_transition_audio.mp4'
+file 'video_apres_audio.mp4'

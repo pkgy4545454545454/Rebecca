@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <link rel="modulepreload" href="/assets/index-6a3e0099.js" fetchpriority="high">
+    <link rel="preload" href="/assets/index-dc541f85.css" as="style" fetchpriority="high">
+    <meta charset="UTF-8" />
+    <!-- Favicon standard pour compatibilité maximale (Google, etc.) -->
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <!-- Favicon adaptatif selon le mode sombre/clair -->
+    <link rel="icon" type="image/png" href="/MEB_Logo_2016_noir_fond-transparant.png" media="(prefers-color-scheme: light)" />
+    <link rel="icon" type="image/png" href="/MEB_Logo_2016_blanc_fond-transparant.png" media="(prefers-color-scheme: dark)" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Resource hints pour améliorer les performances -->
+    <!-- Préconnexion à l'API (CRITIQUE pour LCP) -->
+    <link rel="dns-prefetch" href="https://lamise.ch" />
+    <link rel="preconnect" href="https://lamise.ch" crossorigin />
+
+    <!-- Préconnexion à Google OAuth -->
+    <link rel="dns-prefetch" href="https://accounts.google.com" />
+    <link rel="preconnect" href="https://accounts.google.com" crossorigin />
+
+    <!-- LCP-PRELOAD-START -->
+    <!-- FR (default) -->
+    <link rel="preload" as="image" href="/uploads/carousel/carousel-1769427057037-78353992.avif" type="image/avif" fetchpriority="high" media="(max-width: 768px)" />
+    <link rel="preload" as="image" href="/uploads/carousel/carousel-1769427056936-879245965.avif" type="image/avif" fetchpriority="high" media="(min-width: 769px)" />
+    <!-- EN -->
+    <link rel="preload" as="image" href="/uploads/carousel/carousel-1769427237103-124451824.avif" type="image/avif" fetchpriority="high" media="(max-width: 768px)" />
+    <link rel="preload" as="image" href="/uploads/carousel/carousel-1769427191325-49369754.avif" type="image/avif" fetchpriority="high" media="(min-width: 769px)" />
+    <!-- LCP-PRELOAD-END -->
+
+    <!-- Preload des fonts critiques pour réduire le CLS -->
+    <link rel="preload" href="/fonts/inter-v13-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-v13-latin-500.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-v13-latin-600.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/inter-v13-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+
+    <title>La Mise - Boutique de Bières Artisanales</title>
+    <meta name="description" content="Découvrez notre sélection de bières artisanales suisses et internationales. Bar, magasin et tireuse à domicile." />
+    <meta name="keywords" content="bière artisanale, craft beer, brasserie suisse, bar bière, magasin bière, tireuse bière, bière locale" />
+    <meta name="author" content="La Mise" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:site_name" content="La Mise" />
+    <meta property="og:locale" content="fr_CH" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="La Mise - Boutique de Bières Artisanales" />
+    <meta property="og:description" content="Découvrez notre sélection de bières artisanales suisses et internationales. Bar, magasin et tireuse à domicile." />
+    <meta property="og:image" content="/MEB_Logo_2016_noir_fond-transparant.png" />
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="La Mise - Boutique de Bières Artisanales" />
+    <meta name="twitter:description" content="Découvrez notre sélection de bières artisanales suisses et internationales. Bar, magasin et tireuse à domicile." />
+    <meta name="twitter:image" content="/MEB_Logo_2016_noir_fond-transparant.png" />
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#d97706" id="theme-color" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="La Mise" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <script>
+      // Appliquer le mode sombre immédiatement
+      (function() {
+        const html = document.documentElement;
+        html.classList.add('dark');
+        html.style.backgroundColor = '#111827';
+        if (document.body) {
+          document.body.style.backgroundColor = '#111827';
+        }
+        const metaThemeColor = document.getElementById('theme-color');
+        if (metaThemeColor) {
+          metaThemeColor.setAttribute('content', '#111827');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-6a3e0099.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-a60e00a9.js">
+    <link rel="modulepreload" crossorigin href="/assets/i18n-vendor-26b91e1c.js">
+    <link rel="modulepreload" crossorigin href="/assets/http-vendor-501dfb2f.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-10c1cdf7.js">
+    <link rel="stylesheet" href="/assets/index-dc541f85.css">
+  </head>
+  <body style="background-color: inherit; margin: 0;">
+    <div id="root" style="background-color: inherit; min-height: 100vh;"></div>
+    
+  </body>
+</html>

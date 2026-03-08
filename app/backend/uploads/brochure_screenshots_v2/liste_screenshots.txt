@@ -1,0 +1,61 @@
+accueil_hero|Page d'accueil - Vue principale|/app/backend/uploads/brochure_screenshots_v2/accueil_hero.png
+services_liste|Liste des services|/app/backend/uploads/brochure_screenshots_v2/services_liste.png
+produits_liste|Liste des produits|/app/backend/uploads/brochure_screenshots_v2/produits_liste.png
+entreprises_liste|Liste des entreprises|/app/backend/uploads/brochure_screenshots_v2/entreprises_liste.png
+connexion|Page de connexion/inscription|/app/backend/uploads/brochure_screenshots_v2/connexion.png
+emplois_liste|Liste des emplois|/app/backend/uploads/brochure_screenshots_v2/emplois_liste.png
+rdv_titelli|RDV Titelli|/app/backend/uploads/brochure_screenshots_v2/rdv_titelli.png
+sports|Page Sports|/app/backend/uploads/brochure_screenshots_v2/sports.png
+media_pub|Créer une publicité|/app/backend/uploads/brochure_screenshots_v2/media_pub.png
+video_pub|Créer une vidéo pub|/app/backend/uploads/brochure_screenshots_v2/video_pub.png
+titelli_pro|Titelli Pro++|/app/backend/uploads/brochure_screenshots_v2/titelli_pro.png
+about|À propos|/app/backend/uploads/brochure_screenshots_v2/about.png
+cgv|CGV|/app/backend/uploads/brochure_screenshots_v2/cgv.png
+mentions_legales|Mentions légales|/app/backend/uploads/brochure_screenshots_v2/mentions_legales.png
+accueil_part1_hero|Accueil - Hero|/app/backend/uploads/brochure_screenshots_v2/accueil_part1_hero.png
+accueil_part2_services|Accueil - Services|/app/backend/uploads/brochure_screenshots_v2/accueil_part2_services.png
+accueil_part3_prestataires|Accueil - Prestataires|/app/backend/uploads/brochure_screenshots_v2/accueil_part3_prestataires.png
+accueil_part4_avis|Accueil - Avis|/app/backend/uploads/brochure_screenshots_v2/accueil_part4_avis.png
+menu_pub_ia|Menu Pub IA ouvert|/app/backend/uploads/brochure_screenshots_v2/menu_pub_ia.png
+auth_formulaire|Formulaire connexion|/app/backend/uploads/brochure_screenshots_v2/auth_formulaire.png
+inscription_entreprise|Inscription entreprise|/app/backend/uploads/brochure_screenshots_v2/inscription_entreprise.png
+inscription_entreprise_2|Inscription entreprise - Suite|/app/backend/uploads/brochure_screenshots_v2/inscription_entreprise_2.png
+dashboard_accueil|Dashboard - Accueil|/app/backend/uploads/brochure_screenshots_v2/dashboard_accueil.png
+dashboard_profil|Dashboard - Profil entreprise|/app/backend/uploads/brochure_screenshots_v2/dashboard_profil.png
+dashboard_media|Dashboard - Galerie média|/app/backend/uploads/brochure_screenshots_v2/dashboard_media.png
+dashboard_fil_actu|Dashboard - Mon fil d'actualité|/app/backend/uploads/brochure_screenshots_v2/dashboard_fil_actu.png
+dashboard_feed_entreprises|Dashboard - Feed entreprises|/app/backend/uploads/brochure_screenshots_v2/dashboard_feed_entreprises.png
+dashboard_services|Dashboard - Services & Produits|/app/backend/uploads/brochure_screenshots_v2/dashboard_services.png
+dashboard_commandes|Dashboard - Mes commandes|/app/backend/uploads/brochure_screenshots_v2/dashboard_commandes.png
+dashboard_livraisons|Dashboard - Mes livraisons|/app/backend/uploads/brochure_screenshots_v2/dashboard_livraisons.png
+dashboard_activites|Dashboard - Mes activités|/app/backend/uploads/brochure_screenshots_v2/dashboard_activites.png
+dashboard_stocks|Dashboard - Gestion des stocks|/app/backend/uploads/brochure_screenshots_v2/dashboard_stocks.png
+dashboard_commandes_permanentes|Dashboard - Commandes permanentes|/app/backend/uploads/brochure_screenshots_v2/dashboard_commandes_permanentes.png
+dashboard_offres|Dashboard - Offres & Promotions|/app/backend/uploads/brochure_screenshots_v2/dashboard_offres.png
+dashboard_publicites|Dashboard - Mes publicités|/app/backend/uploads/brochure_screenshots_v2/dashboard_publicites.png
+dashboard_geste_commercial|Dashboard - Geste commercial|/app/backend/uploads/brochure_screenshots_v2/dashboard_geste_commercial.png
+dashboard_tendances|Dashboard - Tendances actuelles|/app/backend/uploads/brochure_screenshots_v2/dashboard_tendances.png
+dashboard_guests|Dashboard - Guests du moment|/app/backend/uploads/brochure_screenshots_v2/dashboard_guests.png
+dashboard_ia_ciblage|Dashboard - IA Ciblage clients|/app/backend/uploads/brochure_screenshots_v2/dashboard_ia_ciblage.png
+dashboard_influenceurs|Dashboard - Influenceurs|/app/backend/uploads/brochure_screenshots_v2/dashboard_influenceurs.png
+dashboard_invitations|Dashboard - Invitations clients|/app/backend/uploads/brochure_screenshots_v2/dashboard_invitations.png
+dashboard_commandes_titelli|Dashboard - Commandes Titelli|/app/backend/uploads/brochure_screenshots_v2/dashboard_commandes_titelli.png
+dashboard_personnel|Dashboard - Mon personnel|/app/backend/uploads/brochure_screenshots_v2/dashboard_personnel.png
+dashboard_emplois|Dashboard - Emplois & Stages|/app/backend/uploads/brochure_screenshots_v2/dashboard_emplois.png
+dashboard_postulations|Dashboard - Postulations|/app/backend/uploads/brochure_screenshots_v2/dashboard_postulations.png
+dashboard_formations|Dashboard - Formations|/app/backend/uploads/brochure_screenshots_v2/dashboard_formations.png
+dashboard_finances|Dashboard - Mes finances|/app/backend/uploads/brochure_screenshots_v2/dashboard_finances.png
+dashboard_cartes|Dashboard - Mes cartes|/app/backend/uploads/brochure_screenshots_v2/dashboard_cartes.png
+dashboard_investissements|Dashboard - Mes investissements|/app/backend/uploads/brochure_screenshots_v2/dashboard_investissements.png
+dashboard_donations|Dashboard - Donations|/app/backend/uploads/brochure_screenshots_v2/dashboard_donations.png
+dashboard_business_news|Dashboard - Business News|/app/backend/uploads/brochure_screenshots_v2/dashboard_business_news.png
+dashboard_formations_metier|Dashboard - Formations métier|/app/backend/uploads/brochure_screenshots_v2/dashboard_formations_metier.png
+dashboard_messagerie|Dashboard - Messagerie|/app/backend/uploads/brochure_screenshots_v2/dashboard_messagerie.png
+dashboard_contacts|Dashboard - Contacts|/app/backend/uploads/brochure_screenshots_v2/dashboard_contacts.png
+dashboard_abonnements|Dashboard - Abonnements|/app/backend/uploads/brochure_screenshots_v2/dashboard_abonnements.png
+dashboard_documents|Dashboard - Documents|/app/backend/uploads/brochure_screenshots_v2/dashboard_documents.png
+dashboard_immobilier|Dashboard - Immobilier|/app/backend/uploads/brochure_screenshots_v2/dashboard_immobilier.png
+dashboard_parametres|Dashboard - Paramètres|/app/backend/uploads/brochure_screenshots_v2/dashboard_parametres.png
+dashboard_support|Dashboard - Service client|/app/backend/uploads/brochure_screenshots_v2/dashboard_support.png
+dashboard_partenaires|Dashboard - Partenaires|/app/backend/uploads/brochure_screenshots_v2/dashboard_partenaires.png
+dashboard_apropos|Dashboard - À propos|/app/backend/uploads/brochure_screenshots_v2/dashboard_apropos.png

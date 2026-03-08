@@ -1,0 +1,133 @@
+
+🛡️  SCRIPT DE SAUVEGARDE - NE MODIFIE PAS LE SITE
+
+============================================================
+🔄 COPIE DE BASE DE DONNÉES MONGODB
+============================================================
+📤 Source: secondevie
+📥 Destination: rebecca
+🕐 Début: 2026-02-21 21:26:08
+============================================================
+
+🔌 Connexion au cluster MongoDB Atlas...
+✅ Connexion réussie!
+
+📋 Collections trouvées dans 'secondevie': 88
+   • email_preferences: 1 documents
+   • annonce_attente: 4 documents
+   • training_enrollments: 4 documents
+   • enterprise_contacts: 6 documents
+   • managers: 5 documents
+   • pro_subscriptions: 11 documents
+   • enterprise_favorites: 1 documents
+   • electromenager: 6 documents
+   • rangement: 2 documents
+   • donations: 4 documents
+   • client_investments: 4 documents
+   • enterprise_activity_likes: 0 documents
+   • enterprises: 8251 documents
+   • electronique: 1 documents
+   • investments: 2 documents
+   • enterprise_invoices: 7 documents
+   • profile_views: 23 documents
+   • client_agenda: 0 documents
+   • fs.files: 22 documents
+   • romantic_subscriptions: 16 documents
+   • platform_settings: 2 documents
+   • job_applications: 6 documents
+   • annonce: 9 documents
+   • referral_codes: 2 documents
+   • services: 18 documents
+   • collection_d: 1 documents
+   • personal_providers: 5 documents
+   • friendships: 18 documents
+   • decoration: 1 documents
+   • user_gamification: 3 documents
+   • cashback_withdrawals: 3 documents
+   • video_orders: 7 documents
+   • subscriptions: 8 documents
+   • client_invitations: 2 documents
+   • registration_requests: 7 documents
+   • influencer_profiles: 5 documents
+   • wishlist: 19 documents
+   • orders: 27 documents
+   • agenda: 11 documents
+   • collection_gg: 1 documents
+   • offers: 4 documents
+   • commercial_gestures: 1 documents
+   • enterprise_activity_posts: 9 documents
+   • advertising: 7 documents
+   • notification_preferences: 1 documents
+   • lifestyle_subscriptions: 20 documents
+   • cuisine: 5 documents
+   • pending_subscriptions: 19 documents
+   • annonce_gg: 2 documents
+   • payment_transactions: 29 documents
+   • shared_offers: 5 documents
+   • notifications: 313 documents
+   • referral_uses: 1 documents
+   • training_reviews: 1 documents
+   • services_products: 1747 documents
+   • documents: 0 documents
+   • disponibilite_entreprise: 2 documents
+   • activity_posts: 25 documents
+   • pub_orders: 23 documents
+   • collection_xx: 0 documents
+   • transactions: 29 documents
+   • fs.chunks: 51 documents
+   • client_documents: 6 documents
+   • reviews: 19 documents
+   • trainings: 8 documents
+   • team_members: 5 documents
+   • stock_movements: 5 documents
+   • points_history: 3 documents
+   • stock: 1 documents
+   • influencer_collaborations: 5 documents
+   • influencers: 8 documents
+   • annonce_frfr: 3 documents
+   • bookings: 7 documents
+   • products: 274 documents
+   • finance_transactions: 8 documents
+   • users: 76 documents
+   • expert_bookings: 2 documents
+   • jobs: 12 documents
+   • cashback_transactions: 19 documents
+   • collection_fr: 1 documents
+   • favorite_guests: 0 documents
+   • ia_campaigns: 18 documents
+   • messages: 14 documents
+   • specialist_requests: 1 documents
+   • pending_certifications: 3 documents
+   • annonce_INVITE: 1 documents
+   • payment_cards: 2 documents
+   • enterprise_documents: 7 documents
+
+⚠️  ATTENTION: Cette opération va copier toutes les données.
+   Les données existantes dans 'rebecca' seront CONSERVÉES.
+   Les nouvelles données seront AJOUTÉES (pas de suppression).
+
+📁 Copie de 'email_preferences'...
+   ✅ 1 documents copiés/mis à jour
+📁 Copie de 'annonce_attente'...
+   ✅ 4 documents copiés/mis à jour
+📁 Copie de 'training_enrollments'...
+   ✅ 4 documents copiés/mis à jour
+📁 Copie de 'enterprise_contacts'...
+   ✅ 6 documents copiés/mis à jour
+📁 Copie de 'managers'...
+   ✅ 5 documents copiés/mis à jour
+📁 Copie de 'pro_subscriptions'...
+   ✅ 11 documents copiés/mis à jour
+📁 Copie de 'enterprise_favorites'...
+   ✅ 1 documents copiés/mis à jour
+📁 Copie de 'electromenager'...
+   ✅ 6 documents copiés/mis à jour
+📁 Copie de 'rangement'...
+   ✅ 2 documents copiés/mis à jour
+📁 Copie de 'donations'...
+   ✅ 4 documents copiés/mis à jour
+📁 Copie de 'client_investments'...
+   ✅ 4 documents copiés/mis à jour
+📁 Copie de 'enterprise_activity_likes'...
+   ⚪ Collection vide, rien à copier
+📁 Copie de 'enterprises'...

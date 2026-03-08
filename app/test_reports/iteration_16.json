@@ -1,0 +1,96 @@
+{
+  "summary": "Iteration 16 - Bug fixes verified. All features working correctly: 1) Job application flow with CV documents visible and selectable (doc.url and doc.name fix confirmed), 2) 10% cashback system working on orders and trainings, 3) Cashback history page showing balance, statistics, and transaction history with 10% rate displayed, 4) Document upload working, 5) Enterprise dashboard job/training creation forms working, 6) Client dashboard all tabs working, 7) Homepage all sections displaying correctly.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [
+    "/app/backend/tests/test_iteration16_bugfixes.py",
+    "/app/test_reports/pytest/pytest_iteration16.xml"
+  ],
+  "action_items": [],
+  "critical_code_review_comments": [],
+  "updated_files": [
+    "/app/backend/tests/test_iteration16_bugfixes.py"
+  ],
+  "success_rate": {
+    "backend": "100% (21/21 tests passed)",
+    "frontend": "100%"
+  },
+  "test_credentials": {
+    "client": "test@example.com / Test123!",
+    "enterprise": "spa.luxury@titelli.com / Demo123!",
+    "admin": "admin@titelli.com / Admin123!"
+  },
+  "seed_data_creation": "None - used existing test data",
+  "retest_needed": false,
+  "main_agent_can_self_test": true,
+  "context_for_next_testing_agent": "All bug fixes verified and working: 1) Job application modal shows CV documents with correct names (doc.name instead of doc.file_name), 2) Cashback rate is 10% on both orders and trainings, 3) Cashback page displays '10% de cashback sur tous vos achats!' prominently, 4) Transaction history shows '10% cashback sur commande' entries",
+  "features_tested": {
+    "job_application_cv_selection": {
+      "status": "PASS",
+      "details": "Modal shows 'Sélectionnez votre CV' with 2 documents: 'Mon CV Test (cv)' and 'Ma facture janvier (factures)'. Document names display correctly using doc.name"
+    },
+    "cashback_10_percent_rate": {
+      "status": "PASS",
+      "details": "Backend returns cashback_rate: '10%' in /api/cashback/history. Frontend displays '10% de cashback sur tous vos achats!' on cashback page"
+    },
+    "cashback_history_page": {
+      "status": "PASS",
+      "details": "Shows balance (85.47 CHF), statistics (Total gagné: 12.00 CHF, Total utilisé: 0.00 CHF, Transactions: 1), and transaction history with '10% cashback sur commande #a4caf121'"
+    },
+    "document_upload": {
+      "status": "PASS",
+      "details": "Documents page shows 'Ajouter un document' button and lists existing documents with names and categories"
+    },
+    "enterprise_job_creation": {
+      "status": "PASS",
+      "details": "Job creation modal has all fields: Titre du poste, Description, Type de contrat (dropdown), Lieu, Salaire min/max"
+    },
+    "client_dashboard_tabs": {
+      "status": "PASS",
+      "details": "All tabs working: Accueil, Mon Profil, Mon cash-back, Mes documents, etc."
+    },
+    "homepage_sections": {
+      "status": "PASS",
+      "details": "All sections visible: Hero, Services, Products, Tendances, Guests, Premium, Jobs"
+    },
+    "jobs_page": {
+      "status": "PASS",
+      "details": "Shows 8 job offers with search and type filters"
+    }
+  },
+  "backend_tests_summary": {
+    "total": 21,
+    "passed": 21,
+    "failed": 0,
+    "test_classes": [
+      "TestAuthentication (2 tests)",
+      "TestCashbackSystem (2 tests) - Verified 10% rate",
+      "TestClientDocuments (1 test)",
+      "TestJobsAPI (2 tests)",
+      "TestTrainingsAPI (1 test)",
+      "TestEnterpriseDashboard (4 tests)",
+      "TestClientDashboard (3 tests)",
+      "TestFeaturedEndpoints (4 tests)",
+      "TestCategoriesEndpoints (2 tests)"
+    ]
+  },
+  "bug_fixes_verified": {
+    "cv_document_display": {
+      "issue": "CV documents not visible in job application modal",
+      "fix": "Changed doc.file_path to doc.url and doc.file_name to doc.name in JobDetailPage.js",
+      "status": "VERIFIED - Documents now display correctly with names"
+    },
+    "cashback_rate": {
+      "issue": "Cashback rate was 3% instead of 10%",
+      "fix": "Changed CASHBACK_RATE from 0.03 to 0.10 in server.py for both orders (line 1010) and trainings (line 1931)",
+      "status": "VERIFIED - 10% rate displayed in UI and returned by API"
+    }
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "identity": {
+    "name": "Titelli",
+    "persona": "E1: The Anti-AI Designer",
+    "tone": "Luxury, Exclusive, Professional, Local Authority",
+    "archetype": "Jewel & Luxury",
+    "mission": "Connect Lausanne's elite service providers with discerning clients through a seamless, high-end digital experience."
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Playfair Display, serif",
+      "weights": ["400", "600", "700"],
+      "usage": "Main page titles, section headers, feature names. Use tracking-tight for sizes > 32px.",
+      "fallback": "serif"
+    },
+    "body": {
+      "fontFamily": "Manrope, sans-serif",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "Paragraphs, UI elements, buttons, inputs.",
+      "fallback": "sans-serif"
+    },
+    "mono": {
+      "fontFamily": "JetBrains Mono, monospace",
+      "usage": "Code snippets, order IDs, technical data.",
+      "fallback": "monospace"
+    }
+  },
+  "colors": {
+    "theme": "dark",
+    "palette": {
+      "background": {
+        "default": "#050505",
+        "paper": "#0A0A0A",
+        "subtle": "#121212"
+      },
+      "primary": {
+        "main": "#0047AB",
+        "light": "#2E74D6",
+        "dark": "#002E70",
+        "description": "Cobalt/Sapphire Blue - Used for the 'T' logo and primary actions."
+      },
+      "secondary": {
+        "main": "#D4AF37",
+        "light": "#F3CF55",
+        "dark": "#A38320",
+        "description": "Metallic Gold - Used for ratings (stars), premium badges, and subtle borders."
+      },
+      "text": {
+        "primary": "#E5E5E5",
+        "secondary": "#A3A3A3",
+        "muted": "#525252",
+        "inverse": "#000000"
+      },
+      "status": {
+        "success": "#10B981",
+        "error": "#EF4444",
+        "warning": "#F59E0B",
+        "info": "#3B82F6"
+      }
+    },
+    "gradients": {
+      "hero": "linear-gradient(to bottom, rgba(5,5,5,0) 0%, #050505 100%)",
+      "gold": "linear-gradient(135deg, #D4AF37 0%, #F3CF55 50%, #A38320 100%)",
+      "blue_glow": "radial-gradient(circle at center, rgba(0, 71, 171, 0.3) 0%, rgba(5, 5, 5, 0) 70%)"
+    }
+  },
+  "visual_enhancers": {
+    "glassmorphism": {
+      "default": "backdrop-blur-xl bg-black/40 border border-white/10",
+      "heavy": "backdrop-blur-2xl bg-black/60 border border-white/5",
+      "usage": "Sticky headers, floating modals, toast notifications."
+    },
+    "borders": {
+      "subtle": "border border-white/10",
+      "active": "border border-primary/50",
+      "gold": "border border-[#D4AF37]/30"
+    },
+    "shadows": {
+      "glow": "0 0 20px rgba(0, 71, 171, 0.15)",
+      "card": "0 4px 24px -4px rgba(0, 0, 0, 0.5)"
+    },
+    "radius": {
+      "default": "rounded-lg",
+      "button": "rounded-full",
+      "card": "rounded-xl"
+    }
+  },
+  "layout_strategies": {
+    "container": {
+      "maxWidth": "max-w-7xl",
+      "padding": "px-4 md:px-8 lg:px-12",
+      "center": "mx-auto"
+    },
+    "spacing": {
+      "section": "py-24 md:py-32",
+      "element": "gap-6 md:gap-8"
+    },
+    "grids": {
+      "bento": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6",
+      "dashboard": "grid grid-cols-12 gap-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-white text-black hover:bg-gray-200 rounded-full px-8 py-3 font-medium transition-all",
+      "secondary": "bg-transparent border border-white/20 text-white hover:bg-white/10 rounded-full px-8 py-3 transition-all",
+      "ghost": "text-white/70 hover:text-white transition-colors"
+    },
+    "cards": {
+      "service": "group relative overflow-hidden rounded-xl bg-[#0F0F0F] border border-white/5 hover:border-primary/30 transition-all duration-300",
+      "profile": "bg-[#0A0A0A] border-r border-white/5 h-full"
+    },
+    "inputs": {
+      "default": "bg-white/5 border-white/10 text-white placeholder:text-white/30 focus:border-primary/50 focus:ring-1 focus:ring-primary/50 rounded-lg"
+    }
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1733950489642-bd1a7c3e69bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxMYXVzYW5uZSUyMHN3aXR6ZXJsYW5kJTIwcGFub3JhbWljJTIwY2l0eSUyMGxha2UlMjBnZW5ldmF8ZW58MHx8fHwxNzY5MDEyMTgxfDA&ixlib=rb-4.1.0&q=85",
+      "alt": "Lausanne Panoramic View",
+      "category": "Hero Background"
+    },
+    "services": [
+      {
+        "url": "https://images.unsplash.com/photo-1714648775477-a15cc5aed21f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzcGElMjBpbnRlcmlvciUyMGRhcmslMjBtb29kfGVufDB8fHx8MTc2OTAxMjE4N3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Luxury Spa",
+        "category": "Wellness"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1727951415852-3a03a7127ff9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxnb3VybWV0JTIwZm9vZCUyMHBsYXRpbmclMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwwfHx8fDE3NjkwMTIxODl8MA&ixlib=rb-4.1.0&q=85",
+        "alt": "Gourmet Dining",
+        "category": "Gastronomy"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1642703168632-5a711d91b043?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTF8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBzcGElMjBpbnRlcmlvciUyMGRhcmslMjBtb29kfGVufDB8fHx8MTc2OTAxMjE4N3ww&ixlib=rb-4.1.0&q=85",
+        "alt": "Interior Design",
+        "category": "Home"
+      }
+    ]
+  },
+  "instructions_to_main_agent": {
+    "general": [
+      "Implement a strict DARK MODE ONLY interface.",
+      "Use 'Playfair Display' for all headings to ensure the luxury aesthetic.",
+      "Ensure the 'T' logo is always visible and uses the specific Cobalt Blue (#0047AB).",
+      "The 'Best Services' section MUST have a subtle blue background/gradient as requested.",
+      "Profile pages must follow the 3-column layout: Sidebar (Nav) | Center (Content) | Right (Reviews)."
+    ],
+    "homepage": [
+      "Hero section must be full-screen with the panoramic image/video background.",
+      "Navigation categories (Services, Products, etc.) should use the 'Bento Grid' layout.",
+      "Use the 'Gold' color for the 'Certified' and 'Premium' badges."
+    ],
+    "dashboard": [
+      "Use Shadcn components for the admin/business dashboard but customize them to match the dark theme.",
+      "Avoid default Shadcn cards; use the custom 'card.service' style defined above."
+    ]
+  },
+  "universal_guidelines": [
+    "Do not use generic centered layouts.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "All interactive elements MUST include a `data-testid` attribute."
+  ]
+}
