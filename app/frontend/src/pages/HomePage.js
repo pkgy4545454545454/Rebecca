@@ -399,7 +399,7 @@ return (
     <section className="relative px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-500/10 via-transparent to-transparent" />
       <div className="mx-auto relative z-10">
-        <div className="text-center mb-16 z-10" style={{ padding: '90px' }}>
+        <div className="text-center mb-16 z-10">
           <div className="absolute inset-0" style={{ zIndex: -38 }}>
             <video
               ref={videoRef}
