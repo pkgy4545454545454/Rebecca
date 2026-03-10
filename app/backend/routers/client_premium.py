@@ -100,22 +100,16 @@ async def get_premium_status(current_user: dict = Depends(get_current_user)):
         "cashback_rate": int(cashback_rate * 100),
         "has_active_subscription": subscription is not None
     }
+
+
 @router.post("/checkout")
 async def create_premium_checkout(plan: str, current_user: dict = Depends(get_current_user)):
     """Create Stripe checkout session for premium subscription"""
-    
-    # Vérifie le plan
     if plan not in ['premium', 'vip']:
         raise HTTPException(status_code=400, detail="Plan invalide. Choisissez 'premium' ou 'vip'")
     
     plan_info = PREMIUM_PLANS[plan]
-
-    # Vérifie et nettoie FRONTEND_URL
-    frontend_url = FRONTEND_URL.strip()
-    if not frontend_url.startswith("http://") and not frontend_url.startswith("https://"):
-        logger.error(f"FRONTEND_URL invalide: {FRONTEND_URL}")
-        raise HTTPException(status_code=500, detail="Configuration FRONTEND_URL invalide")
-
+    
     try:
         checkout = StripeCheckout(api_key=STRIPE_API_KEY)
         
@@ -123,20 +117,17 @@ async def create_premium_checkout(plan: str, current_user: dict = Depends(get_cu
             amount=plan_info['price'],
             currency="chf",
             quantity=1,
-            # URLs correctement construites
-            success_url='https://pkgyweb.com',
-            cancel_url='https://pkgyweb.com/vip.php',
+            success_url=f"{os.environ.get('FRONTEND_URL', 'https://market-makeover-1.preview.emergentagent.com')}/dashboard/client?tab=premium&success=true&plan={plan}",
+            cancel_url=f"{os.environ.get('FRONTEND_URL', 'https://market-makeover-1.preview.emergentagent.com')}/dashboard/client?tab=premium&cancelled=true",
             metadata={
                 "plan": plan,
                 "user_id": current_user['id'],
-                "product_name": f"Esclava {plan_info['name']} - Abonnement mensuel"
+                "product_name": f"Titelli {plan_info['name']} - Abonnement mensuel"
             }
         )
         
-        # Création de la session Stripe
         session_response = await checkout.create_checkout_session(session_request)
         
-        # Stocke l'abonnement en attente
         pending_sub = {
             "id": str(uuid.uuid4()),
             "user_id": current_user['id'],
@@ -152,7 +143,6 @@ async def create_premium_checkout(plan: str, current_user: dict = Depends(get_cu
             "checkout_url": session_response.url,
             "session_id": session_response.session_id
         }
-    
     except Exception as e:
         logger.error(f"Stripe checkout error: {str(e)}")
         raise HTTPException(status_code=500, detail=f"Erreur paiement: {str(e)}")
