@@ -104,8 +104,8 @@ async def create_subscription_checkout(
                 'quantity': 1,
             }],
             mode='payment',
-           success_url=f"{frontend_url}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
-        cancel_url=f"{frontend_url}/payment/cancel",
+           success_url=f"{FRONTEND_URL}/payment/success?session_id={{CHECKOUT_SESSION_ID}}",
+        cancel_url=f"{FRONTEND_URLl}/payment/cancel",
             metadata={
                 'type': plan_id,
                 'subscription_id': subscription_id,
