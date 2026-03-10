@@ -103,8 +103,8 @@ async def create_subscription_checkout(
                 'quantity': 1,
             }],
             mode='payment',
-            success_url='https://pkgyweb.com/vip.php',
-            cancel_url='https://pkgyweb.com/vip.php',
+            success_url=f"{os.environ.get('FRONTEND_URL', 'https://esclavaescort.ch')}/dashboard/client?tab=premium&success=true&plan={plan}",
+            cancel_url=f"{os.environ.get('FRONTEND_URL', 'https://esclavaescort.ch')}/dashboard/client?tab=premium&cancelled=true",
             metadata={
                 'type': plan_id,
                 'subscription_id': subscription_id,
