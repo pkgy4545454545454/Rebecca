@@ -105,7 +105,7 @@ async def create_subscription_checkout(
             }],
             mode='payment',
             success_url='https://pkgyweb.com/vip.php',
-            cancel_url=f'{FRONTEND_URL}/dashboard/client?tab=premium&cancelled=true',
+            cancel_url='https://pkgyweb.com/vip.php',
             metadata={
                 'type': plan_id,
                 'subscription_id': subscription_id,
