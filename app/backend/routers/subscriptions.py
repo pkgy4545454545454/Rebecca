@@ -44,7 +44,6 @@ SUBSCRIPTION_PLANS = {
     }
 }
 
-
 @router.get("/plans")
 async def get_subscription_plans():
     """Get available subscription plans"""
