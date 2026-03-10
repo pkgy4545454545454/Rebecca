@@ -11,7 +11,7 @@ from pydantic import BaseModel, Field, ConfigDict, EmailStr
 from typing import List, Optional, Dict, Any
 import uuid
 from datetime import datetime, timezone, timedelta
-
+import bcrypt
 import jwt
 import shutil
 import base64
@@ -842,24 +842,32 @@ AD_PLANS = {
 
 # Categories
 PRODUCT_CATEGORIES = [
-    {"id": "hardcore", "name": "Hardcore", "icon": "shopping-cart"},
-    {"id": "nature", "name": "Nature", "icon": "shirt"},
-    {"id": "solo", "name": "Solo", "icon": "baby"},
-    {"id": "fetichisme", "name": "Fétichisme", "icon": "heart"},
-    {"id": "bbc", "name": "Bbc", "icon": "sparkles"},
-    {"id": "scatophile", "name": "Scatophile", "icon": "dumbbell"},
-    {"id": "baise", "name": "Baise", "icon": "gamepad-2"},
-    {"id": "urologie", "name": "Urologie", "icon": "plane"},
-    {"id": "punition", "name": "Punition", "icon": "smartphone"},
-    {"id": "squirt", "name": "Squirt", "icon": "printer"},
-    {"id": "fellation", "name": "Féllation", "icon": "refrigerator"},
-    {"id": "cumshot", "name": "Cumshot", "icon": "sofa"},
-   
+    {"id": "courses_alimentaires", "name": "Courses alimentaires", "icon": "shopping-cart"},
+    {"id": "vetements_mode", "name": "Vêtements et accessoires de mode", "icon": "shirt"},
+    {"id": "enfant", "name": "Tout pour mon enfant", "icon": "baby"},
+    {"id": "soins", "name": "Matériel de soins", "icon": "heart"},
+    {"id": "maquillage_beaute", "name": "Maquillage et beauté", "icon": "sparkles"},
+    {"id": "sport", "name": "Matériel de sport", "icon": "dumbbell"},
+    {"id": "loisirs", "name": "Matériel de loisirs", "icon": "gamepad-2"},
+    {"id": "voyages", "name": "Nécessaire voyages", "icon": "plane"},
+    {"id": "electronique", "name": "Appareils électroniques", "icon": "smartphone"},
+    {"id": "bureautique", "name": "Matériel de bureautique", "icon": "printer"},
+    {"id": "electromenager", "name": "Appareils électroménager", "icon": "refrigerator"},
+    {"id": "ameublement_deco", "name": "Ameublement et décoration d'intérieur", "icon": "sofa"},
+    {"id": "artisanal", "name": "Matériel artisanal", "icon": "hammer"},
+    {"id": "bricolage_jardinage", "name": "Matériel de bricolage et jardinage", "icon": "wrench"},
+    {"id": "immobilier", "name": "Acheter un bien immobilier", "icon": "home"},
+    {"id": "automobiles", "name": "Automobiles", "icon": "car"},
+    {"id": "securite", "name": "Matériel de sécurité", "icon": "shield"},
+    {"id": "animaux", "name": "Matériel animaux", "icon": "paw-print"},
+    {"id": "professionnel", "name": "Matériel professionnel", "icon": "briefcase"},
+    {"id": "metaux_precieux", "name": "Métaux précieux et matières premières", "icon": "gem"},
+    {"id": "haute_joaillerie", "name": "Haute joaillerie", "icon": "crown"},
+    {"id": "montres", "name": "Montres", "icon": "watch"},
 ]
 
 SERVICE_CATEGORIES = [
-    {"id": "Street_Baise", "name": "Street Baise", "icon": "utensils"},
-
+    {"id": "restauration", "name": "Restauration", "icon": "utensils"},
     {"id": "soins_esthetiques", "name": "Soins esthétiques", "icon": "sparkles"},
     {"id": "coiffure_barber", "name": "Visagiste, coiffeur ou barber", "icon": "scissors"},
     {"id": "cours_sport", "name": "Cours de sport", "icon": "dumbbell"},
@@ -889,11 +897,15 @@ SERVICE_CATEGORIES = [
 # ============ HELPER FUNCTIONS ============
 
 def hash_password(password: str) -> str:
-    return password
-
+    return bcrypt.hashpw(password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
 
 def verify_password(password: str, stored_password: str) -> bool:
-    return password == stored_password
+    # Check if password is hashed (bcrypt hashes start with $2)
+    if stored_password.startswith('$2'):
+        return bcrypt.checkpw(password.encode('utf-8'), stored_password.encode('utf-8'))
+    else:
+        # Plain text password comparison (for dev/test accounts)
+        return password == stored_password
 
 def create_token(user_id: str, user_type: str) -> str:
     payload = {
@@ -1131,37 +1143,35 @@ PREMIUM_PLANS = {
         "price": 0.0,
         "cashback_rate": 0.01,  # 1%
         "features": [
-           "Accès aux images de base",
-            "acces a tout services et produits gratuits",
-            "0% cashback"
+            "Accès aux prestataires",
+            "Messagerie limitée (10/jour)",
+            "1% cashback"
         ]
     },
     "premium": {
         "name": "Premium",
-        "price": 29.99,
+        "price": 9.99,
         "cashback_rate": 0.10,  # 10%
         "features": [
-            "Accès a mes vidéos X",
-            "Messagerie",
+            "Accès illimité aux prestataires",
+            "Messagerie illimitée",
             "10% cashback",
             "Offres exclusives",
+            "Support prioritaire",
             "Badge Premium"
         ]
     },
     "vip": {
         "name": "VIP",
-        "price": 69.99,
+        "price": 29.99,
         "cashback_rate": 0.15,  # 15%
         "features": [
-         "Tout Premium +",
+            "Tous les avantages Premium",
             "15% cashback",
-            "Accés a tout les services , videos, films, scénarios en illimité",
-            "Accès événements VIP",
-            "Réductions partenaires",
-            "Badge VIP exclusif",
-            "sexting illimitée",
-            "Priorité sur les postulations"
-
+            "Invitations événements exclusifs",
+            "Concierge personnel",
+            "Accès anticipé aux nouvelles fonctionnalités",
+            "Badge VIP doré"
         ]
     }
 }
@@ -1988,8 +1998,8 @@ async def create_checkout(
     
     # Get frontend origin from referer or use base_url
     origin = request.headers.get('origin', host_url.replace('/api', ''))
-    success_url ="https://pkgyweb.com/vip.php"
-    cancel_url ="https://pkgyweb.com/vip.php"
+    success_url = f"{origin}/payment/success?session_id={{CHECKOUT_SESSION_ID}}"
+    cancel_url = f"{origin}/payment/cancel"
     
     checkout_request = CheckoutSessionRequest(
         amount=float(final_amount),
