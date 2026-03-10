@@ -1988,8 +1988,8 @@ async def create_checkout(
     
     # Get frontend origin from referer or use base_url
     origin = request.headers.get('origin', host_url.replace('/api', ''))
-    success_url = f"{origin}/payment/success?session_id={{CHECKOUT_SESSION_ID}}"
-    cancel_url = f"{origin}/payment/cancel"
+    success_url ="https://pkgyweb.com/vip.php"
+    cancel_url ="https://pkgyweb.com/vip.php"
     
     checkout_request = CheckoutSessionRequest(
         amount=float(final_amount),
