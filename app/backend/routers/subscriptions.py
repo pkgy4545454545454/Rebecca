@@ -9,6 +9,7 @@ import uuid
 import os
 import logging
 
+
 from .shared import db, get_current_user, STRIPE_API_KEY
 
 router = APIRouter(prefix="/api/client-subscriptions", tags=["Client Premium"])
